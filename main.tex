@@ -38,7 +38,7 @@
 \maketitle
 
 \begin{abstract}
-Rewarding yourself after a difficult task, encourages you to complete the task again. Habit formation systems use rewards to encourage and motivate people to form new habits. This paper compares three types of positive reinforcement rewards from two modalities, visual and auditory, to see how they effect habit formation. 36 people participated in a 4-week study followed by voluntary semi-structured interviews. Four groups received different types of rewards from a different mode: no reward, visual, auditory, and visual-auditory combined. The results showed: (TODO summarise key findings from both hypothesis)... the effectiveness of these chosen rewards on users habit strength and analysis on the motivation about each modality. Semi-structured user interviews, combined with the data analysis, found at the end of the 4-week period: i) visual rewards had the highest increase in habit strength, ii) ..., finally, iii) participants found interacting with the chatbot fun.
+Rewards encourage and motivate people to complete tasks, \textit{and} complete them again. Habit formation systems use rewards to encourage and motivate people to form new habits. This paper looks at the effect of habit formation using three types of positive reinforcement rewards from two modalities, visual, auditory and visual-auditory combined. To test each type of reward, 36 people participated in a 4-week study followed by voluntary semi-structured interviews. The results showed: (TODO summarise key findings from both hypothesis)... the effectiveness of these chosen rewards on users habit strength and analysis on the motivation about each modality. Semi-structured user interviews, combined with the data analysis, found at the end of the 4-week period: i) visual rewards had the highest increase in habit strength, ii) ..., finally, iii) participants found interacting with the chatbot fun.
 ... final sentence, why it all matters, the papers contribution...
 \end{abstract}
 
@@ -57,7 +57,7 @@ Technology can help people stick to a routine, but also needs to avoid building 
 Motivation can be encouraged by rewarding users with positive reinforcement after they complete the action.
 However, these are not enough to be successful, the reward and delivery type are crucial to success.
 
-The type of reward is important to habit formation and motivation. Monetary rewards (extrinsic rewards) hinders motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based rewards (intrinsic rewards) benefits the person and should be preferred~\cite{article_meta_analytic_review_intrinsic_motivation}.
+The type of reward can effect motivation. Monetary rewards (extrinsic rewards) can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based rewards (intrinsic rewards) can be beneficial to motivation and should be preferred~\cite{article_meta_analytic_review_intrinsic_motivation}.
 How rewards are delivered is also important. The method of delivery should suit each individual user, and a choice of delivery should be available. For example, research~\cite{article_user_centred_multimodal_reminders} into reminder systems shows that reminders should span different modalities to increase user retention and better suit the users needs.
 This paper tries a new method of delivering rewards in the form of a bot. Using this to send intrinsic positive reinforcement rewards from different modalities to see how this affects people's habit strength.
 
@@ -81,13 +81,7 @@ An existing routine acts as a trigger to motivate the desired action. Context fr
 \subsubsection{Rewards}
 Self-efficacy (the belief in ones ability to succeed) plays a large part in forming habits~\cite{article_a_self_efficacy} and some research suggests it is the main part of behaviour change. Rewards give people this experience by feeding back their success of their action. Rewarding a person with positive reinforcement, strengthens the habit by giving the feeling of satisfaction~\cite{article_promoting_habit_formation}. However, the type of reward matters, as rewards that benefit the person with satisfaction (intrinsic rewards) should be used over monetary gains (extrinsic rewards), because extrinsic rewards have a negative effect on motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, particularly in relation to interesting tasks. Therefore, this paper focuses on positive reinforcement intrinsic rewards.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.47\columnwidth]{figures/reminder.png}
-  \hspace{5px}
-  \includegraphics[width=0.47\columnwidth]{figures/reward-visual.png}
-  \caption{Prototype delivering a visual reward after a user has marked their habit as completed.}~\label{fig:setup}
-\end{figure}
+
 
 \subsection{Positive Reinforcement}
 TODO: Compare different reward types. We will focus only on positive reinforcement rewards, however, there are lots of different types...
@@ -144,10 +138,10 @@ Combining audio with visual can be advantageous as feedback after the completion
 These aspects are implemented into our prototype and adapted for delivering rewards.
 
 \subsection{Mapping Modalities}
-First, the actual rewards are aimed to motivate participants to complete further habits. Gifs and audio are found from the site, with the search 'Motivation'. Each frame of the gif image is altered to match the audio frequency level. The frame is slowed down if the audio level is lower, or speed up, if the audio frequency level is higher. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}. The next section discusses how the tool was created and delivery methods for these rewards.
+First, the actual rewards are aimed to motivate participants to complete further habits. Gifs and audio are found from the site, with the search 'Motivation'. Each frame of the gif image is altered to match the audio frequency level. The frame is slowed down if the audio level is lower, or speed up, if the audio frequency level is higher. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}. The next section discusses how technology is used to create a delivery method for these rewards.
 
 \section{Technology}
-TODO briefly review these papers\cite{chi_mechanics_of_persuasive_system_design, chi_time_aware_leveraging_framing_effects, personal_tracking_of_screen_time, chi_crowd_designed_motivation}
+TODO briefly review this papers\cite{chi_crowd_designed_motivation}
 
 Research~\cite{survey_on_apps_2,survey_on_current_apps_of_steel} into how mobile systems can support habit formation and behaviour change, shows a large number of habit forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory. Research into some of these apps show that habits are not sustained when the app is removed, due to the lack of habit automaticity~\cite{article_beyond_self_tracking_designing_apps}.
 
@@ -161,7 +155,13 @@ Interaction with current habit formation systems is often via a mobile app. This
 This is also the case with many mobile feedback systems that aid with behaviour change.
 When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. To build a system for mobile devices that meets our requirements we must review all available options. A chatbot can easily send notifications, has a short development time, high availability with cross-platform and is simple, with the UI already built for us.
 
-
+\begin{figure}
+  \centering
+  \includegraphics[width=0.47\columnwidth]{figures/reminder.png}
+  \hspace{5px}
+  \includegraphics[width=0.47\columnwidth]{figures/reward-visual.png}
+  \caption{Prototype delivering a visual reward after a user has marked their habit as completed.}~\label{fig:setup}
+\end{figure}
 
 \section{Study: Comparing Different Rewards}
 To explore the influence of different modalities on habit formation, we would conducted a something study, followed by semi-structured interviews. For the purpose of the study we developed a chatbot that helps users form healthy habits by providing different types of positive reinforcement. The study and the bot itself are described below.
@@ -171,11 +171,11 @@ To explore the influence of different modalities on habit formation, we would co
 \subsection{Method}
 The study aims to test 2 hypothesis to compare how well people form new habits based on their reward modality and how the rewards delivered by the chatbot effect participants habit formation.
 
-\subsubsection{Hypothesis}
-\textbf{Hypothesis 1.} Are rewards better than no rewards: Compare all aggregated reward modalities with control group (no rewards).
+\subsubsection{Hypothesis 1. Are rewards better than no rewards}
+Compare all aggregated reward modalities with control group (no rewards).
 
-
-\textbf{Hypothesis 2.} Are combined modalities better than singular modes: Compare Visual-Audio with Visual, Audio aggregated.
+\subsubsection{Hypothesis 2. Are multiple modalities better than a singular mode}
+Compare Visual-Audio with Visual, Audio aggregated.
 
 \subsubsection{Conditions}
 Both of these are based on these conditions:
@@ -184,11 +184,10 @@ Both of these are based on these conditions:
   \item Number of habits completed
 \end{itemize}
 
-60 participants were recruited on social networks (using this landing page \url{www.harrymt.com/harryshabits}), and were mostly University students and staff. They were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking.
+
 
 \subsubsection{Participants}
-60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger.
-
+60 participants were recruited on social networks (using the landing page: \url{www.harrymt.com/harryshabits}), and were mostly University students and staff. They were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking.
 
 
 
@@ -217,16 +216,15 @@ The study used four conditions: visual rewards, auditory rewards, visual-auditor
 Participants would receive a confirmation message, followed by positive reinforcement after they marked a habit as complete, unless they were in the control group, then they would only receive a confirmation message.
 
 
-\subsubsection{Procedure}
-
-\subsubsection{- Materials}
+\subsubsection{Materials}
 The bot will collect the amount of habits people complete verses their reward type. Habit completion will be verified by using the SRBAI questionnaire~\cite{article_habit_measurement}---A validated set of questions to measure habit automaticity levels. This will be used to test if people are forming a habit. Finally, participant interviews will discuss the chatbot delivered rewards for further verification.
 
-a subset (4-questions) of the SRHI~\cite{article_habit_strength}  to measure habit automaticity levels
+A subset (4-questions) of the SRHI~\cite{article_habit_strength}  to measure habit automaticity levels
 
- modality survey (N = 12, 40\%). Likert scale was also used for various questions about participants rewards.
+Likert scale was also used for various questions about participant rewards coined a modality survey.
  
-
+ 
+\subsubsection{Procedure}
 First, we conducted an internal pilot trial to develop the strength of the prototype. Second, we ran a 4-week evaluation trial in the wild with real people who try and form a new positive habit. Finally, follow-up interviews with participants test if they continued with their habit without the bot.\newline
 \newline
 The 4-week evaluation trial is split into two sections. First a 3-week trial tests the success of the chatbot by evaluating the tool and the effectiveness of each modality on participants habit strength using a validated questionnaire~\cite{article_habit_measurement}. During the fourth week, chatbot interaction is removed during a 1-week follow up trial to test if participants continue with the habit. Participants were split into four groups, all groups receiving reminders, three groups receiving rewards each from a different modality, and one group (control group) don't receive any rewards.
@@ -239,16 +237,16 @@ Option one (completed habit): participants would receive a message thanking them
 After 3 weeks of participants interacting with the bot, all participants who completed the set up are asked to complete the SRHI~\cite{article_habit_strength} questionnaire. Then the bot interaction was suspended for 1 week. After the full 4-week period, participants were asked to complete the questionnaire again. Both questionnaires presented the questions on a 7-point Likert scale with answers from 'Strongly Disagree' (5) to 'Strongly Agree' (1). Higher scores indicates higher self-reported levels of automaticity. In addition, participants had an option to opt-in for an interview about their experience after the 4-week period.
 
 \subsection{Results}
-60 participants connected on these platforms: 25 browser, iOS 18 and Android 12. 14 people (40\%) dropped out of the study at various stages: 54 people (90\%) continued interacting with the bot and started the set-up. 39 people (65\%) completed the set-up and out of these 39 people, 3 people just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 people (93\%) visual, 9 people (60\%) visual and auditory, 7 people (46\%) auditory and 6 people (40\%) had no rewards (control group). 28 participants volunteered for an interview (at the beginning of the study, but only 8 participants arranged a time for one,) and 8 were carried out.
+60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 browser, iOS 18 and Android 12. 14 people (40\%) dropped out of the study at various stages: 54 people (90\%) continued interacting with the bot and started the set-up. 39 people (65\%) completed the set-up and out of these 39 people, 3 people just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 people (93\%) visual, 9 people (60\%) visual and auditory, 7 people (46\%) auditory and 6 people (40\%) had no rewards (control group). 28 participants volunteered for an interview (at the beginning of the study, but only 8 participants arranged a time for one,) and 8 were carried out.
 
 General Trend
 
-How each condition changed/occured over time (fig 4.)
+How each condition changed/occurred over time (fig 4.)
 
 Number of completed habits per condition...
 
 \subsubsection{Participants who Previously Tracked Habits}
-7 people (19\%) used them before and 100\% of those people said they worked. They tracked habits such as 'Diet' (3 people), 'Exercise' (3 people), 'Deadlines' (2 people), 'Audiobook reading' (1), 'Weight' (1). These people all chose new habits that they hadn't listed that they had tracked before.
+7 participants (19\%) previously used habit tracking systems and 100\% of stated they worked well for tracking habits. These habits were: 'Diet' (3 mentions), 'Exercise' (3 mentions), 'Deadlines' (2 mentions), 'Audiobook reading' (1 mention), 'Weight' (1 mention). All of these participants chose new habits that they hadn't tracked before.
 
 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
 
@@ -363,6 +361,149 @@ Participants (N = 15, 41\%) completed the SRBAI (4-questions) at the end of the 
 
 
 \subsection{Interviews}
+
+(still need to add in mitches)
+
+
+\subsubsection{Rosa Mumford-Turner, 23/08/17}
+
+\subsubsection{Why did you pick that habit?} (stretching)
+Want to be more flexible, easier habit, she isnt gonna do the plank every morning, its easier, not too much effort, less time consuming.
+
+\subsubsection{Are you still doing that habit? (stretching)}
+No not stretching.
+
+\subsubsection{Did you like the chatbot?}
+Pretty good.
+
+\subsubsection{Do you want it back?}
+Yes, if it was enclosed in the fitbit, cuz it was all in one place
+
+\subsubsection{Rewards}
+A bit weird, a bit funny, weird just a black screen. She liked the buttons that you could pick.
+Didnt need a reward. Was unneccesary, the message was enough. The stats was cool, because you can reflect on data. Better to have info, like 'Its almost theree'
+
+\subsubsection{General}
+Overall pretty cool.
+
+
+\subsubsection{Youstraila, 22/08/17}
+1007204192716352 07956839590
+
+Questions:
+
+\subsubsection{Why did you pick that habit?} (write)
+Writing in the morning, changed from the evening.
+
+\subsubsection{Are you still doing that habit? (write)}
+No, just keep forgetting todo it, or cbb?
+
+\subsubsection{Did you like the chatbot?}
+- Yes I liked it. It would've been great for reminding me to write.
+
+\subsubsection{Do you want it back?}
+Yes, but maybe, but only thing that didnt like my reward,
+
+\subsubsection{Rewards}
+- Some of them were funny, works with other people.
+- Want different types of rewards.
+- Didn't really like them.
+- Maybe have, measurement of, if something starts doing good, writing then give them measurement, giving them consistnet well done, stats. When they feel like they are making progress, they are more encouraged to keep doing it, rather than random music.
+
+\subsubsection{General}
+They participated in it, to change my habits. Problem with being consistent with a habit.
+Deactivated their fb account for a week. Didn't really write.
+
+\subsubsection{Lesley Mumford, 21/08/17}
+
+\subsubsection{Why did you pick that habit?} (meditation)
+Its something I wanted todo for a long time, so I thought this would help me make it more regular, I downloaded headspace meditation app, but it was hard to remember todo it. Using it combination with that thing. Because it doesnt send me iphone reminders, chatbot is better remidners because it fb messenger app. Was doing habti without headspace while using chatbot.
+
+\subsubsection{Are you still doing that habit? (meditation)}
+Yes, but, its not as regular, I do miss it.
+
+\subsubsection{Did you like the chatbot?}
+Woulve liked to of interacted with it a bit more, and to of been able to ask it for help and support throughout. Ideas of how to make sure that you set aside some time todo things, ideas on how to meditate. Where to go, different apps to use, or things like that. Liked to of had a bit more interaction with the bot.
+
+\subsubsection{Do you want it back?}
+Yes, if it had a bit more interaction with it, I would. In its current form, I wouldn't. It made me think I should dowwnload the headspace app on my phone, the reminders they found useful.
+
+\subsubsection{General}
+She felt like she needed rewards.
+She wanted to put my own habit in, she wanted drawing.
+
+\subsubsection{Joe Hutchinson, 21/08/17}
+
+\subsubsection{Why did you pick that habit?} (meditation)
+Something I wanted todo for a while, stress relief habit. Chance to give it a go. Longer term.
+
+\subsubsection{Are you still doing that habit? (meditation)}
+I did it every now and again, ususally I think about it, it depends, if I had a long day, sometimes I want to go to bed. Done it a couple of times, done it more when I was using the chatbot.
+
+\subsubsection{Did you like the chatbot?}
+Depending on my mood, if I was feeling okay it would remind me. Otherwise would get annoying, I ignored the message. If he said 'Not Yet', it would remind me sometimes when I already got to bed, (10.30pm) more precise time.
+
+\subsubsection{Do you want it back?}
+Would be more willing to give it a go, change more precise time then yes.
+
+- Did your rewards help your form my new habit
+Cute, but didn't think gave them insentives towrds meditation, nice little extra.
+Not the sort of thing you want just before you go to bed, he tries to avoid computer and phone before bed, not good for your sleep. But liked them.
+
+\subsubsection{Natalia Sharon, 21/08/17}
+
+
+\subsubsection{Why did you pick that habit?} (meditation)
+Picked it sometime that successful people do, bc I get stressed really easy.
+
+\subsubsection{Are you still doing that habit? (meditation)}
+I do it when I remember, I tend to do it now before bed, rather than after lunch, only if I remember
+
+\subsubsection{Did you like the chatbot?}
+Liked it because it reminded me 2 hours later! This other app didn't
+
+\subsubsection{Do you want it back?}
+Yes, deffo. Um, but I also downloaded an app that sends you a reminde, because they sent you a mindful message, Harry's Habits snoozed reminders, Headspace.
+
+\subsubsection{General}
+First few days were great, stuck to it. Bot was easy to setup. After a few days, I read the message and I would just do it later. Moved to new house and ran out of data, so got no data.
+Worked well at beginning, got worse and worse, still doing it, but it was at midnight.
+
+\subsubsection{Jaime Flores, 16/08/17}
+
+\subsubsection{Why did you pick that habit?}
+- Stretch:
+Wanting to be more active, haven't had any exercise at all
+
+\subsubsection{Are you still doing that habit?}
+- No:
+Been out of town.
+
+\subsubsection{Did you like the chatbot?}
+Yes
+- What was it like?
+A bit back and forth, just always the same repeititive.
+Expecting different messages, Hey man, Hey man
+A bit more caring about the person, a bit less like a robot
+
+\subsubsection{Do you want it back?}
+Yes. Because, technology has been a helpful tool to remind him todo things.
+
+
+\subsubsection{I enjoyed my rewards}
+I was always waiting to open them
+Combination was perfect, if it was only one, it wouldn't of been as funny as what I got
+
+\subsubsection{I found my rewards annoying}
+No but found them repititive
+
+\subsubsection{General}
+Using the stretching as reminder as swimming.
+Stretching after lunch is automatic, but not all the time
+Sometimes I remember it, but dont do it still
+- Wants chatbot to continue to help with his depression, theripist said: every hour each day set alarm, saying how are you feeling right now, what are u feeling, is it based on reality or based on expectations? These for me are very helpful to break my cycle, in my case, sometimes I get a thought and it cycles in my head, these things break this. I deleted them, but only after 6 months, these repetitive things helped make a habit and helped me stick to a routine
+But I wanted some different messages because otherwise its just an alarm, to create some sort of person.
+
 
 
 \section{Discussion}
