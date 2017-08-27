@@ -38,8 +38,7 @@
 \maketitle
 
 \begin{abstract}
-Rewards motivate people to complete tasks. Habit formation systems use rewards to motivate people to form habits. This paper looks at the effect of habit formation using three types of positive reinforcement rewards from two modalities, visual, auditory and visual-auditory combined. To test each type of reward, 36 people participated in a 4-week study followed by voluntary semi-structured interviews. The results showed: (TODO summarise key findings from both hypothesis)... the effectiveness of these chosen rewards on users habit strength and analysis on the motivation about each modality. Semi-structured user interviews, combined with the data analysis, found at the end of the 4-week period: i) visual rewards had the highest increase in habit strength, ii) ..., finally, iii) participants found interacting with the chatbot fun.
-... final sentence, why it all matters, the papers contribution...
+Rewards motivate people to complete tasks. Habit formation systems use rewards to motivate people to form habits. This paper looks at the effect of habit formation using three types of positive reinforcement rewards from two modalities, visual, auditory and visual-auditory combined. We evaluate the findings against our two hypothesis: What is the effect of rewards on habit completion and strength; How do multiple modalities effect habit completion and strength. 60 people participated in a 4-week study followed by voluntary semi-structured interviews. Our findings show that participants receiving our bot-delivered rewards completed more habits than the control group. We also found a correlation between the our habit formation method and habit strength. However, all participants interviewed (N = 7) found a drop in habit performance after 1-week without our prototype. We outline the dangers in technology dependence and hope that our research provides new avenues for combing modalities and behaviour change for the HCI community.
 \end{abstract}
 
 \category{H.5.2}{Information interfaces and presentation (e.g. HCI)}{User Interfaces, auditory (non-speech) feedback, interaction styles}
@@ -62,7 +61,7 @@ The type of reward can effect motivation. Monetary rewards (extrinsic rewards) c
 How rewards are delivered is also important. The method of delivery should suit each individual user, and a choice of delivery should be available. For example, research~\cite{article_user_centred_multimodal_reminders} into reminder systems shows that reminders should span different modalities to increase user retention and better suit the users needs.
 We experiment with this new method of delivering rewards in the form of a bot sending intrinsic positive reinforcement rewards from different modalities to see how this affects people's habit strength.
 
-In this paper we present results of a 4-week situated study measuring the impact of visual and auditory rewards on participants habit strength. Our work makes three contributions. Firstly, ... Finally, ....
+In this paper we make three contributions. First, we present analysis of a 4-week situated study measuring the impact of visual, auditory and visual-auditory rewards on participants habit strength and the number of habits competed. Second, we show how our bot-delivered rewards encourage people to stick to a routine and perform their habit. Lastly, we demonstrate how our method of tracking habits increases habit strength, however, we discuss the dependency issues arising with technology and habit formation.
 
 \section{Background}
 \subsection{Mediation of Habit Formation}
@@ -179,7 +178,7 @@ H1: Are rewards better than no rewards: Compare all aggregated reward modalities
 H2: Are multiple modalities better than a singular mode: Compare Visual-Audio with Visual, Audio aggregated.
 
 \subsubsection{Conditions}
-C1: Habit Automaticity: Calculated based on two SRHI questionnaires.
+C1: Habit Strength: Calculated based on two SRHI questionnaires.
 
 
 C2: Number of Completed Habits: Number incremented when a participant presses '\textit{Completed habit}'.
@@ -239,40 +238,29 @@ Option one (completed habit): participants would receive a message thanking them
 
 After 3 weeks of participants interacting with the bot, all participants who completed the set up are asked to complete the SRHI~\cite{article_habit_strength} questionnaire. Then the bot interaction was suspended for 1 week. After the full 4-week period, participants were asked to complete the questionnaire again. Both questionnaires presented the questions on a 7-point Likert scale with answers from 'Strongly Disagree' (5) to 'Strongly Agree' (1). Higher scores indicates higher self-reported levels of automaticity. In addition, participants had an option to opt-in for an interview about their experience after the 4-week period.
 
-\subsection{Results}
+\section{Results}
 60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 browser, iOS 18 and Android 12. 14 people (23\%) dropped out of the study at various stages: 54 people (90\%) continued interacting with the bot and started the set-up. 39 people (65\%) completed the set-up and out of these 39 people, 3 people just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 people (93\%) visual, 9 people (60\%) visual and auditory, 7 people (46\%) auditory and 6 people (40\%) had no rewards (control group). 28 participants volunteered for an interview (at the beginning of the study, but only 7 participants arranged a time for one,) and 7 were carried out.
-
-General Trend
-
-How each condition changed/occurred over time (fig 4.)
-
-Number of completed habits per condition...
-
-\subsubsection{Participants who Previously Tracked Habits}
-7 participants (19\%) previously used habit tracking systems and 100\% of stated they worked well for tracking habits. These habits were: 'Diet' (3 mentions), 'Exercise' (3 mentions), 'Deadlines' (2 mentions), 'Audiobook reading' (1 mention), 'Weight' (1 mention). All of these participants chose new habits that they hadn't tracked before.
-
-36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
-
-Out of the 36 participants, 4 people blocked/deleted the thread during the study, 6 people blocked/deleted thread at the end of the 3-week period, after the bot messaged all users 'See you in a week'. Their data is included in this analysis. Meditation was the most popular habit chosen (12 people 33\%), followed by Press ups (8 people 22\%), then Stretching (6 people 15\%). Reading and writing were the least, only selected by 4 and 2 people respectively. Stretching (6 people 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
-
-
-\subsubsection{Habit Strength Increase}
-A paired-samples t-test was conducted to evaluate the impact of between the first SRHI questionnaire and the second, on habit strength. There was a statistically
-significant increase in automaticity scores from SRHI 1 (mean = 14.18, SD = 3.78) to SRHI 2
-(mean = 15.09, SD = 4.34), t (10) = 2.469, p <. 0005 (two-tailed). The mean increase in
-SRHI scores was 0.90 with a 95\% confidence interval ranging from 0.08 to 1.72.
-The eta squared statistic (.37) indicated a large effect size.
 
 
 \subsection{General Trend}
+36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits and were sent 0 rewards. Out of the 36 participants, 4 people blocked/deleted the thread during the study, 6 people blocked/deleted thread at the end of the 3-week period, after the bot messaged all users 'See you in a week'. Their data is included in this analysis.
 
 
+Comparing the number of people who dropped out of the study verses their reward modality, we see that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
+
+
+7 participants (19\%) previously used habit tracking systems and 100\% of stated they worked well for tracking habits. These habits were: 'Diet' (3 mentions), 'Exercise' (3 mentions), 'Deadlines' (2 mentions), 'Audiobook reading' (1 mention), 'Weight' (1 mention). All of these participants chose new habits that they hadn't tracked before. Meditation was the most popular habit chosen (12 people 33\%), followed by Press ups (8 people 22\%), then Stretching (6 people 15\%). Reading and writing were the least, only selected by 4 and 2 people respectively. Stretching (6 people 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
+
+
+Participants (14 people 39\%) with visual rewards had the highest total number of snoozes (72 total presses to 'Not Yet'), auditory had the smallest (14 total). The control group had 55 snoozes and visual-auditory had 45 snoozes. Most people snoozed (answered 'Not Yet') in the morning (100 times), specifically mid (66) and late (27) morning. Visual and sound had the most number of failed snoozes (10, split over 6 people, 1 person had 5 failed snoozes). Then it was sound by 4.
+
+
+Habit performance was also tracked in the form of a streak. If a participant did not track a habit for a day, their streak would be reset to 0. Meditation had the most cumulative streak (17) followed by stretching (7 people). High streaks (streak > 10) had habits: meditation (total 135 streaks) and stretch (126 streaks). Visual-Auditory rewards had the most streaks (126 combined), control group had 75, then Visual had 60. Stretch had the highest peak streak (18), meditation (15). However, overall, for all habits completed, meditation was the most streaked (269 combined), stretching (231 combined), then press ups (39) then plank (24).
 
 \subsection{C1: Habit Strength}
+11 participants completed both SRHI questionnaires, 2 control group, 2 auditory, 5 visual and 2 visual-auditory. A paired-samples t-test was conducted to evaluate the change of habit strength between the first SRHI questionnaire (after 3 weeks) and the second (after 4 weeks). We found there was a statistically significant increase in automaticity scores from SRHI 1 (mean = 14.18, SD = 3.78) to SRHI 2 (mean = 15.09, SD = 4.34), t (10) = 2.469, p <. 0005 (two-tailed). The mean increase in SRHI scores was 0.90 with a 95\% confidence interval ranging from 0.08 to 1.72. The eta squared statistic (.37) indicated a large effect size.
 
-11 participants completed both SRHI questionnaires, 2 control group, 2 auditory, 5 visual and 2 visual-auditory.
-
-\subsubsection{C1 H1: effect of rewards verses the control group on habit strength}
+\subsubsection{C1H1: rewards verses control group}
 
 % 			S1 Mean	S2 Mean	S1 SD		S2 SD
 % Control	13.5	14.5	4.949747468	6.363961031
@@ -320,19 +308,18 @@ The eta squared statistic (.37) indicated a large effect size.
 \end{figure}
 
 An independent-samples t-test was conducted to compare the habit automaticity scores
-for rewards and control at both SRHI 1 and SRHI 2.  For SRHI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; t (9) = 0.224, p = .85,
+for rewards and control at both SRHI 1 and SRHI 2. For SRHI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; t (9) = 0.224, p = .85,
 two-tailed). The magnitude of the differences in the means (mean difference = .83,
-95\% CI: –29.43 to 27.76) was very small (eta squared = .005). For SRHI 2, there was no significant difference in scores for rewards
+95\% CI: \-29.43 to 27.76) was very small (eta squared = .005). For SRHI 2, there was no significant difference in scores for rewards
 (mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; t (9) = 0.202, p = .84,
 two-tailed). The magnitude of the differences in the means (mean difference = .72,
-95\% CI: –8.80 to 7.36) was very small (eta squared = .004).
+95\% CI: \-8.80 to 7.36) was very small (eta squared = .004).
 
 
 A one-way between-groups analysis of variance with planned comparisons was also conducted to explore the impact of rewards on habit strength, as measured by the SRHI 1 and 2. Participants were divided into two groups (Group 1: visual rewards, auditory rewards, visual-auditory rewards combined; Group 2: control group. There was not a
 statistically significant difference for the two groups at SRHI 1: F (1, 9) = 0.02, p = .88, and SRHI 2: F (1, 9) = 0.07, p = .78. In addition, the difference in mean scores between the groups had, at SHRI 1: a medium effect with an effect size of .11, and at SRHI 2: a large effect, with an effect size of .17, both calculated using eta squared.
 
-
-\subsubsection{C1 H2: effect of multiple modalities verses a singular mode on habit strength}
+\subsubsection{C1H2: multiple modalities verses singular mode}
 
 % 			S1 Mean	S2 Mean	S1 SD	S2 SD
 % Visual	14.6	15.8	4.336	3.701
@@ -343,7 +330,7 @@ statistically significant difference for the two groups at SRHI 1: F (1, 9) = 0.
   \centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.4*\textwidth,
+      width  = 0.5*\textwidth,
       height = 7cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
@@ -352,7 +339,7 @@ statistically significant difference for the two groups at SRHI 1: F (1, 9) = 0.
       symbolic x coords={Visual,Auditory,Visual-Auditory},
       xtick = data,
       scaled y ticks = false,
-      enlarge x limits=0.60,
+      enlarge x limits=0.35, % how far apart the bars are
       ymin=0,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
@@ -382,17 +369,13 @@ statistically significant difference for the two groups at SRHI 1: F (1, 9) = 0.
   \caption{C1 H2: Comparing mean habit strength for rewards and control group.}~\label{fig:habit_4_item_survey1_v_survey2}
 \end{figure}
 
-
 A one-way between-groups analysis of variance with planned comparisons was conducted to explore the
-impact of multiple modalities on habit strength, compared with singular modes as measured by the SRHI 1 and 2. Participants were divided into two groups according to their reward mode (Group
-1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards. There was not a
+impact of multiple modalities on habit strength, compared with singular modes as measured by the SRHI 1 and 2. Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards). There was not a
 statistically significant difference for the two groups at SRHI 1: F (1, 9) = 1.04, p = .33, and SRHI 2: F (1, 9) = 0.64, p = .44. In addition, the difference in mean scores between the groups had, at SHRI 1: a medium effect with an effect size of .11, and at SRHI 2: a large effect, with an effect size of .17, both calculated using eta squared.
 
 \subsection{C2: Habits Completed}
 
-
-\subsubsection{C2 H1: effect of rewards verses the control group on the number of completed habits}
-
+\subsubsection{C2H1: rewards verses control group}
 
 \begin{figure}
   \centering
@@ -407,7 +390,7 @@ statistically significant difference for the two groups at SRHI 1: F (1, 9) = 1.
       symbolic x coords={Week-1, Week-2, Week-3},
       xtick = data,
       scaled y ticks = false,
-      enlarge x limits=0.60,
+      enlarge x limits=0.45,
       ymin=0,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
@@ -434,12 +417,11 @@ statistically significant difference for the two groups at SRHI 1: F (1, 9) = 1.
   \caption{Sum of completed habits for rewards and control group during 3-week study period.}~\label{fig:c2_h2}
 \end{figure}
 
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with control group. Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group. There was a statistically significant difference at the p < .005 level in both groups for two thirds of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with control group. Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group). There was a statistically significant difference at the p < .005 level in both groups for two thirds of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
+\subsubsection{C2H2: multiple modalities verses singular mode}
 
-\subsubsection{C2 H2: effect of multiple modalities verses a singular mode on the number of completed habits}
-
-A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed. Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards. There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < 0.005 and Week 3, F (1, 50) = 8.85, p = 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed. Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards). There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < 0.005 and Week 3, F (1, 50) = 8.85, p = 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
 \begin{figure}
   \centering
@@ -454,7 +436,7 @@ A one-way between-groups analysis of variance with planned comparisons was condu
       symbolic x coords={Week-1, Week-2, Week-3},
       xtick = data,
       scaled y ticks = false,
-      enlarge x limits=0.60,
+      enlarge x limits=0.45,
       ymin=0,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
@@ -474,7 +456,7 @@ A one-way between-groups analysis of variance with planned comparisons was condu
           (Week-3, 15)
            };
 
-      \legend{Multiple Modalities, Singular Modality}
+      \legend{Multiple modes, Single mode}
 
   \end{axis}
   \end{tikzpicture}
@@ -483,235 +465,55 @@ A one-way between-groups analysis of variance with planned comparisons was condu
 
 
 
-\subsubsection{Rewards Analysis}
-
-Comparing the number of people who dropped out of the study verses their reward modality, we see that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.\newline
-\newline
-Comparing the number of habits participants completed with each reward type. We can see from graph~\ref{fig:habits_v_rewards} that participants with visual rewards completed more habits as the trial continued than any other habit.  
-
-Participants (14 people 39\%) with visual rewards had the highest total number of snoozes (72 total presses to 'Not Yet'), auditory had the smallest (14 total). The control group had 55 snoozes and visual-auditory had 45 snoozes. Most people snoozed (answered 'Not Yet') in the morning (100 times), specifically mid (66) and late (27) morning.
-
-\subsubsection{What is the highest streaked habit?}
-Meditation had the most cumulative streak (17) followed by stretching (7 people).
-
-\subsubsection{What is the correlation between reward and streaks?}
-High streaks (streak > 10) had habits: meditation (total 135 streaks) and stretch (126 streaks). Rewards wise, VISUAL AND SOUND had the most streaks (126 combined), control group 75, then VISUAL (60)
+\subsection{Interview Feedback}
+7 interviews with participants outlined their experience with their habit performance after the prototype bot was removed. We found that participants picked habits they wanted to pick, but when the bot stopped notifying them, they lacked motivation to completed their habit. We found that some participants enjoyed the rewards at the beginning, but most people disliked them after the first week. In addition to the general questions below, we asked all participants specific questions about their rewards based on a Likert scale to gather some quantitative data to analyse.
 
 
+Participants discussed how they picked their habit, they chose because they had wanted to start for the particular habit for a long time, it was \textit{not too much effort} and \textit{something successful people do}. They wanted \textit{to be more active}, \textit{relieve stress} and wanted a habit that was \textit{less time consuming}. Throughout participants mostly completed their habits, but some participants would put the message off, but eventually get \textit{worse and worse}, until they stopped all together. However, after the bot was removed all interviewed participants (N = 7) found it difficult to continue with their habit. They \textit{kept forgetting}, found it \textit{harder to remember} and lacked motivation, not performing the action if it had \textit{been a long day}. Some tried to do it \textit{every now and again}, but usually they would only complete it if \textit{they remembered}. This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
 
 
+Participants had mixed feelings about the rewards. Some \textit{didn't like the [visual] rewards}, skipping over them after the first few, they \textit{just wanted to get rid of the notification dot}. Another participant said \textit{some of them [visual-auditory rewards] were funny}, but they did not like them overall and mentioned the auditory rewards were \textit{too random}. One participant thought they did not give them an incentive towards their habit, just a \textit{nice little extra}. They also discussed including time-sensitive rewards, as they did not want to listen to music before going to bed. This reflects on using the right modality at the right time, e.g. not having auditory rewards at certain times of the day. Finally, an upbeat participant talked about \textit{always wanting to open them} and \textit{the combination was perfect}. However, they said they also found them \textit{repetitive}.
 
+
+Participants were asked about how they found the chatbot as the method of interaction. They found the method \textit{pretty good}, they \textit{liked it} and \textit{would've liked more interaction}. Suggesting additional features, such as \textit{help and support throughout}, \textit{ideas on how to improve your habit} and \textit{advice on how to set aside time for your habit}. Others were neutral, some expecting \textit{different messages, such as Hey [name], a bit more care about the person, a bit less like a robot}. Lots of participants (N = 4) enjoyed the reminder aspect, but a few found it \textit{repetitive} and \textit{got annoying if I pressed Not Yet}. Participants wanted to see their progress as they tracked their habits, they talked about wanting to reflect on their data. They mentioned that they would feel \textit{more encouraged to keep doing it, rather than random music [auditory rewards]}.
+
+
+Mostly participants wanted the prototype to come back with a few modifications: \textit{enclosed with Fitbit so it is all in a single place}, \textit{fine without rewards} (2 participants mentioned this), \textit{more interaction} and \textit{with statistics about my progress}. People wanted the bot as more of a \textit{constant persistent reminder} with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Participants (N = 5) mentioned the \textit{headspace}\cite{headspace_app} app, mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
+
+
+\subsubsection{Reward Questions}
 Under half the participants completed the modality survey (N = 12, 40\%). Visual rewards had the highest score (mean = 12, SD = 3.347), visual and auditory rewards were slightly below (mean = 10.75, SD = 1.893).
 
-\subsubsection{How many habits were completed, verses, modality type?}
-Habits with visual rewards increased over time, but the rest decrease. Aggregated data shows all decreasing. However, the difference between visual rewards and habit strength show the highest increase out of all rewards.
-
-
-\subsubsection{Automaticity}
-Automaticity was used to measure the habit strength based on the reward used. SRBAI scores for each condition are presented in figure~\ref{fig:habit_4_item_survey1_v_survey2}.
-Participants (N = 15, 41\%) completed the SRBAI (4-questions) at the end of the 3-week period. Most participants (N = 10, 27\%) completed the full 12-question SRHI 1-week later. Comparing the difference between the first questionnaire and the second: Auditory and visual rewards combined increased the most (9.4\%) from 32 SRBAI (mean = 16, SD = 2.828) to 35 SRBAI (mean = 17.5 (9.4\% increase), SD = 3.536). But, visual rewards had the highest score in both questionnaires, 73 SRBAI (mean = 14.6, SD = 4.336) for the first and 79 SRBAI (mean = 15.8, SD = 3.701) for the second (8.2\% increase). Finally, the auditory rewards had the least increase 15 SRBAI (mean = 15, SD = 0.0) to 16 SRBAI (mean = 15, SD = 0.0) (6.7\% increase) and the control group (without rewards) increased from 27 SRBAI (mean = 13.5, SD = 4.950) to 29 SRBAI (mean = 14.5, SD = 6.364) (7.4\% increase).
-
-% 				S 1		S 2 	Increase
-% NONE			27		29		7.4%
-% AUDITORY		15		16		6.7%
-% VISUAL		73		79		8.2%
-% COMBINED		32		35		9.4%
-% N: SD			4.950	6.364
-% A: SD			0		0
-% VISUAL:SD		4.336	3.701
-% COMBINED:SD	2.828	3.536
-% N: MEAN		13.5	14.5	7.4%
-% A: MEAN		15		15		0.0%
-% V: MEAN		14.6	15.8	8.2%
-% C: MEAN		16		17.5	9.4%
-
-\begin{figure}
-  \centering
- \begin{tikzpicture}
-   \begin{axis}[
-      width  = 0.45*\textwidth,
-      height = 7cm,
-      major x tick style = transparent,
-      ybar=2*\pgflinewidth,
-      bar width=12pt,
-      ymajorgrids = true,
-      symbolic x coords={None,Visual,Auditory,Combined},
-      xtick = data,
-      scaled y ticks = false,
-      enlarge x limits=0.20,
-      ymin=0,
-      legend cell align=left,
-      legend style={at={(0.5,-0.12)},anchor=north},
-%       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-%       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-%       xlabel={$u$ unemployment},
-      ylabel={Habit Strength},
-   ]
-      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-          coordinates {
-          (None, 27) += (0,4.950) -= (0,4.950)
-          (Visual, 73) += (0,3.701) -= (0,3.701)
-          (Auditory, 15) += (0,0.5) -= (0,0.5)
-          (Combined, 32) += (0,2.828) -= (0,2.828)
-          };
-
-      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates {
-           (None, 29) += (0,6.364) -= (0,6.364)
-           (Visual, 79) += (0,3.701) -= (0,3.701)
-           (Auditory, 16) += (0,0.5) -= (0,0.5)
-           (Combined, 35) += (0,3.536) -= (0,3.536)
-           };
-
-      \legend{Week-3, Week-4}
-
-  \end{axis}
-  \end{tikzpicture}
-  \caption{Comparing Habit strength verses reward type using the SRHI questionnaire for each modality.}~\label{fig:habit_4_item_survey1_v_survey2}
-\end{figure}
-
-
-\subsection{Interviews}
-
-\subsubsection{Why did you pick that habit?}
-
-- Want to be more flexible, easier habit, she isnt gonna do the plank every morning, its easier, not too much effort, less time consuming.
-- Writing in the morning, changed from the evening.
-- Its something I wanted todo for a long time, so I thought this would help me make it more regular, I downloaded headspace meditation app, but it was hard to remember todo it. Using it combination with that thing. Because it doesnt send me iphone reminders, chatbot is better remidners because it fb messenger app. Was doing habti without headspace while using chatbot.
-- Something I wanted todo for a while, stress relief habit. Chance to give it a go. Longer term.
-- Picked it sometime that successful people do, bc I get stressed really easy.
-- Wanting to be more active, haven't had any exercise at all
-- I was already doing meditation, but not parts of meditation that were beneficail afterwards. Habits that i wasnt picking up. I wanted to not be stressed out of nut.
-
-
-\subsubsection{Are you still doing that habit?}
-
-- Been harder, but the first few days, I was like, I now know how todo this, if i got dragged out it was harder to remember.
-- No not stretching.
-- No, just keep forgetting todo it, or cbb?
-- Yes, but, its not as regular, I do miss it.
-- I did it every now and again, ususally I think about it, it depends, if I had a long day, sometimes I want to go to bed. Done it a couple of times, done it more when I was using the chatbot.
-- I do it when I remember, I tend to do it now before bed, rather than after lunch, only if I remember
-- No: Been out of town.
-
-
-\subsubsection{Did you like the chatbot?}
-
-- Pretty good.
-- Neutral on it. Good that it let me know, but idk.
-- Yes I liked it. It would've been great for reminding me to write.
-- Woulve liked to of interacted with it a bit more, and to of been able to ask it for help and support throughout. Ideas of how to make sure that you set aside some time todo things, ideas on how to meditate. Where to go, different apps to use, or things like that. Liked to of had a bit more interaction with the bot.
-- Depending on my mood, if I was feeling okay it would remind me. Otherwise would get annoying, I ignored the message. If he said 'Not Yet', it would remind me sometimes when I already got to bed, (10.30pm) more precise time.
-- Liked it because it reminded me 2 hours later! This other app didn't
-- Yes. A bit back and forth, just always the same repeititive. Expecting different messages, Hey man, Hey man. A bit more caring about the person, a bit less like a robot
-
-
-\subsubsection{How were the rewards?}
-
-  - I didnt like the rewards, getting the gif I was like, oh. I skipped over the gif. I just wanted to get rid of the red dot on messenger. Because it was a bot, I just wanted to get rid of it. After the fourth time I saw same gif it was bad.
-  - I didnt like the rewards, getting the gif I was like, oh. I skipped over the gif. I just wanted to get rid of the red. dot on messenger. Because it was a bot, I just wanted to get rid of it. After the fourth time I saw same gif it was bad. If it recognised my progress it wouldve been better. Based on my trend, my progress and if I done it on time. They didnt move them forward or set him back.
-  - A bit weird, a bit funny, weird just a black screen. She liked the buttons that you could pick. Didnt need a reward. Was unneccesary, the message was enough. The stats was cool, because you can reflect on data. Better to have info, like 'Its almost theree'
-  - Some of them were funny, works with other people. Want different types of rewards. Didn't really like them. Maybe have, measurement of, if something starts doing good, writing then give them measurement, giving them consistnet well done, stats. When they feel like they are making progress, they are more encouraged to keep doing it, rather than random music.
-  - Cute, but didn't think gave them insentives towrds meditation, nice little extra. Not the sort of thing you want just before you go to bed, he tries to avoid computer and phone before bed, not good for your sleep. But liked them.
-  - I was always waiting to open them. Combination was perfect, if it was only one, it wouldn't of been as funny as what I got. No but found them repititive
-
-
-\subsubsection{Do you want it back?}
-
-  - Yes, if it was enclosed in the fitbit, cuz it was all in one place
-  - Interested in having it back and its a good. Would be fine without rewrads.
-  - Yes, but maybe, but only thing that didnt like my reward,
-  - Yes, if it had a bit more interaction with it, I would. In its current form, I wouldn't. It made me think I should dowwnload the headspace app on my phone, the reminders they found useful.
-  - Would be more willing to give it a go, change more precise time then yes.
-  - Yes, deffo. Um, but I also downloaded an app that sends you a reminde, because they sent you a mindful message, Harry's Habits snoozed reminders, Headspace.
-  - Yes. Because, technology has been a helpful tool to remind him todo things.
-
-
-\subsubsection{General}
-  - Overall pretty cool.
-  - They participated in it, to change my habits. Problem with being consistent with a habit. Deactivated their fb account for a week. Didn't really write.
-  - She felt like she needed rewards. She wanted to put my own habit in, she wanted drawing.
-  - First few days were great, stuck to it. Bot was easy to setup. After a few days, I read the message and I would just do it later. Moved to new house and ran out of data, so got no data. Worked well at beginning, got worse and worse, still doing it, but it was at midnight.
-
-
-
-\subsubsection{General}
-Using the stretching as reminder as swimming.
-Stretching after lunch is automatic, but not all the time
-Sometimes I remember it, but dont do it still
-- Wants chatbot to continue to help with his depression, theripist said: every hour each day set alarm, saying how are you feeling right now, what are u feeling, is it based on reality or based on expectations? These for me are very helpful to break my cycle, in my case, sometimes I get a thought and it cycles in my head, these things break this. I deleted them, but only after 6 months, these repetitive things helped make a habit and helped me stick to a routine
-But I wanted some different messages because otherwise its just an alarm, to create some sort of person.
-
-
+TODO: analyse the questions
 
 \section{Discussion}
-Remind the reader that: What was the reason for our reaserach, what did we discover!
+Remind the reader that: What was the reason for our research, what did we discover!
 
 TODO: Compare these results to people not using the chatbot, e.g.. people signing up to the gym, new years resolution
 
 Developing a habit involves repeating a behaviour and carefully planning the action around event-based cues within existing routines~\cite{habits_event_cues_1, habits_event_cues_2}. Habits develop more effectively when participants set specific and measurable goals \cite{habits_better_when_have_specific_and_measurable_goals}.
 
 
+Comparing the number of habits participants completed with each reward type. We can see from graph~\ref{fig:habits_v_rewards} that participants with visual rewards completed more habits as the trial continued than any other habit.  
+
+
 \subsection{Dependence}
-Streaks could've been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (n = 7) struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
+Streaks could've been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (N = 7) struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 
 \subsection{Bot}
-General chatbot feedback
+The prototype was somewhat successful at running a research trail. There were several issues and various limitations with development. However, it was generally liked by participants and managed to easily gather a lot of useful data.
 
+Participants had mixed feelings towards the bot. First there performance shows that the number of snoozes over time decreased, but the number of total habits completed per day decreased for all reward types (including the control group). However, participants streaks over time increased and 36 participants manage to use it for 3-weeks.
 
-\subsubsection{Users issues they had}
+Participants had various issues with bot interaction. 7 participants tried to message the bot during setup, instead of using quick replies. This broke the setup flow and they had to start again. Other participants tried to send multiple messages when asked for free input, they went around an endless loop when asking for a habit type and people tried to mark their habit as completed using the Facebook messenger thumb (which the bot was not coded for).
 
-\begin{itemize}
-  \item x7 People tried to message to bot instead of using the quick replies
-  \item x1 People tried to send multiple messages for free input, rather than all in a single message
-  \item x1 Endless loop with different type
-  \item x1 People tried to respond to the multiple messages with a thumb.
-\end{itemize}
+Participants gave additional feedback by simply messaging the bot. They asked inquisitive questions, such as \textit{'what kind of thing are you looking to find out}, \textit{'this isn't working for me'} and '\textit{stop}'---to try and stop the daily messages (the participant then blocked the bot). Negative feedback towards the rewards and bot were also expressed. When asked about being messaged every day, a participant sent the this reply then blocked the bot: \textit{Don't that will be annoying}, and another said '\textit{never message me}'. Another stated that this was the \textit{lame same band} after receiving a auditory reward.
 
-
-\subsubsection{Users feedback they gave in an unconventional way}
-Feedback users gave when they just randomly messaged the bot.
-
-\begin{itemize}
-  \item Asked: What kind of thing are you looking to find out?
-  \item Asked: 'Don't that will be annoying' when asked about being messaged every day
-  \item Asked: 'Never' when asked about being messaged every day
-  \item Asked: 'This is not working for me', got no response.
-  \item Asked: 'Lame same band' when got same reward twice
-  \item Asked: 'stop', then blocked the bot
-  \item 1 user press a thumb to say they completed a habit
-\end{itemize}
-
-For example, during the pilot trials when asking for an existing routine, users were confused, so examples of habit contexts were provided. The results found, 92?\% of participants chose one of these examples.
-31 people chose one of the contexts that were listed as examples, some with a slight change in before and after wording, e.g. before getting home from work, rather than after getting home from work. The remaining 5 people chose the following context: 'Having a snack', 'Sitting in bed', 'Early morning', 'during breakfast' and 'Before sleeping'.
-
-
-
-\subsection{Questions}
-\subsubsection{Did users like the bot?}
-Yes: Well the number of snoozes over time decreased (chart), the number of total habits completed per day decreased for all reward types (including the control group)~\ref{fig:allhabits_v_rewards} and users streaks over time increased (chart). In addition, 36 people used it for 3-weeks. Also 31 participants actually completed a habit or marked one as not yet and 31 participants interacted with the bot at least once.
-
-
-
-
-\subsubsection{Were the rewards motivating?}
-Not really: The graphs show that the number of snoozes for all modalities stays roughly the same, except for the control group which declines.
-
-
-\subsubsection{Was chatbot successful at running a trial?}
-TODO: Did have a lot of issues, but did get a lot of data.
-
+Mostly participants chose existing routines that were suggested to them. For example, during the pilot trials when asking for an existing routine, users were confused, so examples of habit contexts were provided. The results found, 92?\% of participants chose one of these examples. 31 people chose one of the contexts that were listed as examples, some with a slight change in before and after wording, e.g. before getting home from work, rather than after getting home from work. The remaining 5 people chose the following context: 'Having a snack', 'Sitting in bed', 'Early morning', 'during breakfast' and 'Before sleeping'. A participant also pointed out that changing the time their existing routine occured was prompted to them, but the description about it, was not.
 
 \subsection{Limitations and Future Work}
-There are x key limitations to these findings. Firstly, the small number of participants and the small sample of rewards used in the study make it unclear how these findings would generalise to other types of rewards with the same modality.
-
-TODO: Say we are aware of other types of rewards, but we chose positive reinforcement (intrinsic? ex? reward)
-
-TODO: Facebook limitations. Briefly discuss vibration limitations.
-
-
-
+There are four key limitations to these findings. Firstly, the small number of participants and the small sample of rewards used in the study make it unclear how these findings would generalise to other types of rewards with the same modality. Second, this only applies to intrinsic positive reinforcement rewards, further research into how different types of rewards from different modalities is needed. Third, ... Finally, ...
 
 
 \section{Conclusions}
@@ -721,48 +523,11 @@ TODO: Facebook limitations. Briefly discuss vibration limitations.
 %     - If a bot pretends to be a person, you more likely to respond as a person, as social scaffolding
 %   - Design recommendations, this is what we have learnt, if you are going to design chatbots, these are my recommendations
 
-This paper presents two contributions: i) design guidelines for designing habit formation chatbots that focus on rewards from different modalities, ii) analysis about how rewards delivered-by-a-bot from different modalities effect habit strength.
-
-We encourage the use of these results to compare with different types of rewards for behaviour change technology. We hope this opens up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change.
+We have shown analysis about how rewards delivered-by-a-bot from different modalities effect habit completion and habit strength. We encourage the use of these results to compare with different types of rewards for behaviour change technology. We hope this opens up new research avenues for investigating the use of chatbots as vehicles for promoting behaviour change.
 
 
 \section{Acknowledgements}
 We thank all the participants involved, the internal reviewers and staff who provided helpful feedback throughout the trial.
-
-
-\subsection{Other Results}
-(NOTE: I am not sure if I should include any of these)
-
-\subsubsection{What was users habit context?}
-31 participants (86\%) chose one of the contexts that were listed as examples, some with a slight change in before and after wording, e.g. before getting home from work, rather than after getting home from work. The remaining 5 people chose the following context: 'Having a snack', 'Sitting in bed', 'Early morning', 'during breakfast' and 'Before sleeping'.
-
-Suggested habit contexts (by the bot):(todo insert table: morning, afternoon, evening habit context)
-
-Morning:
-  - waking up
-  - eating breakfast
-  - arriving at work
-
-  Afternoon:
-  - eating lunch
-  - leaving work
-
-  Evening:
-  - leaving work
-  - eating dinner
-  - getting ready for bed
-
-  Morning: 100: 7 (early) + 66 (mid) + 27 (late)
-  Afternoon: 54: 7 + 4 + 43
-  Evening: 32: 6 + 15 + 11
-
-
-
-\subsubsection{What was the habit that lasted the longest?}
-Stretch had the highest streak (18), meditation (15). However, overall, for all habits completed, meditation was the most streaked (269 combined), stretching (231 combined), then press ups (39) then plank (24)
-
-\subsubsection{Failed snoozes}
-Visual and sound had the most number of failed snoozes (10, split over 6 people, 1 person had 5 failed snoozes). Then it was sound by 4.
 
 
 
