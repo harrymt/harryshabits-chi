@@ -38,7 +38,7 @@
 \maketitle
 
 \begin{abstract}
-Rewards encourage and motivate people to complete tasks, \textit{and} complete them again. Habit formation systems use rewards to encourage and motivate people to form new habits. This paper looks at the effect of habit formation using three types of positive reinforcement rewards from two modalities, visual, auditory and visual-auditory combined. To test each type of reward, 36 people participated in a 4-week study followed by voluntary semi-structured interviews. The results showed: (TODO summarise key findings from both hypothesis)... the effectiveness of these chosen rewards on users habit strength and analysis on the motivation about each modality. Semi-structured user interviews, combined with the data analysis, found at the end of the 4-week period: i) visual rewards had the highest increase in habit strength, ii) ..., finally, iii) participants found interacting with the chatbot fun.
+Rewards motivate people to complete tasks. Habit formation systems use rewards to motivate people to form habits. This paper looks at the effect of habit formation using three types of positive reinforcement rewards from two modalities, visual, auditory and visual-auditory combined. To test each type of reward, 36 people participated in a 4-week study followed by voluntary semi-structured interviews. The results showed: (TODO summarise key findings from both hypothesis)... the effectiveness of these chosen rewards on users habit strength and analysis on the motivation about each modality. Semi-structured user interviews, combined with the data analysis, found at the end of the 4-week period: i) visual rewards had the highest increase in habit strength, ii) ..., finally, iii) participants found interacting with the chatbot fun.
 ... final sentence, why it all matters, the papers contribution...
 \end{abstract}
 
@@ -49,34 +49,30 @@ Rewards encourage and motivate people to complete tasks, \textit{and} complete t
 
 
 \section{Introduction}
-Para about: Why are habits important? Why we want to support change in behaviour? Positive habits?
+Using technology to form new habits is important to the HCI community. Habits require behaviour change interventions to become permanent. Understanding how we can build tech to action change means we know how to support behaviour change. Understanding the full habit formation process within tech needs further research.
+It is difficult to evaluate the long-term effects of technology, due to the practical limitations of building technology that motivates people to adopt new habits~\cite{how_to_evaluate_tech_for_behaviour_change}. However, the need for HCI researchers to design technology that encourages people to change their behaviour is still main focus.
 
 Psychology defines habits as learned automatic cue-response actions, such actions that will perform automatically in response to another action or trigger that has been actioned repeatedly in the past~\cite{article_the_habitual_consumer}. A simple action such as turning on the light to a room happens automatically, even if the light is already on. Forming a new habit is difficult, people normally give up, often due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
 
-Technology can help people stick to a routine, but also needs to avoid building repetitive actions, rather than habit strength. Repetitive actions lead people to become dependent on technology, and when the system is eventually removed, habit performance decreases~\cite{}. Habit automaticity is a measure of habit strength and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
+Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and coaching that person along. However, these techniques do not always work~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit strength. Repetitive actions lead people to become dependent on technology, and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit}. Habit automaticity is a measure of habit strength and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
 Motivation can be encouraged by rewarding users with positive reinforcement after they complete the action.
 However, these are not enough to be successful, the reward and delivery type are crucial to success.
 
 The type of reward can effect motivation. Monetary rewards (extrinsic rewards) can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based rewards (intrinsic rewards) can be beneficial to motivation and should be preferred~\cite{article_meta_analytic_review_intrinsic_motivation}.
 How rewards are delivered is also important. The method of delivery should suit each individual user, and a choice of delivery should be available. For example, research~\cite{article_user_centred_multimodal_reminders} into reminder systems shows that reminders should span different modalities to increase user retention and better suit the users needs.
-This paper tries a new method of delivering rewards in the form of a bot. Using this to send intrinsic positive reinforcement rewards from different modalities to see how this affects people's habit strength.
+We experiment with this new method of delivering rewards in the form of a bot sending intrinsic positive reinforcement rewards from different modalities to see how this affects people's habit strength.
 
-A 4-week situated study measures the impact of visual and auditory rewards on participants habit strength. These rewards are delivered using a prototype bot. We need a bot to deliver the positive reinforcement because (summarise the table that we deleted). The results showed that (insert top What our top level findings are and what is the contribution.)
-
+In this paper we present results of a 4-week situated study measuring the impact of visual and auditory rewards on participants habit strength. Our work makes three contributions. Firstly, ... Finally, ....
 
 \section{Background}
 \subsection{Mediation of Habit Formation}
-Habits are automatic actions that require little effort~\cite{article_the_habitual_consumer}. People must keep to strict strategies and perform an action repeatedly before it occurs with little concious thought~\cite{article_promoting_habit_formation}. Habit formation requires behaviour change. Three elements are needed to make this change permanent: repetition, contextual cues and positive reinforcement~\cite{article_experiences_of_habit_formation}. Positive reinforcement rewards the person encouraging them to perform the action again, until it forms into a habit~\cite{}. Finally, repetition is needed --- as habits, on average, take up to 66 days to form~\cite{article_how_habits_formed_modelling_habit_formation}.
+Habits are automatic actions that require little concious effort~\cite{article_the_habitual_consumer}. To develop new habits people must keep to a strict strategy and perform the action repeatedly to strengthen the automaticity of the action~\cite{article_promoting_habit_formation}. When strong habits are developed the likelihood of behaviours persisting is higher~\cite{putting_habit_into_practice}. The formation of new habits requires behaviour change. Three elements are needed to make this change permanent: repetition, contextual cues and positive reinforcement~\cite{article_experiences_of_habit_formation}. Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit. This has been shown to significantly increase intrinsic motivation and increase in the persons perception of their own performance~\cite{positive_reinforcement_pro}. Finally, repetition is needed --- as habits, on average, take up to 66 days to form~\cite{article_how_habits_formed_modelling_habit_formation}.
 However, people still fail at forming new positive habits and give up, often due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
 
+
+
 \subsubsection{Repetition \& Cues}
-TODO Condense these 2 paragraphs into a single one (+ mention rewards)
-
-
-Lally~et~al.~\cite{article_how_habits_formed_modelling_habit_formation} conducted a test on how long it takes for an action to become automatic, showing that the process of creating a new habit takes on average 66 days of repetitive use. The easier the action, the shorter the before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days)~\cite{article_how_habits_formed_modelling_habit_formation}. However, applying the other two elements is needed before the action develops into a habit.
-
-
-An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a stretching habit, you could attach it onto an existing habit like (brushing your teeth, this is weird, think of another). The contextual cue of brushing your teeth will trigger you to stretch. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue}, when compared with time-based habits, e.g. stretch every 4 hours. These help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}. Finally, when designing behaviour change interventions multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}.
+The process of creating a new habit takes on average 66 days of repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). However, existing routines and cues are needed before the action develops into a habit. An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a stretching habit, you could attach it onto an existing habit like (waking up). The contextual cue of brushing your teeth will trigger you to stretch. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue}, when compared with time-based habits, e.g. stretch every 4 hours, or at a specific time as these times usually change with changes in environment, e.g. weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}. Finally, when designing behaviour change interventions multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}.
 
 \subsubsection{Rewards}
 Self-efficacy (the belief in ones ability to succeed) plays a large part in forming habits~\cite{article_a_self_efficacy} and some research suggests it is the main part of behaviour change. Rewards give people this experience by feeding back their success of their action. Rewarding a person with positive reinforcement, strengthens the habit by giving the feeling of satisfaction~\cite{article_promoting_habit_formation}. However, the type of reward matters, as rewards that benefit the person with satisfaction (intrinsic rewards) should be used over monetary gains (extrinsic rewards), because extrinsic rewards have a negative effect on motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, particularly in relation to interesting tasks. Therefore, this paper focuses on positive reinforcement intrinsic rewards.
@@ -141,19 +137,24 @@ These aspects are implemented into our prototype and adapted for delivering rewa
 First, the actual rewards are aimed to motivate participants to complete further habits. Gifs and audio are found from the site, with the search 'Motivation'. Each frame of the gif image is altered to match the audio frequency level. The frame is slowed down if the audio level is lower, or speed up, if the audio frequency level is higher. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}. The next section discusses how technology is used to create a delivery method for these rewards.
 
 \section{Technology}
-TODO briefly review this papers\cite{chi_crowd_designed_motivation}
+
+
 
 Research~\cite{survey_on_apps_2,survey_on_current_apps_of_steel} into how mobile systems can support habit formation and behaviour change, shows a large number of habit forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory. Research into some of these apps show that habits are not sustained when the app is removed, due to the lack of habit automaticity~\cite{article_beyond_self_tracking_designing_apps}.
 
 Two pieces of literature discuss different strategies for building habit forming mobile systems that do ground themselves in theory: Stawarz et al.~\cite{article_beyond_self_tracking_designing_apps} discuss guidelines for building habit forming apps and Weiser et al.~\cite{article_taxonomy_motivational_affordances_meaningful} show that `motivation is a key requirement for behaviour change' presenting five design principles and six requirements about the implementation mechanics of habit forming systems that focus on rewards and motivational needs. These share three recommendations: i) make personalized, well-defined, structured multi-cue routines, with examples, \& support users choice of not setting remembering strategies, ii) reminders can effectively support prospective memory in the short-term, increase the logging of health data~\cite{the_power_of_logging_mobile_notifications} and educate them about what they should perform in the long-term, iii) Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability. These rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists.
 
 Technology can help people stick to a routine. By associating the desired action with contextual information to develop a cue. It can positively reinforce with rewards after completing the action. Finally, it can send repetitive notifications, that adjust to changes in environment.
-Yet most existing habit formation systems are not always built on theory~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit}, and usually build repetitive actions rather than habit automaticity.
-Therefore, people become dependent on technology, and when the system is eventually removed, habit performance decreases~\cite{}. Building habit automaticity is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}.
+Yet most existing habit formation systems are not always built on theory~\cite{article_beyond_self_tracking_designing_apps}, and usually build repetitive actions rather than habit automaticity.
+Therefore, people become dependent on technology, and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit}. Building habit automaticity is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}.
 
 Interaction with current habit formation systems is often via a mobile app. This creates a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
 This is also the case with many mobile feedback systems that aid with behaviour change.
 When we remove the system any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. To build a system for mobile devices that meets our requirements we must review all available options. A chatbot can easily send notifications, has a short development time, high availability with cross-platform and is simple, with the UI already built for us.
+
+TODO somewhere here We need a bot to deliver the positive reinforcement because (summarise the table that we deleted).
+
+
 
 \begin{figure}
   \centering
@@ -171,20 +172,17 @@ To explore the influence of different modalities on habit formation, we would co
 \subsection{Method}
 The study aims to test 2 hypothesis to compare how well people form new habits based on their reward modality and how the rewards delivered by the chatbot effect participants habit formation.
 
-\subsubsection{Hypothesis 1. Are rewards better than no rewards}
-Compare all aggregated reward modalities with control group (no rewards).
+\subsubsection{Hypothesis}
+H1: Are rewards better than no rewards: Compare all aggregated reward modalities with control group (no rewards).
 
-\subsubsection{Hypothesis 2. Are multiple modalities better than a singular mode}
-Compare Visual-Audio with Visual, Audio aggregated.
+
+H2: Are multiple modalities better than a singular mode: Compare Visual-Audio with Visual, Audio aggregated.
 
 \subsubsection{Conditions}
-Both of these are based on these conditions:
-\begin{itemize}
-  \item Habit Automaticity/Strength
-  \item Number of habits completed
-\end{itemize}
+C1: Habit Automaticity: Calculated based on two SRHI questionnaires.
 
 
+C2: Number of Completed Habits: Number incremented when a participant presses '\textit{Completed habit}'.
 
 \subsubsection{Participants}
 60 participants were recruited on social networks (using the landing page: \url{www.harrymt.com/harryshabits}), and were mostly University students and staff. They were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking.
@@ -223,6 +221,11 @@ A subset (4-questions) of the SRHI~\cite{article_habit_strength}  to measure hab
 
 Likert scale was also used for various questions about participant rewards coined a modality survey.
  
+\begin{figure}
+  \centering
+  \includegraphics[width=.8\columnwidth]{figures/study-flow}
+  \caption{Study overview.}~\label{fig:study_flow}
+\end{figure}
  
 \subsubsection{Procedure}
 First, we conducted an internal pilot trial to develop the strength of the prototype. Second, we ran a 4-week evaluation trial in the wild with real people who try and form a new positive habit. Finally, follow-up interviews with participants test if they continued with their habit without the bot.\newline
@@ -237,7 +240,7 @@ Option one (completed habit): participants would receive a message thanking them
 After 3 weeks of participants interacting with the bot, all participants who completed the set up are asked to complete the SRHI~\cite{article_habit_strength} questionnaire. Then the bot interaction was suspended for 1 week. After the full 4-week period, participants were asked to complete the questionnaire again. Both questionnaires presented the questions on a 7-point Likert scale with answers from 'Strongly Disagree' (5) to 'Strongly Agree' (1). Higher scores indicates higher self-reported levels of automaticity. In addition, participants had an option to opt-in for an interview about their experience after the 4-week period.
 
 \subsection{Results}
-60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 browser, iOS 18 and Android 12. 14 people (40\%) dropped out of the study at various stages: 54 people (90\%) continued interacting with the bot and started the set-up. 39 people (65\%) completed the set-up and out of these 39 people, 3 people just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 people (93\%) visual, 9 people (60\%) visual and auditory, 7 people (46\%) auditory and 6 people (40\%) had no rewards (control group). 28 participants volunteered for an interview (at the beginning of the study, but only 8 participants arranged a time for one,) and 8 were carried out.
+60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 browser, iOS 18 and Android 12. 14 people (23\%) dropped out of the study at various stages: 54 people (90\%) continued interacting with the bot and started the set-up. 39 people (65\%) completed the set-up and out of these 39 people, 3 people just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 people (93\%) visual, 9 people (60\%) visual and auditory, 7 people (46\%) auditory and 6 people (40\%) had no rewards (control group). 28 participants volunteered for an interview (at the beginning of the study, but only 7 participants arranged a time for one,) and 7 were carried out.
 
 General Trend
 
@@ -252,27 +255,235 @@ Number of completed habits per condition...
 
 Out of the 36 participants, 4 people blocked/deleted the thread during the study, 6 people blocked/deleted thread at the end of the 3-week period, after the bot messaged all users 'See you in a week'. Their data is included in this analysis. Meditation was the most popular habit chosen (12 people 33\%), followed by Press ups (8 people 22\%), then Stretching (6 people 15\%). Reading and writing were the least, only selected by 4 and 2 people respectively. Stretching (6 people 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
 
-\subsubsection{Hypothesis 1}
 
-Did we answer it?
+\subsubsection{Habit Strength Increase}
+A paired-samples t-test was conducted to evaluate the impact of between the first SRHI questionnaire and the second, on habit strength. There was a statistically
+significant increase in automaticity scores from SRHI 1 (mean = 14.18, SD = 3.78) to SRHI 2
+(mean = 15.09, SD = 4.34), t (10) = 2.469, p <. 0005 (two-tailed). The mean increase in
+SRHI scores was 0.90 with a 95\% confidence interval ranging from 0.08 to 1.72.
+The eta squared statistic (.37) indicated a large effect size.
 
-\subsubsection{Hypothesis 2}
 
-...
+\subsection{General Trend}
+
+
+
+\subsection{C1: Habit Strength}
+
+11 participants completed both SRHI questionnaires, 2 control group, 2 auditory, 5 visual and 2 visual-auditory.
+
+\subsubsection{C1 H1: effect of rewards verses the control group on habit strength}
+
+% 			S1 Mean	S2 Mean	S1 SD		S2 SD
+% Control	13.5	14.5	4.949747468	6.363961031
+% Rewards	14.33	15.22	3.840572874	4.294699576
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.4*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Control,Rewards},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.60,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+%       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+%       xlabel={$u$ unemployment},
+      ylabel={Mean Habit Strength},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (Control, 13.5) += (0,4.94) -= (0,4.94)
+          (Rewards, 14.33) += (0,3.84) -= (0,3.84)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates {
+           (Control, 14.5) += (0,6.36) -= (0,6.36)
+           (Rewards, 15.22) += (0,4.29) -= (0,4.29)
+           };
+
+      \legend{Week-3, Week-4}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{C1 H1: Comparing mean habit strength for rewards and control group.}~\label{fig:habit_4_item_survey1_v_survey2}
+\end{figure}
+
+An independent-samples t-test was conducted to compare the habit automaticity scores
+for rewards and control at both SRHI 1 and SRHI 2.  For SRHI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; t (9) = 0.224, p = .85,
+two-tailed). The magnitude of the differences in the means (mean difference = .83,
+95\% CI: –29.43 to 27.76) was very small (eta squared = .005). For SRHI 2, there was no significant difference in scores for rewards
+(mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; t (9) = 0.202, p = .84,
+two-tailed). The magnitude of the differences in the means (mean difference = .72,
+95\% CI: –8.80 to 7.36) was very small (eta squared = .004).
+
+
+A one-way between-groups analysis of variance with planned comparisons was also conducted to explore the impact of rewards on habit strength, as measured by the SRHI 1 and 2. Participants were divided into two groups (Group 1: visual rewards, auditory rewards, visual-auditory rewards combined; Group 2: control group. There was not a
+statistically significant difference for the two groups at SRHI 1: F (1, 9) = 0.02, p = .88, and SRHI 2: F (1, 9) = 0.07, p = .78. In addition, the difference in mean scores between the groups had, at SHRI 1: a medium effect with an effect size of .11, and at SRHI 2: a large effect, with an effect size of .17, both calculated using eta squared.
+
+
+\subsubsection{C1 H2: effect of multiple modalities verses a singular mode on habit strength}
+
+% 			S1 Mean	S2 Mean	S1 SD	S2 SD
+% Visual	14.6	15.8	4.336	3.701
+% Auditory	12		11.5	4.243	6.364
+% V-A		16		17.5	2.828	3.536
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.4*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Visual,Auditory,Visual-Auditory},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.60,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+%       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+%       xlabel={$u$ unemployment},
+      ylabel={Mean Habit Strength},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (Visual, 14.6) += (0,4.336) -= (0,4.336)
+          (Auditory, 12) += (0,4.243) -= (0,4.243)
+          (Visual-Auditory, 16) += (0,2.828) -= (0,2.828)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates {
+          (Visual,15.8) += (0,3.701) -= (0,3.701)
+          (Auditory, 11.5) += (0,6.364) -= (0,6.364)
+          (Visual-Auditory, 17.5) += (0,3.536) -= (0,3.536)
+           };
+
+      \legend{Week-3, Week-4}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{C1 H2: Comparing mean habit strength for rewards and control group.}~\label{fig:habit_4_item_survey1_v_survey2}
+\end{figure}
+
+
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the
+impact of multiple modalities on habit strength, compared with singular modes as measured by the SRHI 1 and 2. Participants were divided into two groups according to their reward mode (Group
+1: visual rewards, auditory rewards; Group 2: visual-auditory combined rewards. There was not a
+statistically significant difference for the two groups at SRHI 1: F (1, 9) = 1.04, p = .33, and SRHI 2: F (1, 9) = 0.64, p = .44. In addition, the difference in mean scores between the groups had, at SHRI 1: a medium effect with an effect size of .11, and at SRHI 2: a large effect, with an effect size of .17, both calculated using eta squared.
+
+\subsection{C2: Habits Completed}
+
+
+\subsubsection{C2 H1: effect of rewards verses the control group on the number of completed habits}
+
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.4*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Week-1, Week-2, Week-3},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.60,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Habits Completed},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates { % Control group
+          (Week-1, 19)
+          (Week-2, 6)
+          (Week-3, 3)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 21)
+          (Week-2, 16)
+          (Week-3, 18)
+           };
+
+      \legend{Control, Rewards}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{Sum of completed habits for rewards and control group during 3-week study period.}~\label{fig:c2_h2}
+\end{figure}
+
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of rewards on the number of habits completed, compared with control group. Participants were divided into two groups according to their reward mode (Group 1: visual rewards, auditory rewards, visual-auditory rewards; Group 2: control group. There was a statistically significant difference at the p < .005 level in both groups for two thirds of the Weeks: Week 1, F (1, 23.20) = 9.48, p = .005, Week 2, F (1, 33.35) = 4.46, p = 0.42 and Week 3, F (1, 50) = 17.01, p < 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+
+
+\subsubsection{C2 H2: effect of multiple modalities verses a singular mode on the number of completed habits}
+
+A one-way between-groups analysis of variance with planned comparisons was conducted to explore the effect of multiple modalities and singular modalities on the number of habits completed. Participants were divided into two groups according to their mode (Group 1: visual rewards, auditory rewards; Group 2: visual-auditory rewards. There was a statistically significant difference at the p < .005 level in Week 2 and Week 3, and lots in all groups: Week 1, F (1, 50) = 0.69, p = .410, Week 2, F (1, 50) = 23.04, p < 0.005 and Week 3, F (1, 50) = 8.85, p = 0.005. The effect size for Week 1, Week 2 and Week 3 are large, calculated using eta squared, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.4*\textwidth,
+      height = 7cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Week-1, Week-2, Week-3},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.60,
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Habits Completed},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates { % Multiple Modes
+          (Week-1, 10)
+          (Week-2, 11)
+          (Week-3, 3)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Singular Modes
+          (Week-1, 11)
+          (Week-2, 5)
+          (Week-3, 15)
+           };
+
+      \legend{Multiple Modalities, Singular Modality}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{Sum of completed habits for multiple modalities compared with singular modes during 3-week study period.}~\label{fig:c2_h2}
+\end{figure}
+
+
 
 \subsubsection{Rewards Analysis}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1\columnwidth]{figures/habitscompleted-v-rewards.png}
-  \caption{Habits competed per day (over 3 weeks) verses participant reward modality.}~\label{fig:habits_v_rewards}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1\columnwidth]{figures/allhabitscompleted-v-rewards.png}
-  \caption{Habits completed per day (over 3 weeks) verses all participant reward types (included control group).}~\label{fig:allhabits_v_rewards}
-\end{figure}
 
 Comparing the number of people who dropped out of the study verses their reward modality, we see that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.\newline
 \newline
@@ -362,140 +573,67 @@ Participants (N = 15, 41\%) completed the SRBAI (4-questions) at the end of the 
 
 \subsection{Interviews}
 
-(still need to add in mitches)
-
-
-\subsubsection{Rosa Mumford-Turner, 23/08/17}
-
-\subsubsection{Why did you pick that habit?} (stretching)
-Want to be more flexible, easier habit, she isnt gonna do the plank every morning, its easier, not too much effort, less time consuming.
-
-\subsubsection{Are you still doing that habit? (stretching)}
-No not stretching.
-
-\subsubsection{Did you like the chatbot?}
-Pretty good.
-
-\subsubsection{Do you want it back?}
-Yes, if it was enclosed in the fitbit, cuz it was all in one place
-
-\subsubsection{Rewards}
-A bit weird, a bit funny, weird just a black screen. She liked the buttons that you could pick.
-Didnt need a reward. Was unneccesary, the message was enough. The stats was cool, because you can reflect on data. Better to have info, like 'Its almost theree'
-
-\subsubsection{General}
-Overall pretty cool.
-
-
-\subsubsection{Youstraila, 22/08/17}
-1007204192716352 07956839590
-
-Questions:
-
-\subsubsection{Why did you pick that habit?} (write)
-Writing in the morning, changed from the evening.
-
-\subsubsection{Are you still doing that habit? (write)}
-No, just keep forgetting todo it, or cbb?
-
-\subsubsection{Did you like the chatbot?}
-- Yes I liked it. It would've been great for reminding me to write.
-
-\subsubsection{Do you want it back?}
-Yes, but maybe, but only thing that didnt like my reward,
-
-\subsubsection{Rewards}
-- Some of them were funny, works with other people.
-- Want different types of rewards.
-- Didn't really like them.
-- Maybe have, measurement of, if something starts doing good, writing then give them measurement, giving them consistnet well done, stats. When they feel like they are making progress, they are more encouraged to keep doing it, rather than random music.
-
-\subsubsection{General}
-They participated in it, to change my habits. Problem with being consistent with a habit.
-Deactivated their fb account for a week. Didn't really write.
-
-\subsubsection{Lesley Mumford, 21/08/17}
-
-\subsubsection{Why did you pick that habit?} (meditation)
-Its something I wanted todo for a long time, so I thought this would help me make it more regular, I downloaded headspace meditation app, but it was hard to remember todo it. Using it combination with that thing. Because it doesnt send me iphone reminders, chatbot is better remidners because it fb messenger app. Was doing habti without headspace while using chatbot.
-
-\subsubsection{Are you still doing that habit? (meditation)}
-Yes, but, its not as regular, I do miss it.
-
-\subsubsection{Did you like the chatbot?}
-Woulve liked to of interacted with it a bit more, and to of been able to ask it for help and support throughout. Ideas of how to make sure that you set aside some time todo things, ideas on how to meditate. Where to go, different apps to use, or things like that. Liked to of had a bit more interaction with the bot.
-
-\subsubsection{Do you want it back?}
-Yes, if it had a bit more interaction with it, I would. In its current form, I wouldn't. It made me think I should dowwnload the headspace app on my phone, the reminders they found useful.
-
-\subsubsection{General}
-She felt like she needed rewards.
-She wanted to put my own habit in, she wanted drawing.
-
-\subsubsection{Joe Hutchinson, 21/08/17}
-
-\subsubsection{Why did you pick that habit?} (meditation)
-Something I wanted todo for a while, stress relief habit. Chance to give it a go. Longer term.
-
-\subsubsection{Are you still doing that habit? (meditation)}
-I did it every now and again, ususally I think about it, it depends, if I had a long day, sometimes I want to go to bed. Done it a couple of times, done it more when I was using the chatbot.
-
-\subsubsection{Did you like the chatbot?}
-Depending on my mood, if I was feeling okay it would remind me. Otherwise would get annoying, I ignored the message. If he said 'Not Yet', it would remind me sometimes when I already got to bed, (10.30pm) more precise time.
-
-\subsubsection{Do you want it back?}
-Would be more willing to give it a go, change more precise time then yes.
-
-- Did your rewards help your form my new habit
-Cute, but didn't think gave them insentives towrds meditation, nice little extra.
-Not the sort of thing you want just before you go to bed, he tries to avoid computer and phone before bed, not good for your sleep. But liked them.
-
-\subsubsection{Natalia Sharon, 21/08/17}
-
-
-\subsubsection{Why did you pick that habit?} (meditation)
-Picked it sometime that successful people do, bc I get stressed really easy.
-
-\subsubsection{Are you still doing that habit? (meditation)}
-I do it when I remember, I tend to do it now before bed, rather than after lunch, only if I remember
-
-\subsubsection{Did you like the chatbot?}
-Liked it because it reminded me 2 hours later! This other app didn't
-
-\subsubsection{Do you want it back?}
-Yes, deffo. Um, but I also downloaded an app that sends you a reminde, because they sent you a mindful message, Harry's Habits snoozed reminders, Headspace.
-
-\subsubsection{General}
-First few days were great, stuck to it. Bot was easy to setup. After a few days, I read the message and I would just do it later. Moved to new house and ran out of data, so got no data.
-Worked well at beginning, got worse and worse, still doing it, but it was at midnight.
-
-\subsubsection{Jaime Flores, 16/08/17}
-
 \subsubsection{Why did you pick that habit?}
-- Stretch:
-Wanting to be more active, haven't had any exercise at all
+
+- Want to be more flexible, easier habit, she isnt gonna do the plank every morning, its easier, not too much effort, less time consuming.
+- Writing in the morning, changed from the evening.
+- Its something I wanted todo for a long time, so I thought this would help me make it more regular, I downloaded headspace meditation app, but it was hard to remember todo it. Using it combination with that thing. Because it doesnt send me iphone reminders, chatbot is better remidners because it fb messenger app. Was doing habti without headspace while using chatbot.
+- Something I wanted todo for a while, stress relief habit. Chance to give it a go. Longer term.
+- Picked it sometime that successful people do, bc I get stressed really easy.
+- Wanting to be more active, haven't had any exercise at all
+- I was already doing meditation, but not parts of meditation that were beneficail afterwards. Habits that i wasnt picking up. I wanted to not be stressed out of nut.
+
 
 \subsubsection{Are you still doing that habit?}
-- No:
-Been out of town.
+
+- Been harder, but the first few days, I was like, I now know how todo this, if i got dragged out it was harder to remember.
+- No not stretching.
+- No, just keep forgetting todo it, or cbb?
+- Yes, but, its not as regular, I do miss it.
+- I did it every now and again, ususally I think about it, it depends, if I had a long day, sometimes I want to go to bed. Done it a couple of times, done it more when I was using the chatbot.
+- I do it when I remember, I tend to do it now before bed, rather than after lunch, only if I remember
+- No: Been out of town.
+
 
 \subsubsection{Did you like the chatbot?}
-Yes
-- What was it like?
-A bit back and forth, just always the same repeititive.
-Expecting different messages, Hey man, Hey man
-A bit more caring about the person, a bit less like a robot
+
+- Pretty good.
+- Neutral on it. Good that it let me know, but idk.
+- Yes I liked it. It would've been great for reminding me to write.
+- Woulve liked to of interacted with it a bit more, and to of been able to ask it for help and support throughout. Ideas of how to make sure that you set aside some time todo things, ideas on how to meditate. Where to go, different apps to use, or things like that. Liked to of had a bit more interaction with the bot.
+- Depending on my mood, if I was feeling okay it would remind me. Otherwise would get annoying, I ignored the message. If he said 'Not Yet', it would remind me sometimes when I already got to bed, (10.30pm) more precise time.
+- Liked it because it reminded me 2 hours later! This other app didn't
+- Yes. A bit back and forth, just always the same repeititive. Expecting different messages, Hey man, Hey man. A bit more caring about the person, a bit less like a robot
+
+
+\subsubsection{How were the rewards?}
+
+  - I didnt like the rewards, getting the gif I was like, oh. I skipped over the gif. I just wanted to get rid of the red dot on messenger. Because it was a bot, I just wanted to get rid of it. After the fourth time I saw same gif it was bad.
+  - I didnt like the rewards, getting the gif I was like, oh. I skipped over the gif. I just wanted to get rid of the red. dot on messenger. Because it was a bot, I just wanted to get rid of it. After the fourth time I saw same gif it was bad. If it recognised my progress it wouldve been better. Based on my trend, my progress and if I done it on time. They didnt move them forward or set him back.
+  - A bit weird, a bit funny, weird just a black screen. She liked the buttons that you could pick. Didnt need a reward. Was unneccesary, the message was enough. The stats was cool, because you can reflect on data. Better to have info, like 'Its almost theree'
+  - Some of them were funny, works with other people. Want different types of rewards. Didn't really like them. Maybe have, measurement of, if something starts doing good, writing then give them measurement, giving them consistnet well done, stats. When they feel like they are making progress, they are more encouraged to keep doing it, rather than random music.
+  - Cute, but didn't think gave them insentives towrds meditation, nice little extra. Not the sort of thing you want just before you go to bed, he tries to avoid computer and phone before bed, not good for your sleep. But liked them.
+  - I was always waiting to open them. Combination was perfect, if it was only one, it wouldn't of been as funny as what I got. No but found them repititive
+
 
 \subsubsection{Do you want it back?}
-Yes. Because, technology has been a helpful tool to remind him todo things.
+
+  - Yes, if it was enclosed in the fitbit, cuz it was all in one place
+  - Interested in having it back and its a good. Would be fine without rewrads.
+  - Yes, but maybe, but only thing that didnt like my reward,
+  - Yes, if it had a bit more interaction with it, I would. In its current form, I wouldn't. It made me think I should dowwnload the headspace app on my phone, the reminders they found useful.
+  - Would be more willing to give it a go, change more precise time then yes.
+  - Yes, deffo. Um, but I also downloaded an app that sends you a reminde, because they sent you a mindful message, Harry's Habits snoozed reminders, Headspace.
+  - Yes. Because, technology has been a helpful tool to remind him todo things.
 
 
-\subsubsection{I enjoyed my rewards}
-I was always waiting to open them
-Combination was perfect, if it was only one, it wouldn't of been as funny as what I got
+\subsubsection{General}
+  - Overall pretty cool.
+  - They participated in it, to change my habits. Problem with being consistent with a habit. Deactivated their fb account for a week. Didn't really write.
+  - She felt like she needed rewards. She wanted to put my own habit in, she wanted drawing.
+  - First few days were great, stuck to it. Bot was easy to setup. After a few days, I read the message and I would just do it later. Moved to new house and ran out of data, so got no data. Worked well at beginning, got worse and worse, still doing it, but it was at midnight.
 
-\subsubsection{I found my rewards annoying}
-No but found them repititive
+
 
 \subsubsection{General}
 Using the stretching as reminder as swimming.
@@ -511,6 +649,11 @@ Remind the reader that: What was the reason for our reaserach, what did we disco
 
 TODO: Compare these results to people not using the chatbot, e.g.. people signing up to the gym, new years resolution
 
+Developing a habit involves repeating a behaviour and carefully planning the action around event-based cues within existing routines~\cite{habits_event_cues_1, habits_event_cues_2}. Habits develop more effectively when participants set specific and measurable goals \cite{habits_better_when_have_specific_and_measurable_goals}.
+
+
+\subsection{Dependence}
+Streaks could've been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (n = 7) struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 
 \subsection{Bot}
@@ -624,8 +767,8 @@ Visual and sound had the most number of failed snoozes (10, split over 6 people,
 
 
 % % Either:
-% %  1. Put \balance{} in the first column of the last page
-% %  2. Don't use \balance{}
+% %  1. Put \balance in the first column of the last page
+% %  2. Don't use \balance
 % %  3. hard-code a column break into the bbl file (before submission)
 % % see more http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-in-an-ieee-paper-if-using-bibtex
 % \balance{}
