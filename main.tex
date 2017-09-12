@@ -7,13 +7,14 @@
 
 
 % Title
-\def\plaintitle{Investigating How Different Modalities of Positive Reinforcement Influence the Formation of New Habits}
+\def\plaintitle{Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation}
+%\def\plaintitle{Investigating the Impact of Displaying Positive Reinforcement Using Different Modalities on Habit Formation}
 
 % Authors as plain text
 \def\plainauthor{First Author, Second Author, Third Author,
   Fourth Author, Fifth Author, Sixth Author}
 \def\emptyauthor{}
-\def\plainkeywords{habit formation; habit automaticity; behaviour change; chatbot; rewards; modalities; visual; auditory; visual-auditory.}
+\def\plainkeywords{habit formation; behaviour change; positive reinforcement}
 \def\plaingeneralterms{Documentation, Standardization}
   \usepackage{pgfplots}
   \pgfplotsset{compat=1.12}
@@ -41,58 +42,69 @@
 \maketitle
 
 \begin{abstract}
-Habit formation systems use rewards to motivate people to form habits. This thesis looks at the effect of three types of positive reinforcement rewards on habit formation. The rewards are delivered by a chatbot from three modes: visual, auditory and visual-auditory combined. The findings are evaluated against two hypotheses: i) rewards effect on habit performance and automaticity, ii) multiple modalities effect on habit performance and automaticity. 60 people were recruited to participate in a 4-week study followed by voluntary semi-structured interviews. The findings showed that participants receiving the bot-delivered rewards had higher habit performance than the control group without rewards. Participants with visual-auditory rewards had the highest habit automaticity score. However, these were not statistically significant and all participants interviewed reported a drop in habit performance after one week without the prototype. Further research is needed to validate the effect of each modality on habit formation.
+Habit formation technologies use rewards and points as means for providing positive reinforcement, often in the format of visual or audio rewards such as jingles, badges or animations. Providing the right reward increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results show higher habit completion rates when a reward was present without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
 \end{abstract}
 
-\category{H.5.2}{Information interfaces and presentation (e.g. HCI)}{User Interfaces, auditory (non-speech) feedback, interaction styles, miscellaneous}
+\category{H.5.m}{Information interfaces and 
+presentation (e.g. HCI)}{Miscellaneous}
+\category{H.5.2}{User Interfaces}{User-Centered Design}
 
 \keywords{\plainkeywords}
 
 
 \section{Introduction}
-Understanding how to design systems that support behaviour change is important to human computer interaction (HCI) to ensure that designers build these systems to have the maximum impact~\cite{how_to_evaluate_tech_for_behaviour_change}. Habits play an important role in behaviour change by making the changed behaviour permanent~\cite{article_promoting_habit_formation}. However, the full habit formation process within the HCI domain needs further research due to the difficulties in evaluating the long-term effects of technology on habit formation~\cite{article_evaluate_tech_health_behaviour_change}. Therefore, the need for HCI researchers to design technology that encourages people to change their behaviour and form new habits is still a main focus.
 
-Habits are automatic actions that require little concious effort~\cite{article_the_habitual_consumer}. To develop new habits people must keep to a strict routine and perform the action repeatedly to strengthen the automaticity of the action~\cite{article_promoting_habit_formation}. When strong habits are developed the likelihood of behaviours persisting is higher~\cite{putting_habit_into_practice} and habits are more effectively developed when specific and measurable goals are set~\cite{habits_better_when_have_specific_and_measurable_goals}. The action will perform automatically in response to a trigger that has been actioned repeatedly in the past~\cite{article_the_habitual_consumer}. The more automatic the response the higher habit automaticity. For example, a simple action such as turning on the light when you enter a room, happens automatically, even if the light is already on. However, forming a new habit is difficult and people are more likely to give up due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
+\emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in dertail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convicne the reader that looking at different types of positive reinforcement is really needed and important]}
 
-Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
+
+Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change} \emph{[Is this still the right reference? - KS]}. Recent studies have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
+
+[bring back hyphenation!]
+
+%Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
+
 Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action~\cite{positive_reinforcement_pro}. However, how the reward is delivered and the type of reward used is also crucial to success.
 
-The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different modalities to increase retention and better suit the needs of users. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred. 
-This study uses a chatbot to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
+[bits about existing types of positive reinforcement and how they are delivered go here. what are the strenghts and limitations of these approaches?]
 
-This paper is comprised of three sections. First, an analysis of a 4-week situated study measuring the impact of visual, auditory and visual-auditory rewards on participants habit automaticity and the number of habits completed. Second, a demonstration of how the bot-delivered rewards encourage people to stick to a routine and perform their habit. Finally, the effect of tracking habits on habit automaticity is looked at and the dependency issues arising with technology and habit formation are discussed.
+%The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different modalities to increase retention and better suit the needs of users. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred. 
+%This study uses a chatbot to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
+
+To address this gap [we need to identify the gap in earlier paragraphs!] we describe a 4-week situated study that explored the impact of different types of positive reinforcement (audio, visual, audio-visual) on the process of habit formation. The main contribution of our work is a better understanding of the effectiveness of different types of positive feedback. We show that... 
+
+
 
 \section{Background}
-To understand how to build a tool to support habit formation, we must discuss how people fundamentally form habits and the impact of each reward modality.
+\subsubsection{Role of positive reinforcement in habit formation}
+[this section needs cleaning up and shortening]
 
-\subsection{Habit Formation}
-Changing behaviour requires the formation of new habits to make this change permanent. Three elements are needed to form a habit: contextual cues, repetition and positive reinforcement~\cite{article_experiences_of_habit_formation}. However, people still fail at forming new positive habits and give up, often due to their lack of routine~\cite{article_promoting_habit_formation, article_the_habitual_consumer}.
-
-\subsubsection{Cues and Repetition}
-The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). However, existing routines and cues are needed before the action develops into a habit~\cite{habits_event_cues_1, habits_event_cues_2}. An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The contextual cue of brushing your teeth will trigger you to weigh yourself. When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
+Changing behaviour requires the formation of new habits to make this change permanent. Three elements are needed to form a habit: contextual cues, repetition and positive reinforcement~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). However, existing routines and cues are needed before the action develops into a habit~\cite{habits_event_cues_1, habits_event_cues_2}. An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The contextual cue of brushing your teeth will trigger you to weigh yourself. When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
  
-\subsubsection{Rewards}
 Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers~\cite{article_a_self_efficacy} suggest it is the main part of behaviour change. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
 
-
-\subsection{Positive Reinforcement}
 Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit. This reward increases intrinsic motivation by giving the feeling of satisfaction~\cite{article_promoting_habit_formation} and increases the persons perception of their performance~\cite{positive_reinforcement_pro} especially when the task is interesting~\cite{article_meta_analytic_review_intrinsic_motivation}. Technology uses different modalities to deliver positive reinforcement.
 
-\subsection{Modalities}
+\subsection{Providing positive reinforcement with technology}
+[this should be an overview of how behaviour change / habit formation tech provides positive reinforcement. after you give the overview, then we can look into individual modalities]
+
+[somewhere in this section we need a description of my 2015 paper and the guidelines for habit formation apps. since the bot's functionality is based on that, we have to introduce it earlier -- KS]
+
+
 Positive reinforcement rewards can be delivered using technology from different modalities. Visual, auditory and visual-auditory are the most methods for issuing feedback in HCI~\cite{desinging_interface_speech_tech}. Feedback from each of these different modalities has been shown to improve task performance for small tasks~\cite{chi_oussama_tap_the_shapetones}. Combining modalities can be useful for issuing user feedback, enabling systems to be accessible to varying ages~\cite{article_user_centred_multimodal_reminders}. Individual modes can improve the effectiveness of reminders~\cite{multi_modal_reminders_less_disruptive, article_designing_multimodal_reminders_for_home}. However, the effectiveness of each type of modality as reward feedback and how combined modalities affect interaction has little research. Therefore, technology to support behaviour change should explore a range of modalities and feedback should not be annoying as positive reinforcement should be a satisfactory experience. Research into visual, auditory and visual-auditory feedback was identified to understand how they impact behaviour to see how habit formation is impacted.
 
-\subsubsection{Visual}
-Visual feedback can encourage task performance consistency as demonstrated in one study by Lee et al.~\cite{article_realtime_feedback_improving_medication_taking} where they constructed a device that gave constant visual feedback for patients taking medication. They found that visual feedback improved consistency of the habit and increased the rate of self-efficacy. But when the device was removed, their performance dropped (as measured after a 2-month period). This suggests that users did integrate the visual feedback display cue with their routines, but they also became dependant on the technology and the visual feedback did not build habit strength. Users should instead build these cues outside of the system, with another routine to build habit automaticity and allowing for permanent behaviour change after the system is removed.
-
-\subsubsection{Auditory}
-There is a need to use audio when designing for behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, combining different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Using auditory as a method of delivery has shown to improve task success~\cite{auditory_notifications_increase_delivery_success}, but little work has shown how it impacts habit performance.
-
-\subsubsection{Visual-Auditory}
-Several studies show that combining audio with visual as feedback after the completion of a simple task, can be successful~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_auditory} revealed that it was the most effective to increase performance, when a single task is being performed and when compared with visual or auditory feedback alone. Additional research shows this combination of visual and auditory sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that '\textit{visual feedback improved task performance, but sacrificed task quality}'~\cite{comparing_modalities_effects_of_visual_auditory}. In addition, while all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore it will be useful to compare the success of the task with the other modes. Using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness. 
-
-\subsection{Technology}
 Research into how technology can support habit formation and behaviour change~\cite{survey_on_current_apps_of_steel}, shows a large number of habit forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory. Further surveys of these apps~\cite{survey_on_apps_2} suggest that habit performance is not sustained when the app is removed, due to the lack of habit automaticity built during the habit tracking process. Using apps consistently to manage behaviour can create a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
 This is also the case with many behaviour change systems, when the system is removed any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}.
+
+\subsubsection{Audio feedback}
+There is a need to use audio when designing for behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, combining different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Using auditory as a method of delivery has shown to improve task success~\cite{auditory_notifications_increase_delivery_success}, but little work has shown how it impacts habit performance.
+
+\subsubsection{Visual feedback}
+Visual feedback can encourage task performance consistency as demonstrated in one study by Lee et al.~\cite{article_realtime_feedback_improving_medication_taking} where they constructed a device that gave constant visual feedback for patients taking medication. They found that visual feedback improved consistency of the habit and increased the rate of self-efficacy. But when the device was removed, their performance dropped (as measured after a 2-month period). This suggests that users did integrate the visual feedback display cue with their routines, but they also became dependant on the technology and the visual feedback did not build habit strength. Users should instead build these cues outside of the system, with another routine to build habit automaticity and allowing for permanent behaviour change after the system is removed.
+
+\subsubsection{Audio-visual feedback}
+Several studies show that combining audio with visual as feedback after the completion of a simple task, can be successful~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_auditory} revealed that it was the most effective to increase performance, when a single task is being performed and when compared with visual or auditory feedback alone. Additional research shows this combination of visual and auditory sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that '\textit{visual feedback improved task performance, but sacrificed task quality}'~\cite{comparing_modalities_effects_of_visual_auditory}. In addition, while all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore, using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness. 
+
+[needs a paragraph that introduces the study]
 
 
 \begin{figure}
@@ -100,78 +112,75 @@ This is also the case with many behaviour change systems, when the system is rem
   \includegraphics[width=0.47\columnwidth]{figures/reminder.png}
   \hspace{5px}
   \includegraphics[width=0.47\columnwidth]{figures/reward-visual.png}
-  \caption{Prototype delivering a visual reward after a user has marked their habit as completed.}~\label{fig:setup}
+  \caption{Bot's ``check in'' message (left) and an example of a reward (right).}~\label{fig:setup}
 \end{figure}
 
-\section{Study: Comparing Different Rewards}
-To explore the influence of different modalities on habit formation, a situated study was conducted, followed by semi-structured interviews. For the purpose of the study a chatbot was developed to help users form healthy habits by providing different types of positive reinforcement. The study and the bot itself are described below.
-
-\subsection{Hypotheses and Measurements}
-The study tests two hypotheses, the effect of the rewards and the effect of multiple modes versus singular modes. They are measured by habit performance and habit automaticity.
-
-\subsubsection{M1: Habit Performance}
-The number of habits a participant marked as completed, incremented when a participant presses '\textit{completed habit}' on the bot.
-
-\begin{itemize}
-	\item \textit{M1H1: The rewards effect on habit performance}
-	\item \textit{M1H2: Multiple modes versus singular on habit performance}
-\end{itemize}
-
-\subsubsection{M2: Habit Automaticity}
-Calculated from two Self-Report Behavioural Automaticity Index (SRBAI)~\cite{article_4q_SRBAI} questionnaires and feedback from participant interviews.
-\begin{itemize}
-\item \textit{M2H1: The rewards effect on habit automaticity}
-\item \textit{M2H2: Multiple modes versus singular on habit automaticity}
-\end{itemize}
+\section{Comparing Different Types Of Positive Reinforcement}
+To explore the influence of different types of positive reinforcement on habit formation, we conducted a situated study followed by semi-structured interviews. The aim of the study was to explore what type of positive reinforcement would be the most effective in supporting regular habit completion and the development of automaticity. 
 
 \subsection{Method}
-The study aims to test the hypotheses comparing how well people form new habits based on the rewards and how the bot-delivered rewards effect participants habit formation.
-
-\subsubsection{Chatbot}
-Several systems were reviewed to test their feasibility as a prototype. A chatbot was chosen as it: can easily send notifications, is cross-platform, therefore highly available and is simple, with the user interface (UI) already constructed. The bot was custom built and designed to track participants habits and deliver the rewards (Figure~\ref{fig:setup}). The content of these rewards are experimented with to test if they provide user satisfaction. Memes are an idea that is passed along from person to person via social media posts~\cite{meme_definition}. Humorous GIFs memes make people laugh and are very popular on some social media sites and are usually most engaging content~\cite{meme_gifs_are_good}. This works well with the prototype integration into an existing social media messaging platform \textit{Facebook Messenger} (\url{www.messenger.com}) participants were used to, therefore the social scaffolding around the interaction will help reinforce the response to notifications and logging of habit behaviour~\cite{the_power_of_logging_mobile_notifications} as participants are more likely to respond because participants perceive the bot as a real person because it is located next to other real people.
-
+For the purpose of the study, we developed a chatbot that was used to deliver positive reinforcement to participants wanting to start a new healthy habit. To ensure that participants were motivated to pursue their habit, we gave them a choice: they could select one of physical activity habits (stretching, press ups, the plank) or relaxation habits (reading, writing, meditation). We selected these specific habits, as they are easy to complete and generally do not require any special equipment. Moreover, simple tasks become automatic quicker than complex actions~\cite{article_how_habits_formed_modelling_habit_formation} and such simple habits allow to observe changes in automaticity of behaviour within four weeks [ref to KS 2015 paper].
 
 \subsubsection{Participants}
-60 participants were recruited with public posts to social networks and were mostly University students and staff.
+Sixty participants were recruited on social networks. They were XX-XX years old (mean age=XX years old), XX\% were men, XX\% were university students. Twenty-five participants used a web browser, 18 used iOS devices and 12 used Android to interact with the bot. XX participants selected meditation, XX selected push ups... [finish - describe habits they chose]
 
 \subsubsection{Design}
-Participants were instructed to connect with the bot via Facebook Messenger and pick a series of options to set-up their habit tracking. A brief description accompanied these options, to guide the participants on how to answer. The habits participants could choose were split into two categories, physical and relaxation. They were: stretching, press ups, the plank, reading, writing or meditation. Participants were aware of these habits before they consented to the study and if they did not want to form any of these habits they would not start the study. These simple actions were chosen to match the length of the study, as simple tasks become automatic quicker than complex actions~\cite{article_how_habits_formed_modelling_habit_formation}, for example a drinking water habit only takes, on average, 18 days of repetitive use.
+The participants were randomly assigned to one of four conditions: Audio, Visual, Audio-visual and the Control group. Each condition differed by the type of positive reinforcment provided to participants: in the Audio condition they received a 15-second audio clip as a reward for completing their habit; in the Visual condition they received a 15-second GIF; the Audio-visual condition combined the audio clip with a GIF; and participants in the Control group received a simple acknowledgement. 
 
-The study used four conditions: visual rewards, auditory rewards, visual-auditory rewards and no rewards (control group). Participants were randomly assigned a condition by the bot after they completed the set-up, 15 were assigned to visual rewards, 15 assigned to auditory rewards, 15 assigned to visual-auditory rewards and 15 with no rewards (control group). The modalities are mapped to identify a pattern across the modes before they are implemented and adapted for delivering rewards. The rewards were aimed at motivating participants to keep coming back every day and completing their habits. Several GIFs and audio files were identified that categorised themselves as motivational and each GIF file was vaguely matched and tweaked to match the audio frequency. The relationship between the audio and the visual is inferred, therefore this mapping is \textit{semi-congruent}.
+The aim of the rewards was to motivate the participants to keep coming back every day and completing their habits. We identified several ``motivational'' GIFs and audio files, and each GIF file was tweaked to match the audio frequency. The relationship between the audio and the visual was inferred, therefore this mapping is \textit{semi-congruent}. [not sure what that last stentence means]
 
-Participants would receive a confirmation message, followed by a positive reinforcement reward after they marked a habit as complete, unless they were in the control group, then they would only receive a confirmation message. Information about how well a participant was performing was not revealed, to separate the rewards from other types of motivation, as streaks can provide motivation~\cite{article_dont_kick_habit}. 
-
-\subsubsection{Materials}
-The bot will collect the amount of habits participants complete versus their reward type. Habit completion will be verified by using the Self-Report Behavioural Automaticity Index (SRBAI)---A validated set of questions to measure habit automaticity levels. This will be used to test if participants are forming a habit. Additional questions will also be asked about how participants found their rewards and how they found interacting with the chatbot. Finally, interviews with participants will discuss the bot-delivered rewards for further verification.
+For each condition, we measured the number of times the selected habit was completed during the study (``habit completion'') and the change in automaticity of the behaviour during the final weeks. 
 
 \begin{table}
   \centering
   \begin{tabular}{l l l}
     % \toprule
-    {\small \textit{Participants}} & {\small \textit{Reward}} & {\small\textit{Modality}}\\
+    {\small\textit{Condition}} & {\small \textit{No. Participants}} & {\small \textit{Positive reinforcement}} \\
     \midrule
-    15 & 15s GIF & Visual \\
-    15 & 15s audio & Auditory\\
-    15 & 15s GIF and audio & Visual-Auditory \\
-    15 & No reward & None (control group) \\
+    Audio & 15 & 15s audio\\
+    Visual & 15 & 15s GIF \\
+    Audio-visual & 15 & 15s GIF and audio \\
+    None (control group) & 15 & Confirmation message \\
     % \bottomrule
   \end{tabular}
-  \caption{Participants were randomly assigned one of these four rewards.}~\label{fig:precise_rewards}
+  \caption{Study conditions and their corresponding types of positive reinforcement}~\label{fig:precise_rewards}
 \end{table}
 
+\subsubsection{Materials}
+To deliver different types of positive reinforcement, we built a custom Facebook Messenger bot (see Figure~\ref{fig:setup}). Bot's functionality and approach to support habit formation was informed by [REF to KS 2015 paper]: rather than providing reminders, the bot first allowed participants to define a routine and during the study provided ``check in'' notifications to see if the routine was followed; if the routine was not working and participants did not complete their habit on time, the bot then suggested changes to the plan. 
+
+We decided to use a bot as it can easily send notifications, is cross-platform and thus highly available, and also offers simple user interface and easy interactions already familiar to the users. Moreover, the integration with the platform meant that interactions with the bot would be visible alongside participant's other conversations, making it easier to report completion of the habit~\cite{the_power_of_logging_mobile_notifications}.
+
+For the GIF rewards, we decided to use popular internet memes, i.e. contant that is passed along from person to person via social media posts~\cite{meme_definition}. Humorous GIF memes make people laugh and are popular on some social media sites, where they usually are the most engaging content~\cite{meme_gifs_are_good}. Given that our bot was integrated with Facebook, and that Facebook introduced built-in support for animated GIFs [ref to that link I sent with feedback for the thesis - KS], memes would integrate well with the bot enviornment. 
+
+We also used the bot to collect responses to the Self-Report Behavioural Automaticity Index (SRBAI;~\cite{article_4q_SRBAI}). This is a validated 4-item instrument for measuring habit automaticity, which can be used as an indicator of habit strength. SRBA statements are presented on a 5-point Likert scale with answers from 'Strongly Disagree' (1) to 'Strongly Agree' (5); higher scores indicate higher self-reported levels of automaticity.
+
 \subsubsection{Procedure}
-First, an internal pilot trial was conducted to develop the strength of the prototype. Minor language changes were made as a result of this, to better explain how participants should proceed. Second, a  4-week situated study was conducted with real people who wanted to try and form a new positive habit. The length of the study was appropriate for the simplicity of each habit and was based on the lengths of a previous habit formation study~\cite{article_beyond_self_tracking_designing_apps}. Finally, follow-up interviews with participants revealed if participants continued with their habit without the bot.
+Recruitment posts instructed potential partiticipants to connect with our bot via Facebook Messenger. By connecting with the bot, completing the set-up and providing demographics information, participants expressed their consent to participate in the study.
 
-The 4-week evaluation trial was split into two sections. First a 3-week trial tested the success of the chatbot by evaluating the tool and the effectiveness of each modality on participants habit automaticity using a validated questionnaire~\cite{article_4q_SRBAI}. During the fourth week, chatbot interaction was removed during a 1-week follow up trial to test if participants continue with the habit. Participants were split into four groups (Table~\ref{fig:precise_rewards}), all groups receiving reminders, three groups receiving rewards each from a different modality, and one group (control group) did not receive any rewards.
+During the set-up process, participants were asked to select one of the healthy habits they would like to develop and, as recommended in [REF for my paper about habit formation apps] for technologies supporting habit formation, to specifcy contextual cues associated with that habit and the time they would want to complete it (morning, afternoon, evening). Once their habit routine was specified, participants were automatically assigned to one of the study conditions. 
 
-At the beginning of the 3-week period, participants gave their consent to take part in the study as required by the ethics committee (reference id: 54701) and were asked to answer basic demographic information and choose a new habit they would like to develop from a list of habits of similar difficulty, divided into two categories: physical and relaxation. Then they were asked to state an existing routine they could build their new habit around, and choose a time that routine normally occurred (morning, afternoon, evening). After they had answered these questions, they would be randomly assigned a modality (unknown to users) for rewards. Participants would complete their chosen habit every day after their existing routine, then wait for the bot to send them a message asking them for one of two choices.
+Next, for the first three weeks of the study, participants were asked to complete their chosen habit as part of the specified routine. During that period, the bot ``checked in'' with the participants after their specified time (see Figure~\ref{fig:precise_rewards}, left). Participants then could indicate whether they completed the habit or not. If they reported habit completion, they would receive their positive reinforcement message (see Figure~\ref{fig:precise_rewards}, right). If they selected ``not yet'', the bot would check on the participant again an hour later. This allowed for the checks to be snoozed, to ensure the new habit fits into participant's routine. If participants constantly told the bot they had not completed their habit yet, the bot would suggest making changes to the routine.
 
-Option one (completed habit): participants would receive a message thanking them, then participants not in the control group would receive a message linking them to a reward. This reward would be from the modality auto-assigned to that participant during the set-up phase (Figure~\ref{fig:precise_rewards}). Option two (not yet): the bot would check on the participant an hour later. This allowed for the checks to be snoozed, to ensure the new habit fit in with participants routine. If participants constantly told the bot they had not completed their habit yet, the bot would ask participants if they would like to change the time their routine occurred. This allowed the participants in the beginning to refine the time they would perform their habit.
+After interacting with the bot for three weeks, participants were asked to complete the SRBAI questionnaire and answer a set of questions about the positive reinforcement they received. Next, during the final week of the study, bot interactions were suspended, but participants were still asked to continue with their habit. At the end of that period, participants were asked to complete the SRBAI questionnaire again [did they do the modality questions here as well?]. 
 
-After 3 weeks of participants interacting with the bot, all participants who completed the set up were asked to complete the SRBAI questionnaire. Then the bot interaction was suspended for 1 week. After the full 4-week period, participants were asked to complete the questionnaire again. The SRBAI presents the questions on a 5-point Likert scale with answers from 'Strongly Disagree' (5) to 'Strongly Agree' (1). Higher scores indicates higher self-reported levels of automaticity. In addition, participants had an option to opt-in for an interview about their experience after the 4-week period.
+Participants also had an option to opt-in for an interview to discuss their experience. The interviews were conducted the after the 4-week study. 
+
+The study has been approved by the university Ethics Committee, project ID: 54701.
+
+\subsection{Pilot}
+We conducted a pilot with XX participants to test the bot and study procedures. The pilot resulted in minor language changes and clarifications to bot messages and study instructions.
 
 \section{Results}
-60 participants connected with the bot by pressing \textit{'Get Started'} in Facebook Messenger on the following platforms: 25 participants used a web browser, 18 used iOS and 12 used Android. 14 participants (23\%) dropped out of the study at various stages (Figure~\ref{fig:study_dropout}): 54 participants (90\%) continued interacting with the bot and started the set-up. 39 participants (65\%) completed the set-up and out of these 39 participants, 3 participants just ignored all messages from the bot during the trial. Leaving 36 participants (66\%) that are considered active throughout and are included in the final analysis. These 36 participants are 18-63 years old, (mean: 27 years old, SD: 12), 23 (64\%) male, 11 (30\%) female and 2 (6\%) didn't say. These 36 remaining participants are split into the following modalities: 14 participants (93\%) visual, 9 participants (60\%) visual-auditory, 7 participants (46\%) auditory and 6 participants (40\%) had no rewards (control group). 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
+Thirty-six participants completed the 4-week study (see Figure~\ref{fig:study_dropout}); 14 of them were from the Visual condition, nine were from Audio-visual, seven from Audio and six from the Control group. They were 18-63 years old (mean=27 years old, SD=12), 23 (64\%) were male, 11 (30\%) were female and two (6\%) didn't say. 
+
+Meditation was the most popular habit chosen (12 participants, or 33\%), followed by press ups (8 participants 22\%), then Stretching (6 participants 15\%). Reading and writing were the least, only selected by 4 and 2 participants respectively. [how does it compare to the initial list of participants and the habits they selected?]
+
+
+
+14 participants (23\%) dropped out of the study at various stages (Figure~\ref{fig:study_dropout}): 54 participants (90\%) continued interacting with the bot and started the set-up. 39 participants (65\%) completed the set-up and out of these 39 participants, 3 participants just ignored all messages from the bot during the trial.  <-- \emph{I don't understand this, numbers don't add up. You say that 60 started the study, but also that 39 completed the set-up. Wasn't completing the set-up the starting point of the study??}
+
+  %Leaving 36 participants (66\%) that are considered active throughout and are included in the final analysis. These 36 participants are 1 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-auditory rewards and 17 auditory rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
 
 \begin{figure}
   \centering
@@ -179,10 +188,16 @@ After 3 weeks of participants interacting with the bot, all participants who com
   \caption{Participant drop-out during the 4-week study. V: visual, A: auditory, V-A: visual-auditory, N: no rewards.}~\label{fig:study_dropout}
 \end{figure}
 
-\subsection{M1: Habit Performance}
-Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
+\subsection{Habit completion}
+%Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
 
-7 participants (19\%) previously used habit tracking systems and 100\% of stated they worked well for tracking habits. These habits were: 'Diet' (3 mentions), 'Exercise' (3 mentions), 'Deadlines' (2 mentions), 'Audiobook reading' (1 mention), 'Weight' (1 mention). All of these participants chose new habits that they had not tracked before. Meditation was the most popular habit chosen (12 participants 33\%), followed by Press ups (8 participants 22\%), then Stretching (6 participants 15\%). Reading and writing were the least, only selected by 4 and 2 participants respectively. Stretching (6 participants 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
+[this section needs cleaning up]
+
+Stretching (6 participants 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
+
+Information about how well a participant was performing was not revealed, to separate the rewards from other types of motivation, as streaks can provide motivation~\cite{article_dont_kick_habit}. 
+
+
 
 Participants (14 participants 39\%) with visual rewards had the highest total number of snoozes (72 total presses to 'Not Yet'), auditory had the smallest (14 total). The control group had 55 snoozes and visual-auditory had 45 snoozes. Most participants snoozed (answered 'Not Yet') in the morning (100 times), specifically mid (66) and late (27) morning. Visual-auditory had the most number of failed snoozes (10, split over 6 participants, 1 person had 5 failed snoozes). Then it was auditory by 4.
 
