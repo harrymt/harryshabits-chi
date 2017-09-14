@@ -42,7 +42,7 @@
 \maketitle
 
 \begin{abstract}
-Habit formation technologies use rewards and points as means for providing positive reinforcement, often in the format of visual or audio rewards such as jingles, badges or animations. Providing the right reward increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results show higher habit completion rates when a reward was present without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
+Habit formation technologies use rewards and points as means for providing positive reinforcement, often in the format of visual or audio rewards such as jingles, badges or animations. Providing the right reward increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results reported higher habit completion rates when a reward was present, with visual rewards having the highest rate, without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
 \end{abstract}
 
 \category{H.5.m}{Information interfaces and 
@@ -54,7 +54,7 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 \section{Introduction}
 
-\emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in dertail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convicne the reader that looking at different types of positive reinforcement is really needed and important]}
+\emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in detail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convince the reader that looking at different types of positive reinforcement is really needed and important - and identify a gap]}
 
 
 Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change} \emph{[Is this still the right reference? - KS]}. Recent studies have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
@@ -78,7 +78,10 @@ To address this gap [we need to identify the gap in earlier paragraphs!] we desc
 \subsubsection{Role of positive reinforcement in habit formation}
 [this section needs cleaning up and shortening]
 
-Changing behaviour requires the formation of new habits to make this change permanent. Three elements are needed to form a habit: contextual cues, repetition and positive reinforcement~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). However, existing routines and cues are needed before the action develops into a habit~\cite{habits_event_cues_1, habits_event_cues_2}. An existing routine acts as a trigger to motivate the desired action. Context from that routine serves as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The contextual cue of brushing your teeth will trigger you to weigh yourself. When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
+Changing behaviour permanently requires forming a new habit~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). Building the habit around an existing routine helps develop the action into a habit~\cite{habits_event_cues_1}. The existing routine acts as a trigger to motivate the desired action~\cite{habits_event_cues_2}, with the context of the routine as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The cue of brushing your teeth will trigger you to weigh yourself.
+
+
+When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
  
 Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers~\cite{article_a_self_efficacy} suggest it is the main part of behaviour change. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
 
@@ -189,6 +192,61 @@ Meditation was the most popular habit chosen (12 participants, or 33\%), followe
 \end{figure}
 
 \subsection{Habit completion}
+Analysis of each individual reward on habit performance (Figure~\ref{fig:m1_h1_a}) revealed that there was a statistically significant difference between each reward as determined by one-way ANOVA ($F(2,624) = 27.007$, $p < 0.05$). A Tukey post hoc test revealed that the difference in completed habits was statistically significantly lower for the auditory ($0.081 + 0.274$, $p < 0.005$) and visual-auditory ($0.267$ + $0.484$, $p = 0.025$) feedback compared to the visual feedback ($0.373$ + $0.484$).
+
+\begin{figure}
+\centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.5*\textwidth,
+      height = 6cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Week-1, Week-2, Week-3},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.45,
+      ymin=0,
+      ymax=30,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Habits Completed},
+   ]
+   
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 5)
+          (Week-2, 0)
+          (Week-3, 12)
+           };
+
+
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates { % Control group
+          (Week-1, 26)
+          (Week-2,28)
+          (Week-3, 24)
+          };
+
+
+      \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 14)
+          (Week-2, 26)
+          (Week-3, 16)
+           };
+
+      \legend{audio, visual, audio-visual}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{The number of habits completed for each reward over the 3-week period.}~\label{fig:m1_h1_a}
+\end{figure}
+
+
+
 %Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total auditory rewards (mean = 2) and 2 participants had 2 visual-auditory combined (mean = 6.5). These visual-auditory participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and auditory with 0 snoozes.
 
 [this section needs cleaning up]
