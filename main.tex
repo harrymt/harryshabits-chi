@@ -53,30 +53,36 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 \section{Introduction}
 % \emph{[Thoughts on new intro? - HMT]}
-Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. Current habit formation technology use extrinsic monetary rewards for rewards, such as coins and points. However, although extrinsic rewards increase task repetition, they hinder habit formation by reducing motivation~\cite{article_meta_analytic_review_intrinsic_motivation}. This paper tries to understand more about different types of intrinsic positive reinforcement and how it can be used to support the formation of new habits.
+Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. Current habit formation technology uses extrinsic monetary rewards, such as coins and points. However, although this type of reward increases task repetition, it reduces motivation and therefore hinders habit formation~\cite{article_meta_analytic_review_intrinsic_motivation}. This paper tries to understand more about different types of intrinsic positive reinforcement and how it can be used to support the formation of new habits.
 
 % \emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in detail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convince the reader that looking at different types of positive reinforcement is really needed and important - and identify a gap]}
 
 
-Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change}. Recent studies have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
+Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change}. Recent studies~\cite{article_beyond_self_tracking_designing_apps} have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
 
 
 %Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
 
-Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action~\cite{positive_reinforcement_pro}. However, how the reward is delivered and the type of reward used is also crucial to success.
+\emph{[We need to identify the gap in earlier paragraphs! KS]}
 
-[bits about existing types of positive reinforcement and how they are delivered go here. what are the strengths and limitations of these approaches?]
+\emph{[Existing types of positive reinforcement~\cite{coaching_not_that_good}, ~\cite{chi_crowd_designed_motivation}]}
+
+\emph{[How positive reinforcement is delivered. ~\cite{coaching_not_that_good}, ~\cite{chi_crowd_designed_motivation}
+~\cite{article_dont_kick_habit}, ~\cite{article_realtime_feedback_improving_medication_taking}]}
+
+\emph{[Strengths and limitations of the different types.
+~\cite{article_dont_kick_habit}~\cite{article_realtime_feedback_improving_medication_taking}]}
+
+% Motivation can be encouraged by giving people positive reinforcement rewards after they complete an action~\cite{positive_reinforcement_pro}. However, how the reward is delivered and the type of reward used is also crucial to success.
 
 %The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different modalities to increase retention and better suit the needs of users. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred. 
 %This study uses a chatbot to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
 
-To address this gap [we need to identify the gap in earlier paragraphs!] we describe a 4-week situated study that explored the impact of different types of positive reinforcement (audio, visual, audio-visual) on the process of habit formation. The main contribution of our work is a better understanding of the effectiveness of different types of positive feedback. We show that visual positive reinforcement increase habit completion rates, over audio-visual and audio. This...
-
-
+To address this gap we describe a 4-week situated study that explored the impact of different types of positive reinforcement (audio, visual, audio-visual) on the process of habit formation. The main contribution of our work is a better understanding of the effectiveness of these types of positive feedback. We show that visual positive reinforcement can increase habit completion rates, over audio-visual and audio. However, it does not necessarily support habit formation as although habit automaticity increased, the specific rewards did not impact this measurement. Therefore, just by using the bot to track habits, participants automaticity increased. This results in a need for further research into using bots to support habit formation.
 
 \section{Background}
 \subsection{Role of positive reinforcement in habit formation}
-[this section needs cleaning up and shortening]
+\emph{[This section needs cleaning up and shortening]}
 
 Changing behaviour permanently requires forming a new habit~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). Building the habit around an existing routine helps develop the action into a habit~\cite{habits_event_cues_1}. The existing routine acts as a trigger to motivate the desired action~\cite{habits_event_cues_2}, with the context of the routine as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The cue of brushing your teeth will trigger you to weigh yourself.
 
@@ -119,7 +125,7 @@ These three types of feedback increase task completion in different ways. Howeve
   \caption{Bot's ``check in'' message (left) and an example of a reward (right).}~\label{fig:setup}
 \end{figure}
 
-\section{Comparing Positive Reinforcement}
+\section{Comparing Different Positive Reinforcement}
 The aim of the study was to explore what type of positive reinforcement would be the most effective in supporting regular habit completion and the development of automaticity. We conducted a 4-week situated study followed by semi-structured interviews to evaluate each reward from a different mode using a chatbot to deliver each reward. The study and the bot are described below.
 
 \subsection{Method}
@@ -167,7 +173,7 @@ Information about how well a participant was performing was not revealed, to sep
 \begin{figure}
   \centering
   \includegraphics[width=.95\columnwidth]{figures/study-flow.pdf}
-  \caption{Participant drop-out during the 4-week study. A: audio, V: visual, A-V: audio-visual, N: no rewards.}~\label{fig:study_dropout}
+  \caption{Participant drop-out during the 4-week study. A: audio, V: visual, A-V: audio-visual, N: no reward.}~\label{fig:study_dropout}
 \end{figure}
 
 \subsubsection{Procedure}
@@ -504,10 +510,10 @@ Participants picked habits they wanted to perform, but when the bot stopped noti
 \subsection{Habit Automaticity Discussion}
 It is inconclusive whether the rewards or the combined modalities effected habit automaticity. 
 
-% \subsubsection{The Rewards effect on Habit Automaticity}
+\subsubsection{Automaticity did not develop}
 Each individual reward did not have a significant effect on habit automaticity. Although participants with rewards had slightly higher automaticity scores and follow up interviews suggest that automaticity did not develop with participants discussing negative feelings towards rewards during the interviews.  
 
-% \subsubsection{M2H2: Multiple Modalities effect on Habit Automaticity}
+\subsubsection{Audio-visual rewards had highest automaticity scores}
 Participants with audio-visual rewards had higher habit automaticity scores compared with audio or visual rewards. However, this difference was not statistically significant.
 
 \subsection{Limitations and Future work for Habit Automaticity}
