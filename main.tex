@@ -52,11 +52,13 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 
 \section{Introduction}
+\emph{[Thoughts on new intro? - HMT]}
+Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. Current habit formation technology use extrinsic monetary rewards for rewards, such as coins and points. However, although extrinsic rewards increase task repetition, they hinder habit formation by reducing motivation~\cite{article_meta_analytic_review_intrinsic_motivation}. This paper tries to understand more about different types of intrinsic positive reinforcement and how it can be used to support the formation of new habits.
 
-\emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in detail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convince the reader that looking at different types of positive reinforcement is really needed and important - and identify a gap]}
+% \emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in detail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convince the reader that looking at different types of positive reinforcement is really needed and important - and identify a gap]}
 
 
-Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change} \emph{[Is this still the right reference? - KS, No - need to change it HMT]}. Recent studies have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
+Habit formation and behaviour change technologies are increasingly the focus of HCI research. This should not come as a surprise, as understanding how to design systems that support habit formation helps to ensure that they lead to long lasting changes in one's behaviour impact~\cite{how_to_evaluate_tech_for_behaviour_change}. Recent studies have shown that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits. 
 
 
 %Technology can help people stick to a routine by sending repeated messages~\cite{chi_crowd_designed_motivation} and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}. Automaticity can be increased by building motivation to complete the action~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
@@ -97,16 +99,16 @@ This is also the case with many behaviour change systems, when the system is rem
 Positive reinforcement feedback can be delivered by technology from different modalities. Audio, visual and audio-visual modes are the most common for issuing feedback in HCI~\cite{desinging_interface_speech_tech}. Feedback from each of these different modalities has been shown to improve task performance for small tasks~\cite{chi_oussama_tap_the_shapetones}. Combining modalities can be useful for issuing user feedback, enabling systems to be accessible to varying ages~\cite{article_user_centred_multimodal_reminders}. Individual modes can improve the effectiveness of reminders~\cite{multi_modal_reminders_less_disruptive, article_designing_multimodal_reminders_for_home}. However, the effectiveness of each type of modality as reward feedback and how combined modalities impact interaction when used by technology has little research. Therefore, technology to support behaviour change should explore a range of modalities for feedback. Research into audio, visual and audio-visual feedback was identified to understand how they impact behaviour and habit formation.
 
 \subsubsection{Audio feedback}
-There is a need to use audio when designing behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, combining different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Audio feedback from levels under 94dB increases task performance~\cite{high_audio_feedback_negative_performance} and using audio as a method of delivery, has shown to improve task success~\cite{audio_notifications_increase_delivery_success}, but little work has shown how it impacts the completion of habits.
+There is a need to use audio when designing behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, combining different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Audio feedback from levels under 94dB increases task performance~\cite{high_audio_feedback_negative_performance} and using audio as a method of delivery, has shown to improve task success~\cite{auditory_notifications_increase_delivery_success}, but little work has shown how it impacts the completion of habits.
 
 \subsubsection{Visual feedback}
 Fast visual feedback is preferred over audio when the relative importance of the task is high~\cite{visual_mode_better}. Visual feedback can encourage task performance consistency as demonstrated in one study by Lee et al.~\cite{article_realtime_feedback_improving_medication_taking} where they constructed a device that gave constant visual feedback for patients taking medication. They found that visual feedback improved consistency of the habit and increased the rate of self-efficacy. But when the device was removed, their performance dropped (as measured after a 2-month period). This suggests that users did integrate the visual feedback display cue with their routines, but they also became dependant on the technology and the visual feedback did not build habit strength. Users should instead build these cues outside of the system, with another routine to build habit automaticity and allowing for permanent behaviour change after the system is removed.
 
 \subsubsection{Audio-visual feedback}
-Several studies show that combining audio with visual as feedback after performing a simple task can be successful~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_audio} revealed that audio-visual feedback was the most effective at increasing performance, when a single task is being performed and when compared with visual or audio feedback alone. Additional research shows this combination of visual and audio sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that visual feedback improved task performance, but sacrificed task quality~\cite{comparing_modalities_effects_of_visual_audio}. While all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore, using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness.
+Several studies show that combining audio with visual as feedback after performing a simple task can be successful~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_auditory} revealed that audio-visual feedback was the most effective at increasing performance, when a single task is being performed and when compared with visual or audio feedback alone. Additional research shows this combination of visual and audio sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that visual feedback improved task performance, but sacrificed task quality~\cite{comparing_modalities_effects_of_visual_auditory}. While all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore, using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness.
 
 
-These three types of feedback effect task completion in different ways. However, how this feedback from different modes effects habit formation needs to best tested on real people. Next we describe a user study to evaluate each type of feedback to see how habit completion and habit automaticity.
+These three types of feedback increase task completion in different ways. However, how this feedback impacts habit formation is unsure. An in-the-wild study to gain insight into audio, visual and audio-visual positive reinforcement impacts habit formation is conducted and detailed below.
 
 \begin{figure}
   \centering
@@ -123,10 +125,10 @@ The aim of the study was to explore what type of positive reinforcement would be
 For the purpose of the study, we developed a chatbot that was used to deliver positive reinforcement to participants wanting to start a new healthy habit. To ensure that participants were motivated to pursue their habit, we gave them a choice: they could select one of physical activity habits (stretching, press ups, the plank) or relaxation habits (reading, writing, meditation). We selected these specific habits, as they are easy to complete and generally do not require any special equipment. Moreover, simple tasks become automatic quicker than complex actions~\cite{article_how_habits_formed_modelling_habit_formation} and such simple habits allow to observe changes in automaticity of behaviour within four weeks~\cite{article_beyond_self_tracking_designing_apps}.
 
 \subsubsection{Participants}
-Sixty participants were recruited on social networks. They were 18-63 years old (mean age=26.7 years old, SD=10), XX\% were men, XX\% were university students. Twenty-five participants used a web browser, eighteen used iOS devices, twelve used Android and five used other mobile devices to interact with the bot. XX participants selected meditation, XX selected push ups... [finish - describe habits they chose]
+Sixty participants were recruited on social networks. They were 18-63 years old (mean age=26.7 years old, SD=10), thirty-five or 58\% were male, fifteen or 25\% were female, ten, 17\% chose not to say, eighteen, or 30\% were university students. Twenty-five participants used a web browser, eighteen used iOS devices, twelve used Android and five used other mobile devices to interact with the bot. Fifteen participants selected meditation, fourteen selected stretch, thirteen selected press ups, six selected reading, five selected writing and seven selected the plank.
 
 \subsubsection{Design}
-The participants were randomly assigned to one of four conditions: Audio, Visual, Audio-visual and the Control group. Each condition differed by the type of positive reinforcement provided to participants: in the Audio condition they received a 15-second audio clip as a reward for completing their habit; in the Visual condition they received a 15-second GIF; the Audio-visual condition combined the audio clip with a GIF; and participants in the Control group received a simple acknowledgement. 
+The participants were randomly assigned to one of four conditions: Audio, Visual, Audio-visual and the Control group. Each condition differed by the type of positive reinforcement provided to participants: in the Audio condition they received a 15-second audio clip as a reward for completing their habit; in the Visual condition they received a fifteen-second GIF; the Audio-visual condition combined the audio clip with a GIF; and participants in the Control group received a simple acknowledgement. 
 
 The aim of the rewards was to motivate the participants to keep coming back every day and completing their habits. We identified several ``motivational'' GIFs and audio files, and each GIF file was tweaked to match the audio frequency.
 
@@ -170,7 +172,7 @@ Information about how well a participant was performing was not revealed, to sep
 \subsubsection{Procedure}
 Recruitment posts instructed potential participants to connect with our bot via Facebook Messenger. By connecting with the bot, completing the set-up and providing demographics information, participants expressed their consent to participate in the study.
 
-During the set-up process, participants were asked to select one of the healthy habits they would like to develop and, as recommended in [REF for my paper about habit formation apps] for technologies supporting habit formation, to specify contextual cues associated with that habit and the time they would want to complete it (morning, afternoon, evening). Once their habit routine was specified, participants were automatically assigned to one of the study conditions. 
+During the set-up process, participants were asked to select one of the healthy habits they would like to develop and, as recommended in~\cite{article_dont_forget_your_pill} for technologies supporting habit formation, to specify contextual cues associated with that habit and the time they would want to complete it (morning, afternoon, evening). Once their habit routine was specified, participants were automatically assigned to one of the study conditions. 
 
 Next, for the first three weeks of the study, participants were asked to complete their chosen habit as part of the specified routine. During that period, the bot ``checked in'' with the participants after their specified time (see Figure~\ref{fig:precise_rewards}, left). Participants then could indicate whether they completed the habit or not. If they reported habit completion, they would receive their positive reinforcement message (see Figure~\ref{fig:precise_rewards}, right). If they selected ``not yet'', the bot would check on the participant again an hour later. This allowed for the checks to be snoozed, to ensure the new habit fits into participant's routine. If participants constantly told the bot they had not completed their habit yet, the bot would suggest making changes to the routine.
 
@@ -190,57 +192,6 @@ Thirty-six participants completed the 4-week study (see Figure~\ref{fig:study_dr
 
   %Leaving 36 participants (66\%) that are considered active throughout and are included in the final analysis. These 36 participants are 1 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 visual-audio rewards and 17 audio rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
 
-
-\begin{figure}
-\centering
- \begin{tikzpicture}
-   \begin{axis}[
-      width  = 0.5*\textwidth,
-      height = 6cm,
-      major x tick style = transparent,
-      ybar=2*\pgflinewidth,
-      bar width=15pt,
-      ymajorgrids = true,
-      symbolic x coords={Week-1, Week-2, Week-3},
-      xtick = data,
-      scaled y ticks = false,
-      enlarge x limits=0.45,
-      ymin=0,
-      ymax=30,
-      legend cell align=left,
-      legend style={at={(0.5,-0.15)},anchor=north},
-      ylabel={Habits Completed},
-   ]
-   
-      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates {
-          (Week-1, 5)
-          (Week-2, 0)
-          (Week-3, 12)
-           };
-
-
-      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-          coordinates {
-          (Week-1, 26)
-          (Week-2,28)
-          (Week-3, 24)
-          };
-
-
-      \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates { 
-          (Week-1, 14)
-          (Week-2, 26)
-          (Week-3, 16)
-           };
-
-      \legend{audio, visual, audio-visual}
-
-  \end{axis}
-  \end{tikzpicture}
-  \caption{The number of habits completed for each reward over the 3-week period.}~\label{fig:m1_h1_a}
-\end{figure}
 
 
 \subsection{Habit Completion}
@@ -272,46 +223,106 @@ A one-way between-groups analysis of variance with planned comparisons was condu
 \subsubsection{The rewards effect on habit completion: audio-visual}
 A one-way between-groups analysis of variance with planned comparisons was conducted to compare audio-visual rewards with audio rewards and visual rewards, on the number of habits completed (Figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode: group 1: audio rewards and visual rewards, group 2: audio-visual rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in week 2 and week 3, and lots in all groups: week 1, $F(1,50) = 0.69$, $p = 0.410$, week 2, $F(1,50) = 23.04$, $p$ $<$ $0.005$ and week 3, $F(1,50) = 8.85$, $p\leq 0.005$. The effect size for week 1, week 2 and week 3 are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, this shows a large difference in the mean scores.
 
+
+
 \begin{figure}
-  \centering
+\centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.4*\textwidth,
+      width  = 0.45*\textwidth,
       height = 6cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
-      bar width=15pt,
+      bar width=12pt,
       ymajorgrids = true,
       symbolic x coords={Week-1, Week-2, Week-3},
       xtick = data,
       scaled y ticks = false,
-      enlarge x limits=0.45,
+      enlarge x limits=0.3,
       ymin=0,
-      ymax=22,
+      ymax=40,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
       ylabel={Habits Completed},
    ]
-      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-          coordinates { % Control group
-          (Week-1, 19)
-          (Week-2, 6)
-          (Week-3, 3)
-          };
-
+   
       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates { % Rewards
-          (Week-1, 21)
-          (Week-2, 16)
-          (Week-3, 18)
+           coordinates {
+          (Week-1, 5)
+          (Week-2, 0)
+          (Week-3, 12)
            };
 
-      \legend{Control, Rewards}
+
+      \addplot[style={fill=cyan},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (Week-1, 26)
+          (Week-2, 28)
+          (Week-3, 24)
+          };
+
+
+      \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { 
+          (Week-1, 14)
+          (Week-2, 26)
+          (Week-3, 16)
+           };
+           
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { 
+          (Week-1, 9)
+          (Week-2, 18)
+          (Week-3, 18)
+           };
+      \legend{audio, visual, audio-visual, control group}
 
   \end{axis}
   \end{tikzpicture}
-  \caption{The effect of positive reinforcement rewards on habit completion.}~\label{fig:m1_h1}
+  \caption{The number of habits completed for each reward over the 3-week period.}~\label{fig:m1_h1_a}
 \end{figure}
+
+
+% \begin{figure}
+%   \centering
+%  \begin{tikzpicture}
+%    \begin{axis}[
+%       width  = 0.4*\textwidth,
+%       height = 6cm,
+%       major x tick style = transparent,
+%       ybar=2*\pgflinewidth,
+%       bar width=15pt,
+%       ymajorgrids = true,
+%       symbolic x coords={Week-1, Week-2, Week-3},
+%       xtick = data,
+%       scaled y ticks = false,
+%       enlarge x limits=0.45,
+%       ymin=0,
+%       ymax=22,
+%       legend cell align=left,
+%       legend style={at={(0.5,-0.15)},anchor=north},
+%       ylabel={Habits Completed},
+%    ]
+%       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+%           coordinates { % Control group
+%           (Week-1, 19)
+%           (Week-2, 6)
+%           (Week-3, 3)
+%           };
+
+%       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+%            coordinates { % Rewards
+%           (Week-1, 21)
+%           (Week-2, 16)
+%           (Week-3, 18)
+%            };
+
+%       \legend{Control, Rewards}
+
+%   \end{axis}
+%   \end{tikzpicture}
+%   \caption{The effect of positive reinforcement rewards on habit completion.}~\label{fig:m1_h1}
+% \end{figure}
 
 
 \subsection{Habit Completion Discussion}
@@ -341,23 +352,23 @@ This research relies on participants self-reporting and participants could have 
       scaled y ticks = false,
       enlarge x limits=0.45,
       ymin=0,
-      ymax=22,
+      ymax=40,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
       ylabel={Habits Completed},
    ]
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates { % Singular Modes
-          (Week-1, 11)
-          (Week-2, 5)
-          (Week-3, 15)
+          (Week-1, 31)
+          (Week-2, 28)
+          (Week-3, 36)
            };
 
-      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit]
+      \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit]
           coordinates { % Multiple Modes
-          (Week-1, 10)
-          (Week-2, 11)
-          (Week-3, 3)
+          (Week-1, 14)
+          (Week-2, 26)
+          (Week-3, 16)
           };
 
    
