@@ -5,6 +5,7 @@
 %\usepackage[none]{hyphenat}
 \usepackage[style=numeric,sorting=nty, eprint=false,doi=false,isbn=false,url=false, maxbibnames=99, firstinits=true]{biblatex}
 \DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
+
 \addbibresource{sample.bib}
 
 
@@ -501,7 +502,7 @@ statistically significant difference for the two groups at SRBAI 1: $ F(1,9) = 1
 \end{figure}
 
 \subsection{Interview Feedback}
-Seven participants agreed to participate in optional interviews. Their details are summarised in Table X. Below we summarise the key findings related to participants' experiences of repeating the habbit and support provided by the bot, their attitudes towards types of positive reinforcement they received, and towards the bot itself.
+Seven participants agreed to participate in optional interviews. Their details are summarised in Table~\ref{table:}. Below we summarise the key findings related to participants' experiences of repeating the habit and support provided by the bot, their attitudes towards types of positive reinforcement they received, and towards the bot itself.
 
 % LET'S TALK ABOUT THE INTERVIEWS
 % Moved info about the interviews to the Method section
@@ -509,6 +510,27 @@ Seven participants agreed to participate in optional interviews. Their details a
 % \emph{[Should I include the full transcripts? I have them im my thesis appendix already written up, if need. - HMT]}
 %KS: no need for that, you just need to include some quotes (as you do) and maybe add participant numbers to the quotes.
 %Also, since there were only 7 seven participants, we could add a table: participant number (P1), gender, habit, reward type. Then you could use these numbers with quotes "something something" (P4) and that would give readers more insight into what type of habit it was related to and what reward they received. Let me know if it doesn't make sense
+
+
+\begin{table}[b]
+  \centering
+  \begin{tabular}{l l l l l l}
+    % \toprule
+    {\small\textit{Number}} & {\small \textit{Age}} & {\small \textit{Gender}} & {\small \textit{Habit}} & {\small \textit{Reward}} & {\small \textit{Habit Completion rate}}\\
+    \midrule
+    1 & 24 & Male & Visual & Meditation & X\% \\
+    2 & 19 & Female & Auditory & Stretch & X\% \\ 
+    3 & 28 & Female & Visual & Writing & X\% \\
+    4 & 57 & Female & No reward & Meditation & X\% \\ 
+    5 & 25 & Male & Visual & Meditation & X\% \\ 
+    6 & 21 & Female & No reward & Meditation & X\% \\ 
+    7 & 32 & Male & Visual-Auditory & Stretch & X\% \\
+    % \bottomrule
+  \end{tabular}
+  \caption{Interviewed participants breakdown.}~\label{fig:transcript_participant_breakdown}
+\end{table}
+
+
  
 \subsubsection{Experiences with habit formation}
 When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. Px and Px \emph{[see the hidden comment above about participant numbering; we need to know who said what]} admitted choosing their habit because they had wanted to start that particular habit for a long time. Px said that it was \textit{'not too much effort'} and \textit{'something successful people do'} [did the same person said both these things?]. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. 
