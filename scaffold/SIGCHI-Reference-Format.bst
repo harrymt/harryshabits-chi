@@ -3251,7 +3251,8 @@ REVERSE {reverse.pass}
 
 FUNCTION { bib.sort.order }
 {
-  sort.label
+  %sort.label
+  
   "    "
   *
   year field.or.null sortify

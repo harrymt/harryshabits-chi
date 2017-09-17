@@ -3,6 +3,9 @@
 \newcommand{\cmark}{\ding{51}} % So we can use \cmark instead of \ding{51}
 \newcommand{\xmark}{\ding{55}}
 %\usepackage[none]{hyphenat}
+\usepackage[style=numeric,sorting=nty]{biblatex}
+
+\addbibresource{sample.bib}
 
 
 % Title
@@ -69,7 +72,7 @@ In recent years, designing technology to support habit formation has become an i
 % \emph{[We need to identify the gap in earlier paragraphs! KS]}
 Sending positive text messages to affirm behaviour is one type of a positive reinforcement that aims to motivate habit completion~\cite{chi_crowd_designed_motivation}. However, this may simply encourage repetitive actions rather than help to develop automaticity of behaviour that characterises habits [REF: Gardner, B. (2012). Habits as automaticity, not frequency. European Health Psychologist, 14(2), 32-36.]. Coaching a person throughout the habit formation process by guiding them every step of the way encourages habit performance~\cite{coaching_not_that_good}, but can also build dependency when the coach is removed~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. A successful method of positive reinforcement is to build habit automaticity, rather than repetitive actions~\cite{article_beyond_self_tracking_designing_apps}, which can be helped by using intrinsic motivation after a habit is completed~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
 
-When delivered through technology, positive reinforcement aimed at facilitating intrinsic motivation is usually presented in a form of visual rewards [REFs]; research investigating the use of other modes for rewards is scarce. Although auditory feedback has been shown to improve task performance in some studies~\cite{}, it is now known how it affects habit formation.
+When delivered through technology, positive reinforcement aimed at facilitating intrinsic motivation is usually presented in a form of visual rewards [REFs]; research investigating the use of other modes for rewards is scarce. Although auditory feedback has been shown to improve task performance ~(e.g.\cite{burke2006comparing, vazquez2012auditory, chi_oussama_tap_the_shapetones}), it is not known how it affects habit formation.
 
 % The type of intrinsic reward for habit formation has had little research improves motivation to complete a habit, even when the reward is removed~\cite{article_meta_analytic_review_intrinsic_motivation}.
 
@@ -89,7 +92,7 @@ Changing behaviour permanently requires forming a new habit~\cite{article_experi
 
 When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
  
-Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers~\cite{article_a_self_efficacy} suggest it is the main part of behaviour change. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
+Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers suggest it is the main part of behaviour change~\cite{article_a_self_efficacy}. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
 
 Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit. This reward increases intrinsic motivation by giving the feeling of satisfaction~\cite{article_promoting_habit_formation} and increases the persons perception of their performance~\cite{positive_reinforcement_pro} especially when the task is interesting~\cite{article_meta_analytic_review_intrinsic_motivation}. Technology uses different modalities to deliver positive reinforcement.
 
@@ -98,7 +101,8 @@ Positive reinforcement rewards the person by encouraging them to perform the act
 
 \emph{[somewhere in this section we need a description of my 2015 paper and the guidelines for habit formation apps. since the bot's functionality is based on that, we have to introduce it earlier -- KS]}
 
-Although there has been lots of research using mobile apps for behaviour change interventions~\cite{survey_on_current_apps_of_steel}. There are plenty of other options available when designing be behaviour change interventions. One option that has been recently used for behaviour change interventions are \textit{chatbots}. They have been integrated into messaging apps, such as the \textit{Telegram} app to track food habits~\cite{telegram_bot_tracking_habits} and are seen as the next big thing in HCI~\cite{chatbots_and_new_world_of_hci}.
+Although there has been lots of research using mobile apps for behaviour change interventions~\cite{survey_on_current_apps_of_steel}. There are plenty of other options available when designing behaviour change interventions. One option that has been recently used for behaviour change interventions are \textit{chatbots}. They have been integrated into messaging apps, such as the \textit{Telegram} app to track food habits~\cite{telegram_bot_tracking_habits} and are seen as a significant component of HCI's increasing shift towards new interaction paradigms involving natural language user interfaces% the next big thing in HCI
+~\cite{chatbots_and_new_world_of_hci}.
 
 A survey into how technology can support habit formation and behaviour change~\cite{survey_on_current_apps_of_steel}, reports a large number of habit forming systems are mobile apps. Studies into the effectiveness of these apps has been recently conducted~\cite{article_beyond_self_tracking_designing_apps, article_dont_kick_habit} revealing that although most of these apps are rated highly, they do not ground themselves in behaviour change theory. Further surveys of these apps~\cite{survey_on_apps_2} suggest that habit performance is not sustained when the app is removed, due to the lack of habit automaticity built during the habit tracking process. Using apps consistently to manage behaviour can create a notable difference in the person when the system is removed~\cite{article_my_phone_is_part_of_my_soul}.
 This is also the case with many behaviour change systems, when the system is removed any improved performance is lost~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Building habit automaticity requires the desired action to be built around an existing routine~\cite{article_how_habits_formed_modelling_habit_formation, article_implementation_intentions_multicue}. Technology should help with routine creation by having additional checks to guard against changes in routine that check in with people about their habit if their situation changes and issue post-completion notifications to check if the action has already happened~\cite{article_dont_forget_your_pill}. This is vital for sustaining habit completion and building habit automaticity.
@@ -165,7 +169,7 @@ We also used the bot to collect responses to the Self-Report Behavioural Automat
 
 \begin{figure}
   \centering
-  \includegraphics[width=.95\columnwidth]{figures/study-flow.pdf}
+  \includegraphics[width=0.7\columnwidth]{figures/study-flow.pdf}
   \caption{Participant drop-out during the 4-week study. A: audio, V: visual, A-V: audio-visual, N: no reward.}~\label{fig:study_dropout}
 \end{figure}
 
@@ -496,8 +500,8 @@ Seven participants agreed to participate in optional interviews. Their details a
 %KS: no need for that, you just need to include some quotes (as you do) and maybe add participant numbers to the quotes.
 %Also, since there were only 7 seven participants, we could add a table: participant number (P1), gender, habit, reward type. Then you could use these numbers with quotes "something something" (P4) and that would give readers more insight into what type of habit it was related to and what reward they received. Let me know if it doesn't make sense
  
-\subsubsection{Expriences with habit formation}
-When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. Px and Px \emph{[see the hiddne comment above about participant numbering; we need to know who said what]} admitted choosing their habit because they had wanted to start that particular habit for a long time. Px said that it was \textit{'not too much effort'} and \textit{'something successful people do'} [did the same person said both these things?]. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. 
+\subsubsection{Experiences with habit formation}
+When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. Px and Px \emph{[see the hidden comment above about participant numbering; we need to know who said what]} admitted choosing their habit because they had wanted to start that particular habit for a long time. Px said that it was \textit{'not too much effort'} and \textit{'something successful people do'} [did the same person said both these things?]. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. 
 
 In terms of habit completion, while most participants were able to do it regularly, Px reported always putting the message off and eventually their habit completion got \textit{'worse and worse'} until they stopped altogether. After the bot was removed, the same was true for all other interviewed participants, who admitted finding it difficult to continue with their habit. They \textit{'kept forgetting'} (Px), found it \textit{'harder to remember'} (Px) and lacked motivation, not performing the action if it had \textit{'been a long day'} (Px). Some tried to do it \textit{'every now and again'} (Px), but usually they would only complete it if \textit{'they remembered'} (Px). This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
 
@@ -575,7 +579,7 @@ The results found that the rewards did not impact habit automaticity, but it inc
 [removed for peer review]
 %"Internal reviews" sound a bit like it's been reviewed somewhere, so let's hide it for now.
 
-%Thank you to all the participants involved, the internal reviewers and staff who provided helpful feedback throughout the study.
+%Thank you to all the participants involved and staff who provided helpful feedback throughout the study.
 
 \balance{}
 
@@ -586,8 +590,8 @@ The results found that the rewards did not impact habit automaticity, but it inc
 % % see more http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-in-an-ieee-paper-if-using-bibtex
 % \balance{}
 
-
-\bibliographystyle{scaffold/SIGCHI-Reference-Format}
-\bibliography{sample}
+% \bibliographystyle{scaffold/SIGCHI-Reference-Format}
+% \bibliography{sample}
+\printbibliography
 
 \end{document}
