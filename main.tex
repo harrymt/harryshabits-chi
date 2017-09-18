@@ -25,7 +25,7 @@
   \usepackage{pgfplots}
   \pgfplotsset{compat=1.12}
 \include{scaffold/preamble}
-
+\usetikzlibrary{patterns}
 % Authors on paper
 \numberofauthors{3}
 \author{%
@@ -48,7 +48,7 @@
 \maketitle
 
 \begin{abstract}
-Habit formation technologies use rewards and points as means for providing positive reinforcement, often in the format of visual or audio rewards such as jingles, badges or animations. Providing the right reward increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results reported higher habit completion rates when a reward was present, especially for the visual condition, without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
+Habit formation technologies use rewards and points as means for providing positive reinforcement, often in visual or audio forms such as jingles, badges or animations. Providing the right reward increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results reported higher habit completion rates when a reward was present, especially for the visual condition, without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
 \end{abstract}
 
 \category{H.5.m}{Information interfaces and 
@@ -89,16 +89,9 @@ To address this gap, we describe a 4-week situated study that explored the impac
 
 \section{Background}
 \subsection{Role of positive reinforcement in habit formation}
-\emph{[This section needs cleaning up and shortening]}
+Changing behaviour permanently requires forming a new habit~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). Building the habit around an existing routine helps develop the action into a habit~\cite{habits_event_cues_1}. The existing routine acts as a trigger to motivate the desired action~\cite{habits_event_cues_2}, with the context of the routine as the cue for the trigger. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
 
-Changing behaviour permanently requires forming a new habit~\cite{article_experiences_of_habit_formation}. The process of creating a new habit takes constant repetitive use~\cite{article_how_habits_formed_modelling_habit_formation}. The easier the action, the shorter the time before the action turns into a habit, from drinking water (18 days), to going to the gym (254 days). Building the habit around an existing routine helps develop the action into a habit~\cite{habits_event_cues_1}. The existing routine acts as a trigger to motivate the desired action~\cite{habits_event_cues_2}, with the context of the routine as the cue for the trigger. For example, if you wanted to adopt a habit to weigh yourself every day, you could attach it onto an existing habit like brushing your teeth. The cue of brushing your teeth will trigger you to weigh yourself.
-
-
-When designing behaviour change interventions, using different types of cues can be beneficial. Multi-cue routines have shown to be more effective than a single cue~\cite{article_understanding_use_contextual_cues_design_impl}. Attaching habits onto existing event-based cues are easier to remember~\cite{article_implementation_intentions_multicue} when compared with time-based habits, mainly due to change in time with change in environment, e.g. the weekend~\cite{coaching_not_that_good}. Event-based cues help connect the contextual information with the action and builds habit automaticity~\cite{article_implementation_intentions}.
- 
-Rewards give motivation, fuelling the belief in success and self-efficacy, which plays a large part in forming habits. Some researchers suggest it is the main part of behaviour change~\cite{article_a_self_efficacy}. Variable types of rewards have been shown to increase dopamine in a laboratory study on rats~\cite{variable_rewards_increases_dopamine}. This technique has proved to be an effective method of increasing repetition as shown in slot machines that vary their reward payout. But although variable rewards increase habit repetition, they hinder habit automaticity~\cite{variable_rewards_increases_dopamine}, which is key to creating permanent and long-lasting behaviour change. Rewards are a good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability~\cite{article_taxonomy_motivational_affordances_meaningful}. Rewards provide a strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists~\cite{article_beyond_self_tracking_designing_apps}.
-
-Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit. This reward increases intrinsic motivation by giving the feeling of satisfaction~\cite{article_promoting_habit_formation} and increases the persons perception of their performance~\cite{positive_reinforcement_pro} especially when the task is interesting~\cite{article_meta_analytic_review_intrinsic_motivation}. Technology uses different modalities to deliver positive reinforcement.
+Positive reinforcement rewards the person by encouraging them to perform the action again until it forms into a habit and some researchers suggest it is the main part of behaviour change~\cite{article_a_self_efficacy}. This reward increases intrinsic motivation by giving the feeling of satisfaction~\cite{article_promoting_habit_formation} and increases the persons perception of their performance~\cite{positive_reinforcement_pro} especially when the task is interesting~\cite{article_meta_analytic_review_intrinsic_motivation}. When designing behaviour change technology, the delivery of the reward must be carefully considered because it can affect the formation of new habits.
 
 \subsection{Providing positive reinforcement with technology}
 \emph{[this should be an overview of how behaviour change / habit formation tech provides positive reinforcement. after you give the overview, then we can look into individual modalities]}
@@ -265,7 +258,9 @@ Multiple modes as feedback has been shown to increase task completion rates~\cit
            };
 
 
-      \addplot[style={fill=cyan},error bars/.cd, y dir=both, y explicit]
+      \addplot[style={fill=white},  postaction={
+        pattern=north east lines
+    }, error bars/.cd, y dir=both, y explicit]
           coordinates {
           (Week-1, 26)
           (Week-2, 28)
