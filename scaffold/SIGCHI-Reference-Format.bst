@@ -593,7 +593,8 @@ FUNCTION { format.day.month.year }     % UTAH
     { "" }
     { ", " format.articleno * }
   if$
-  "" % (" * format.day.month * format.year * ") % CHANGE HMT
+  "" *
+  % (" * format.day.month * format.year * ") % CHANGE HMT
 }
 
 FUNCTION { output.day.month.year }     % UTAH
