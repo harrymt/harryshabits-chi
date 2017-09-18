@@ -6,10 +6,10 @@
 \usepackage{makecell} % For table headers
 \usepackage{multirow}
 
-\usepackage[style=numeric,sorting=nty, eprint=false,doi=false,isbn=false,url=false, maxbibnames=99, giveninits=true]{biblatex}
-\DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
+% \usepackage[style=numeric,sorting=nty, eprint=false,doi=true,isbn=false,url=false, maxbibnames=99, giveninits=false]{biblatex}
+% \DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
 
-\addbibresource{sample.bib}
+% \addbibresource{sample.bib}
 
 
 % Title
@@ -59,21 +59,12 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 
 \section{Introduction}
-% \emph{[Thoughts on new intro? - HMT]}
-%KS: technology doesn't use monetary rewards
-Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. While habit formation technologies use extrinsic rewards to increase task repetition, such as coins and points, studies have shown that extrinsic rewards can reduce motivation and therefore hinder habit development~\cite{article_meta_analytic_review_intrinsic_motivation}. 
-
-%This paper tries to understand more about different types of intrinsic positive reinforcement and how it can be used to support the formation of new habits.
-
-% \emph{[we need a completely new introduction - one that focuses specifically on the role of positive reinforcement in supporting habit formation and how it's currently used in habit/behaviour change technologies. No need to talk in detail about habit formation and automaticity, we don't really care about (that's going to be explained in the background) - here we have to convince the reader that looking at different types of positive reinforcement is really needed and important - and identify a gap]}
-
-
 In recent years, designing technology to support habit formation has become an important theme in HCI research. This is not surprising, as understanding how to design systems that support habit development helps to ensure that they lead to long lasting changes in one's behaviour~\cite{how_to_evaluate_tech_for_behaviour_change}. While there is evidence that that supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits~\cite{article_beyond_self_tracking_designing_apps}, there is little research into the impact of different types of positive reinforcement on habit formation.
 
+Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. While habit formation technologies use extrinsic rewards to increase task repetition, such as coins and points, studies have shown that extrinsic rewards can reduce motivation and therefore hinder habit development~\cite{article_meta_analytic_review_intrinsic_motivation}. 
 
 %Technology can help people stick to a routine by sending repeated messages and encouraging people~\cite{positive_reinforcement_pro}. However, these techniques do not always work and may build repetitive actions rather than habit automaticity~\cite{coaching_not_that_good}. Therefore, technology should be designed to avoid building repetitive actions and instead build habit automaticity. Repetitive actions lead people to become dependent on technology and when the system is eventually removed, habit performance decreases~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. Habit automaticity is a measure of habit strength~\cite{article_4q_SRBAI} and is the key that removes this dependency~\cite{article_beyond_self_tracking_designing_apps}.
 
-% \emph{[We need to identify the gap in earlier paragraphs! KS]}
 Sending positive text messages to affirm behaviour is one type of a positive reinforcement that aims to motivate habit completion~\cite{chi_crowd_designed_motivation}. However, this may simply encourage repetitive actions rather than help to develop automaticity of behaviour that characterises habits~\cite{habits_as_automaticity_not_frequency_gardner}. Coaching a person throughout the habit formation process by guiding them every step of the way encourages habit performance~\cite{coaching_not_that_good}, but can also build dependency when the coach is removed~\cite{article_dont_kick_habit, article_realtime_feedback_improving_medication_taking}. A successful method of positive reinforcement is to build habit automaticity, rather than repetitive actions~\cite{article_beyond_self_tracking_designing_apps}, which can be helped by using intrinsic motivation after a habit is completed~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}.
 
 When delivered through technology, positive reinforcement aimed at facilitating intrinsic motivation is usually presented in a form of visual feedback~\cite{comparison_of_auditory_visual_feedback, visual_mode_better, article_realtime_feedback_improving_medication_taking}, however only as a means to increase task performance; research investigating the use of other modes for habit formation is scarce. Although auditory feedback has been shown to improve task performance~(e.g.~\cite{burke2006comparing, vazquez2012auditory, chi_oussama_tap_the_shapetones}), it is not known how it affects habit formation.
@@ -106,14 +97,7 @@ This is also the case with many behaviour change systems, when the system is rem
 
 Positive reinforcement feedback can be delivered by technology from different modalities. Audio, visual and audio-visual modes are the most common for issuing feedback in HCI~\cite{desinging_interface_speech_tech}. Feedback from each of these different modalities has been shown to improve task performance for small tasks~\cite{chi_oussama_tap_the_shapetones}. Combining modalities can be useful for issuing user feedback, enabling systems to be accessible to varying ages~\cite{article_user_centred_multimodal_reminders}. Individual modes can improve the effectiveness of reminders~\cite{multi_modal_reminders_less_disruptive, article_designing_multimodal_reminders_for_home}. However, the effectiveness of each type of modality as reward feedback and how combined modalities impact interaction when used by technology has little research. Therefore, technology to support behaviour change should explore a range of modalities for feedback. Research into audio, visual and audio-visual feedback was identified to understand how they impact behaviour and habit formation.
 
-\subsubsection{Audio feedback}
-There is a need to use audio when designing behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, combining different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Audio feedback from levels under 94dB increases task performance~\cite{high_audio_feedback_negative_performance} and using audio as a method of delivery, has shown to improve task success~\cite{auditory_notifications_increase_delivery_success}, but little work has shown how it impacts the completion of habits.
-
-\subsubsection{Visual feedback}
-Fast visual feedback is preferred over audio when the relative importance of the task is high~\cite{visual_mode_better}. Visual feedback can encourage task performance consistency as demonstrated in one study by Lee et al.~\cite{article_realtime_feedback_improving_medication_taking} where they constructed a device that gave constant visual feedback for patients taking medication. They found that visual feedback improved consistency of the habit and increased the rate of self-efficacy. But when the device was removed, their performance dropped (as measured after a 2-month period). This suggests that users did integrate the visual feedback display cue with their routines, but they also became dependant on the technology and the visual feedback did not build habit strength. Users should instead build these cues outside of the system, with another routine to build habit automaticity and allowing for permanent behaviour change after the system is removed.
-
-\subsubsection{Audio-Visual feedback}
-Several studies show that combining audio with visual as feedback after performing a simple task can be better at increasing the performance of the task, than audio or visual alone~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_auditory} revealed that audio-visual feedback was the most effective at increasing performance, when a single task is being performed and when compared with visual or audio feedback alone. Additional research shows this combination of visual and audio sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that visual feedback improved task performance, but sacrificed task quality~\cite{comparing_modalities_effects_of_visual_auditory}. While all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore, using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness.
+There is a need to use audio when designing behaviour change technology, especially with a varied target market~\cite{article_designing_for_health_behaviour_change_hci}. For example, substituting different sounds for different actions to suit different users~\cite{article_movipill_improving_medication_elders}. Audio feedback from levels under 94dB increases task performance~\cite{high_audio_feedback_negative_performance} and using audio as a method of delivery, has shown to improve task success~\cite{auditory_notifications_increase_delivery_success}, but little work has shown how it impacts the completion of habits. Fast visual feedback is preferred over audio when the relative importance of the task is high~\cite{visual_mode_better}. Visual feedback can encourage task performance consistency as demonstrated in one study by Lee et al.~\cite{article_realtime_feedback_improving_medication_taking} where they constructed a device that gave constant visual feedback for patients taking medication. They found that visual feedback improved consistency of the habit and increased the rate of self-efficacy. But when the device was removed, their performance dropped (as measured after a 2-month period). This suggests that users did integrate the visual feedback display cue with their routines, but they also became dependant on the technology and the visual feedback did not build habit strength. Users should instead build these cues outside of the system, with another routine to build habit automaticity and allowing for permanent behaviour change after the system is removed. Several studies show that combining audio with visual as feedback after performing a simple task can be better at increasing the performance of the task, than audio or visual alone~\cite{benefits_of_audio_visual_1, benefits_of_audio_visual_2}. A meta-analysis of 43 multi-modal studies~\cite{comparing_modalities_effects_of_visual_auditory} revealed that audio-visual feedback was the most effective at increasing performance, when a single task is being performed and when compared with visual or audio feedback alone. Additional research shows this combination of visual and audio sensory channels has been shown to increase performance with complex tasks~\cite{chi_oussama_tap_the_shapetones}. However, care needs to be taken when adding an extra modality as this study showed that visual feedback improved task performance, but sacrificed task quality~\cite{comparing_modalities_effects_of_visual_auditory}. While all modalities contribute to perceptual experience, one sense can override another if the sensory channel mediates less ambiguous information than the other~\cite{one_mode_override_another}. Therefore, using a combination of modalities for interaction gives a means of communication to people with varying levels of sensory awareness.
 
 
 These three types of feedback increase task completion in different ways. However, how this feedback impacts habit formation is unsure. An in-the-wild study to gain insight into audio, visual and audio-visual positive reinforcement impacts habit formation is conducted and detailed below.
@@ -134,12 +118,12 @@ For the purpose of the study, we developed a chatbot that was used to deliver po
 The study has been approved by the university Ethics Committee.
 
 \subsubsection{Participants}
-Participants were recruited on social networks. They were 18-63 years old (mean age=26.7 years old, SD=10), 35 (58\%) were men, 15 (25\%) were women, and ten (17\%) chose not to disclose their gender; 18 (30\%) were university students. As their habit of choice, 15 participants selected meditation, 14 selected stretching, 13 selected press ups, six selected reading, five selected writing and seven selected the plank. In terms of interactions with the bot, 25 participants used a web browser, 18 used iOS devices, 12 used Android and five used other mobile devices to interact with the bot. 
+Fifty-four participants were recruited on social networks. They were 18-63 years old (mean age=26.7 years old, SD=10), thirty-two, or 59\% were male, fourteen, or 26\% were female, and eight, or 15\%  chose not to disclose their gender; 16, or 29\% were university students. As their habit of choice, fifteen participants selected meditation, twelve selected stretching, eleven selected press ups, six selected reading, five selected writing and five selected the plank. In terms of interactions with the bot, twenty-one participants used a web browser, eighteen used iOS devices, twelve used Android and three used other mobile devices to interact with the bot. 
 
 \subsubsection{Design}
-Participants were randomly assigned to one of four conditions: Audio, Visual, Audio-Visual and the Control group. Each condition differed by the type of positive reinforcement it provided after participants reported completion of their daily habit: participants in the Audio condition received a 15-second audio clip as a reward for completing their habit; in the Visual condition they received a fifteen-second GIF; the Audio-Visual condition combined the audio clip with a GIF; and participants in the Control group received a confirmation message ``Thanks.''. Table 1 summarises study conditions. 
+Participants were randomly assigned to one of four conditions: Audio, Visual, Audio-Visual and the Control group. Each condition differed by the type of positive reinforcement it provided after participants reported completion of their daily habit: participants in the Audio condition received a fifteen-second audio clip as a reward for completing their habit; in the Visual condition they received a fifteen-second GIF; the Audio-Visual condition combined the audio clip with a GIF; and participants in the Control group received a confirmation message ``Thanks.''. Table 1 summarises study conditions. 
 
-For each condition, we measured the number of times the selected habit was completed during the study. ``Habit completion rate'' was defined as the number of times the person repeated and report the behaviour, divided by 21 days during which participants interacted with the bot. We also measured the change in automaticity of the behaviour during the final weeks, to assess habit strength.
+For each condition, we measured the number of times the selected habit was completed during the study. ``Habit completion rate'' was defined as the number of times the person repeated and report the behaviour, divided by twenty-one days during which participants interacted with the bot. We also measured the change in automaticity of the behaviour during the final weeks, to assess habit strength.
 
 
 \begin{table}[b]
@@ -150,10 +134,10 @@ For each condition, we measured the number of times the selected habit was compl
 \multicolumn{1}{p{1.4cm}}{\small \textit{Number of Participants}} &
 \multicolumn{1}{l}{\small \textit{Positive Reinforcement}} \\
     \midrule
-    Audio & 15 & 15s audio\\
+    Audio & 14 & 15s audio\\
     Visual & 15 & 15s GIF \\
-    Audio-Visual & 15 & 15s GIF and audio \\
-    None (control group) & 15 & Confirmation \\
+    Audio-Visual & 14 & 15s GIF and audio \\
+    None (control group) & 11 & Confirmation \\
     % \bottomrule
   \end{tabular}
   \caption{Study conditions and their corresponding types of positive reinforcement.}~\label{fig:precise_rewards}
@@ -166,12 +150,12 @@ We decided to use a bot as it can easily send notifications, is cross-platform a
 
 As the aim of the rewards was to motivate the participants to keep coming back every day and completing their habits, we identified several ``motivational'' GIFs and audio files, and each GIF file was tweaked to match the audio frequency. We decided to use popular GIFs with internet memes, i.e. content that is passed along from person to person via social media posts~\cite{meme_definition}. Humorous GIF memes make people laugh and are popular on some social media sites, where they usually are the most engaging content~\cite{meme_gifs_are_good}. Given that our bot was integrated with Facebook, and that Facebook introduced built-in support for animated GIFs~\cite{fb_gif_rollout}, memes would integrate well with the bot environment. 
 
-We also used the bot to collect responses to the Self-Report Behavioural Automaticity Index (SRBAI;~\cite{article_4q_SRBAI}). This is a validated 4-item instrument for measuring habit automaticity, which can be used as an indicator of habit strength. %SRBAI statements are presented on a 5-point Likert scale with answers from 'Strongly Disagree' (1) to 'Strongly Agree' (5); higher scores indicate higher self-reported levels of automaticity.
+We also used the bot to collect responses to the Self-Report Behavioural Automaticity Index (SRBAI;~\cite{article_4q_SRBAI}). This is a validated four-item instrument for measuring habit automaticity, which can be used as an indicator of habit strength. %SRBAI statements are presented on a 5-point Likert scale with answers from 'Strongly Disagree' (1) to 'Strongly Agree' (5); higher scores indicate higher self-reported levels of automaticity.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.7\columnwidth]{figures/study-flow.pdf}
-  \caption{Participant drop-out during the 4-week study. A: audio, V: visual, A-V: audio-visual, N: no reward.}~\label{fig:study_dropout}
+  \caption{Participant drop-out during the four-week study. A: audio, V: visual, A-V: audio-visual, N: no reward.}~\label{fig:study_dropout}
 \end{figure}
 
 \subsubsection{Procedure}
@@ -185,27 +169,17 @@ Throughout the study, information about how well each participant was performing
 
 After interacting with the bot for three weeks, participants were asked to complete the SRBAI questionnaire and answer a set of questions about the positive reinforcement they received. Next, during the final week of the study, bot interactions were suspended, but participants were still asked to continue with their habit. At the end of that period, participants were asked to complete the SRBAI questionnaire again along with a few questions about their experience with the reward. 
 
-Participants also had an option to opt-in for an interview to discuss their experience. The interviews were conducted the after the 4-week study. The interviews explored their experience with trying to main the habit after the interactions with the bot ended, their attitudes towards positive reinforcement, and towards the bot itself. The interviews were recorded and transcribed, and were analysed thematically~\cite{thematic_analysis_qualatitive_data}. 
-
-
-\subsubsection{Pilot}
-We conducted a pilot with five participants to test the bot and study procedures. The pilot resulted in minor tweaks and clarifications to bot messages and study instructions.
+\subsubsection{Analysis}
+The results are grouped into two measurements habit completion and habit automaticity. For each measurement three categories are used for comparison: i) the control group, audio, visual and audio-visual rewards, ii) combined rewards versus the control group, iii) multiple modalities versus singular modes. Participants also had an option to opt-in for an interview to discuss their experience. The interviews were conducted after the four-week study. The interviews explored participants experience with trying to maintain their habit after the interactions with the bot ended, their attitudes towards positive reinforcement and towards the bot itself. The interviews were recorded, transcribed and grouped into three themes: continuation with habit formation, attitudes towards rewards and attitudes towards the chatbot. 
 
 \section{Results}
-Thirty-six participants completed the 4-week study (see Figure~\ref{fig:study_dropout}); seven of them were from the Audio condition, 14 from the Visual condition, nine were from Audio-Visual and six from the Control group. They were 18-63 years old (mean=27 years old, SD=12), 23 (64\%) were men, 11 (30\%) were women and two (6\%) didn't say. 
+Thirty-six participants completed the four-week study (see Figure~\ref{fig:study_dropout}); seven of them were from the Audio condition, fourteen from the Visual condition, nine were from Audio-Visual and six from the Control group. They were 18-63 years old (mean=27 years old, SD=12), twenty-three, or 64\% were male, eleven, or 30\% were female and two, or 6\% didn't say. 
 
-Among participants who completed the study, meditation was the most popular habit (12 participants, or 33\%), followed by press ups (eight participants 22\%), then Stretching (six participants 15\%). Reading and writing were the least common, only selected by four and two participants respectively.
-
-%Overall, 14 participants (23\%) dropped out of the study at various stages (Figure~\ref{fig:study_dropout}): 54 participants (90\%) continued interacting with the bot and started the set-up. Thirty-nine participants (65\%) completed the set-up and out of these, three participants just ignored all messages from the bot during the trial.  
-%WE NEED TO TALK ABOUT THIS WHEN WE MEET<-- \emph{I don't understand this, numbers don't add up. You say that 60 started the study, but also that 39 completed the set-up. Wasn't completing the set-up the starting point of the study??}
-
-  %Leaving 36 participants (66\%) that are considered active throughout and are included in the final analysis. These 36 participants are 1 36 participants sent a total of 1.1k messages to the bot (mean = 65 messages per participant) and the bot sent 2.7k total messages back. 184 total habits were marked as completed, with the bot issuing 69 visual rewards, 58 audio-visual rewards and 17 audio rewards to those participants. The control group completed 40 habits and were sent 0 rewards.
-
-
+Among participants who completed the study, meditation was the most popular habit (twelve participants, or 33\%), followed by press ups (eight participants, or 22\%), then stretching (six participants, or 15\%). Reading and writing were the least common, only selected by four, or 11\% and two, or 5\% respectively.
 
 \subsection{Habit Completion}
-% SEE METHOD > DESIGN for definition
-Overall, completion rates varied from X\% to X\% across individual participants. The average habit completion rate was the highest for [condition X], with xx\%, and the lowest for [condition Y], with xx\%. Figure [3] shows the average completion rate for all conditions. [change figure 3 label, maybe change the numbers to percentages: habits complted / 21 * 100\%]
+% Habit completion Rate = (SUM of habits-completed / 21 (days)) * 100%
+Overall, completion rates varied from X\% to X\% across individual participants. The average habit completion rate was the highest for [condition X], with xx\%, and the lowest for [condition Y], with xx\%. Figure [3] shows the average completion rate for all conditions. [change figure 3 label, maybe change the numbers to percentages: habits completed / 21 * 100\%]
 
 To investigate the levels of habit completion per condition, we conducted a one-way ANOVA. The analysis (see Figure~\ref{fig:m1_h1_a}) revealed that there was a statistically significant difference between each reward ($F(2,624) = 27.007$, $p < 0.05$). A Tukey post hoc test revealed that the difference in completed habits was lower for the Audio ($0.081 + 0.274$, $p < 0.005$) and Audio-visual ($0.267$ + $0.484$, $p = 0.025$) feedback conditions compared to the Visual feedback ($0.373$ + $0.484$) condition. \emph{[KS: What about comparisons with the control group? according to fig. 3 it seems to be more effective than audio!]}
 
@@ -222,10 +196,10 @@ To investigate the levels of habit completion per condition, we conducted a one-
 
 
 \subsubsection{The rewards effect on habit completion}
-To explore the effect of rewards on the number of habits completed, compared with the control group, a one-way between-groups analysis of variance with planned comparisons was conducted. Participants were divided into two groups: group 1 with rewards, group 2 without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for week one and three: week 1, $F(1,23.20) = 9.48$, $p = 0.005$, week 2, $F(1,33.35) = 4.46$, p = 0.42 and week 3, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week 1, week 2 and week 3 are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting a large difference in the mean scores.
+To explore the effect of rewards on the number of habits completed, compared with the control group, a one-way between-groups analysis of variance with planned comparisons was conducted. Participants were divided into two groups: group one with rewards, group two without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for week one and three: week one, $F(1,23.20) = 9.48$, $p = 0.005$, week two, $F(1,33.35) = 4.46$, p = 0.42 and week three, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting a large difference in the mean scores.
 
 \subsubsection{Audio-visual rewards effect on habit completion}
-Multiple modes as feedback has been shown to increase task completion rates~\cite{comparing_modalities_effects_of_visual_auditory, benefits_of_audio_visual_1, benefits_of_audio_visual_2}. However, the results from our study report a significant \textit{decrease} in habit completion for multiple modes (audio-visual). The significance of this finding was tested by conducting a one-way between-groups analysis of variance with planned comparisons (Figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode: group 1: audio rewards and visual rewards, group 2: audio-visual rewards. There was a statistically significant  between groups each week ($p$ $<$ $0.005$) Week 1, $F(1,50) = 0.69$, $p = 0.410$, week 2, $F(1,50) = 23.04$, $p$ $<$ $0.005$ and week 3, $F(1,50) = 8.85$. The effect size for week 1, week 2 and week 3 are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting an increasing difference in the mean scores throughout weeks.
+Multiple modes as feedback has been shown to increase task completion rates~\cite{comparing_modalities_effects_of_visual_auditory, benefits_of_audio_visual_1, benefits_of_audio_visual_2}. However, the results from our study report a significant \textit{decrease} in habit completion for multiple modes (audio-visual). The significance of this finding was tested by conducting a one-way between-groups analysis of variance with planned comparisons (Figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode. Group one: audio rewards and visual rewards, group two: audio-visual rewards. There was a statistically significant difference between groups each week ($p$ $<$ $0.005$) week one, $F(1,50) = 0.69$, $p = 0.410$, week two, $F(1,50) = 23.04$, $p$ $<$ $0.005$ and week three, $F(1,50) = 8.85$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting an increasing difference in the mean scores throughout weeks.
 
 
 
@@ -381,16 +355,16 @@ Multiple modes as feedback has been shown to increase task completion rates~\cit
 \end{figure}
 
 \subsection{Habit Automaticity}
-Participants completed SRBAI questionnaires at the end of Week 3 and Week 4. Eleven participants completed both SRBAI questionnaires: two from the Audio condition, five from Visual, two from Audio-Visual and two from the control group. A paired-samples t-test was conducted on both questionnaires, showing a statistically significant increase in automaticity scores from Week 3 (mean SRABI score = 14.18, SD = 3.78) to Week 4 (mean = 15.09, SD = 4.34), $t(10) = 2.469$, $p$ $<$ $0.005$ (two-tailed). This meant that participant's habit automaticity did generally increase, as reported by a mean increase in SRBAI scores of 0.90 (CI = 95\%, from 0.08 to 1.72) and a large effect size as measured by $\eta^{2} = 0.37$.
+Participants completed SRBAI questionnaires at the end of week three and week four. Eleven participants completed both SRBAI questionnaires: two from the Audio condition, five from Visual, two from Audio-Visual and two from the control group. A paired-samples t-test was conducted on both questionnaires, showing a statistically significant increase in automaticity scores from week three (mean SRABI score = 14.18, SD = 3.78) to week four (mean = 15.09, SD = 4.34), $t(10) = 2.469$, $p$ $<$ $0.005$ (two-tailed). This meant that participant's habit automaticity did generally increase, as reported by a mean increase in SRBAI scores of 0.90 (CI = 95\%, from 0.08 to 1.72) and a large effect size as measured by $\eta^{2} = 0.37$.
 
 \subsubsection{The effect of rewards on habit automaticity}
 Comparing participants SRBAI results' with the control group shows the impact rewards had on automaticity.
-An independent-samples t-test was conducted to compare both SRBAI 1 and SRBAI 2 for rewards and control (Figure~\ref{fig:m2_h1}). For SRBAI 1, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; $t(9) = 0.224$, $p = 0.85$,
+An independent-samples t-test was conducted to compare both SRBAI one and SRBAI two for rewards and control (Figure~\ref{fig:m2_h1}). For SRBAI one, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; $t(9) = 0.224$, $p = 0.85$,
 two-tailed). The magnitude of the differences in the means (mean difference = 0.83,
 95\% CI: \-29.43 to 27.76) was very small ($\eta^{2} = 0.005$). For SRBAI 2, there was no significant difference in scores for rewards
 (mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; $t(9) = 0.202$, $p = 0.84$,
 two-tailed). The magnitude of the differences in the means (mean difference = 0.72,
-95\% CI: \-8.80 to 7.36) was very small ($\eta^{2} = 0.004$). Another test was conducted to validate this finding. A one-way between-groups analysis of variance with planned comparisons was also conducted, but there was not a statistically significant difference for the two groups at SRBAI 1: $F(1,9) = 0.02$, $p = 0.88$, and SRBAI 2: $F(1,9) = 0.07$, $p = 0.78$. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size $\eta^{2} = 0.11$, and at SRBAI 2: a large effect, with an effect size of $\eta^{2} = 0.17$.
+95\% CI: \-8.80 to 7.36) was very small ($\eta^{2} = 0.004$). Another test was conducted to validate this finding. A one-way between-groups analysis of variance with planned comparisons was also conducted, but there was not a statistically significant difference for the two groups at SRBAI 1: $F(1,9) = 0.02$, $p = 0.88$, and SRBAI two: $F(1,9) = 0.07$, $p = 0.78$. In addition, the difference in mean scores between the groups had, at SRBAI one: a medium effect with an effect size $\eta^{2} = 0.11$, and at SRBAI two: a large effect, with an effect size of $\eta^{2} = 0.17$.
 
 %       S1 Mean S2 Mean S1 SD   S2 SD
 % Control 13.5  14.5  4.949747468 6.363961031
@@ -437,9 +411,9 @@ two-tailed). The magnitude of the differences in the means (mean difference = 0.
   \caption{The rewards effect on habit automaticity. Comparing mean habit automaticity for rewards versus control group.}~\label{fig:m2_h1}
 \end{figure}
 
-\subsubsection{Multiple vs. single-mode feedback [or something like that]}
-To compare the effect audio-visual had on automaticity a one-way between-groups analysis of variance with planned comparisons was conducted (Figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode: group 1: audio rewards and visual rewards and group 2: audio-visual rewards. There was not a
-statistically significant difference for the two groups at SRBAI 1: $ F(1,9) = 1.04$, $p = 0.33$, and SRBAI 2: $F(1,9) = 0.64$, $p = 0.44$. In addition, the difference in mean scores between the groups had, at SRBAI 1: a medium effect with an effect size of $\eta^{2} = 0.11$, and at SRBAI 2: a large effect, with an effect size of $\eta^{2} = 0.17$.
+\subsubsection{Multiple vs. single-mode feedback}
+To compare the effect audio-visual had on automaticity a one-way between-groups analysis of variance with planned comparisons was conducted (Figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode: group one: audio rewards and visual rewards and group two: audio-visual rewards. There was not a
+statistically significant difference for the two groups at SRBAI one: $ F(1,9) = 1.04$, $p = 0.33$, and SRBAI two: $F(1,9) = 0.64$, $p = 0.44$. In addition, the difference in mean scores between the groups had, at SRBAI one: a medium effect with an effect size of $\eta^{2} = 0.11$, and at SRBAI two: a large effect, with an effect size of $\eta^{2} = 0.17$.
 
 
 
@@ -522,7 +496,7 @@ Seven participants agreed to participate in optional interviews. Their details a
 
 
  
-\subsubsection{Experiences with habit formation}
+\subsubsection{Continuation with habit formation}
 When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. P4 and P5 admitted choosing their habit because they had wanted to start that particular habit for a long time. P2 said that it was \textit{'not too much effort'} and P6 said it was \textit{'something successful people do'}. P7 wanted \textit{'to be more active'} P2 wanted a habit that was \textit{'less time consuming'}. Finally, P1, P5 and P6 wanted to \textit{'relieve stress'}. 
 
 In terms of habit completion, while most participants were able to do it regularly, P6 reported always putting the message off and eventually their habit completion got \textit{'worse and worse'} until they stopped altogether. After the bot was removed, the same was true for all other interviewed participants, who admitted finding it difficult to continue with their habit. They \textit{'kept forgetting'} (P3), found it \textit{'harder to remember'} (P1) and lacked motivation, not performing the action if it had \textit{'been a long day'} (P5). P5 also tried to do it \textit{'every now and again'}, but usually they would only complete it if \textit{'they remembered'}. P1, P4, P6, and P7 all discussed not being able to remember to complete their habit after the bot was removed. This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
@@ -538,29 +512,18 @@ Participants gave additional feedback by simply messaging the bot. They asked in
 Participants were able to personalise the chatbot with several different variable configurations. This personalisation could have effected the findings by not narrowing the condition variables. Replicating this research with tighter a configuration is needed to validate this line of reasoning. Finally, streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (N = 7) struggled with maintaining habit completion after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 \subsection{Summary}
-[combine all discussions together in this section, no subsections! how do the results relate to each other?]
-%I've just pasted everything here, it needs cleaning up
+There was a statistically significant drop in habit completion for the control group without rewards. This reveals the effect the rewards had on participant interaction with the bot and habit completion. The findings show that participants are more likely to complete their habit if given one of the rewards, especially if the reward was visual. Although participants enjoyed the rewards at the beginning, most participants disliked them after the first week. However, the results report that participants completed more habits with visual rewards than audio rewards or audio-visual rewards, with audio-visual rewards leading to significantly lower completed habits. However, participants with audio-visual rewards had higher habit automaticity scores compared with audio or visual rewards, this difference was not statistically significant. Finally, participants picked habits they wanted to perform, but when the bot stopped notifying them, they lacked motivation to completed their habit. Therefore, it is inconclusive whether the rewards or the combined modalities effected habit automaticity. 
 
-Participants picked habits they wanted to perform, but when the bot stopped notifying them, they lacked motivation to completed their habit. Some participants enjoyed the rewards at the beginning, but most participants disliked them after the first week.
-
-The results found that participants are more likely to complete their habit if given one of the rewards, especially if the reward was visual. Participants completed more habits with visual rewards than audio rewards or audio-visual rewards.
-
-There was a statistically significant drop in habit completion for the control group without rewards. This reveals the effect the rewards had on participant interaction with the bot and habit completion. The findings show that rewards did significantly increased habit completion.
+\section{Discussion}
+This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during the participant interviews where all seven participants reported a drop in habit completion after 1-week without the prototype.
 
 There is a significant difference between the audio-visual modes on the number of completed habits. But the result appears to be different to the initial hypotheses, with more participants completing habits with audio rewards and visual rewards than audio-visual. This contradicts existing literature reporting feedback from multiple modes benefits task completion, however these findings are only impacted by the rewards used in this study delivered by the bot. Therefore, it is inconclusive whether audio-visual rewards in a general sense decrease habit completion and visual rewards increase habit completion.
 
-It is inconclusive whether the rewards or the combined modalities effected habit automaticity. 
-
 Each individual reward did not have a significant effect on habit automaticity. Although participants with rewards had slightly higher automaticity scores and follow up interviews suggest that automaticity did not develop with participants discussing negative feelings towards rewards during the interviews.  
-
-Participants with audio-visual rewards had higher habit automaticity scores compared with audio or visual rewards. However, this difference was not statistically significant.
 
 Only seven participants responded to the follow up interviews. In addition, the study relied on participants recall which could be inaccurate. Future work conducting similar research with a larger sample size for the SRBAI questionnaire would validate these findings
 
-\section{General Discussion}
-This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during the participant interviews where all seven participants reported a drop in habit completion after 1-week without the prototype.
-
-[this section needs cleaning up - leave only bits that are directly linked to the findings and our contribution as outlined in the Introduction. Also, make sure to link the findings and discuss everything in the context of the the literature you described earlier - which of our findings confirm what we know from the literature? which contradict the literature? have we found something completely new and/or unexpected?]
+\emph{[this section needs cleaning up - leave only bits that are directly linked to the findings and our contribution as outlined in the Introduction. Also, make sure to link the findings and discuss everything in the context of the the literature you described earlier - which of our findings confirm what we know from the literature? which contradict the literature? have we found something completely new and/or unexpected?]}
 
 % Under half the participants completed the modality survey (N = 12, 40\%). These had the following rewards: visual rewards had the highest score (the higher, the more participants preferred the reward) (mean = 12, SD = 3.347), visual and audio rewards were slightly below (mean = 10.75, SD = 1.893).
 % TODO: Compare these results to people not using the chatbot, e.g.. people signing up to the gym, new years resolution
@@ -576,10 +539,10 @@ The chatbot rewards from different modalities effected habit formation with the 
 % \subsection{Dependence}
 % Streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all seven participants interviewed struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
-\subsection{General Limitations and Future Work}
+\subsection{Limitations and Future Work}
 This research has a few key limitations that open up future work avenues. First, the small number of participants and the small sample of rewards used in the study make it unclear how these findings would generalise to other types of rewards with the same modality. However, our findings already suggest that...  [explain why it's okay and not a big deal!]
 
-In addition, future work could focus on comparing bot-delivered positive reinforcement to more traditional approaches, such as SMS or app notifications. With their ease of implementation and access to a large pool of potential participants, chatbots are a promissing platform for delivering behaviour change interventions. However, this new method of delivery is another variable and might have affected our results. Therefore, further research into the effect of bot interactions on habit formation is needed to further validate this approach.   
+In addition, future work could focus on comparing bot-delivered positive reinforcement to more traditional approaches, such as SMS or app notifications. With their ease of implementation and access to a large pool of potential participants, chatbots are a promising platform for delivering behaviour change interventions. However, this new method of delivery is another variable and might have affected our results. Therefore, further research into the effect of bot interactions on habit formation is needed to further validate this approach.   
 
 \section{Conclusions}
 The results found that the rewards did not impact habit automaticity, but it increased generally, while using the bot. However, the rewards did improve the number of habits people completed, with the highest completion rates for visual rewards. Habit completion was also affected by the different modalities, although not in the way our hypotheses assumed. Audio-visual rewards had the lowest habit completion when compared with the others. Finally, the limitations of the study do not show any clear statistical significance whether the audio and visual rewards affected habit automaticity. More conclusive evidence is needed to show that rewards from combined modalities effect habit formation. We hope this research opens up new avenues for using bots as tools to help form new habits and give new behaviour change technology insights into positive reinforcement rewards from audio, visual and audio-visual modalities.
@@ -608,8 +571,8 @@ The results found that the rewards did not impact habit automaticity, but it inc
 % % see more http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-in-an-ieee-paper-if-using-bibtex
 % \balance{}
 
-% \bibliographystyle{scaffold/SIGCHI-Reference-Format}
-% \bibliography{sample}
-\printbibliography
+\bibliographystyle{scaffold/SIGCHI-Reference-Format}
+\bibliography{sample}
+% \printbibliography
 
 \end{document}

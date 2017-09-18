@@ -175,10 +175,11 @@ ENTRY
   { address
     advisor
     author
+    year
+    date        % jtb: added
     booktitle
     chapter
     city        % jtb: added
-    date        % jtb: added
     edition
     editor
     howpublished
@@ -196,7 +197,7 @@ ENTRY
     title
     type
     volume
-    year
+    
         % New keys recognized 
         issue         % UTAH: used in, e.g., ACM SIGSAM Bulletin and ACM Communications in Computer Algebra
         articleno
@@ -592,7 +593,7 @@ FUNCTION { format.day.month.year }     % UTAH
     { "" }
     { ", " format.articleno * }
   if$
-  " (" * format.day.month * format.year * ")" *
+  "" % (" * format.day.month * format.year * ") % CHANGE HMT
 }
 
 FUNCTION { output.day.month.year }     % UTAH
