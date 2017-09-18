@@ -3,7 +3,10 @@
 \newcommand{\cmark}{\ding{51}} % So we can use \cmark instead of \ding{51}
 \newcommand{\xmark}{\ding{55}}
 %\usepackage[none]{hyphenat}
-\usepackage[style=numeric,sorting=nty, eprint=false,doi=false,isbn=false,url=false, maxbibnames=99, firstinits=true]{biblatex}
+\usepackage{makecell} % For table headers
+\usepackage{multirow}
+
+\usepackage[style=numeric,sorting=nty, eprint=false,doi=false,isbn=false,url=false, maxbibnames=99, giveninits=true]{biblatex}
 \DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
 
 \addbibresource{sample.bib}
@@ -152,11 +155,15 @@ Table 1 summarises study conditions.
 
 For each condition, we measured the number of times the selected habit was completed during the study. ``Habit completion rate'' was defined as the number of times the person repeated and report the behaviour, divided by 21 days during which participants interacted with the bot. We also measured the change in automaticity of the behaviour during the final weeks, to assess habit strength.
 
+
 \begin{table}[b]
-  \centering
-  \begin{tabular}{l l l}
+  \centering   
+  \begin{tabular}{c c c}
     % \toprule
-    {\small\textit{Condition}} & {\small \textit{No. Participants}} & {\small \textit{Positive reinforcement}} \\
+    
+  \thead{ \small\textit{Condition}} &
+    \thead{\small \textit{No. Participants}} &
+    \thead{\small \textit{Positive reinforcement}} \\
     \midrule
     Audio & 15 & 15s audio\\
     Visual & 15 & 15s GIF \\
@@ -502,57 +509,52 @@ statistically significant difference for the two groups at SRBAI 1: $ F(1,9) = 1
 \end{figure}
 
 \subsection{Interview Feedback}
-Seven participants agreed to participate in optional interviews. Their details are summarised in Table~\ref{table:}. Below we summarise the key findings related to participants' experiences of repeating the habit and support provided by the bot, their attitudes towards types of positive reinforcement they received, and towards the bot itself.
+Seven participants agreed to participate in optional interviews. Their details are summarised in Table~\ref{table:transcript_participant_breakdown}. Below we summarise the key findings related to participants' experiences of repeating the habit and support provided by the bot, their attitudes towards types of positive reinforcement they received, and towards the bot itself.
 
 % LET'S TALK ABOUT THE INTERVIEWS
 % Moved info about the interviews to the Method section
 
-% \emph{[Should I include the full transcripts? I have them im my thesis appendix already written up, if need. - HMT]}
-%KS: no need for that, you just need to include some quotes (as you do) and maybe add participant numbers to the quotes.
-%Also, since there were only 7 seven participants, we could add a table: participant number (P1), gender, habit, reward type. Then you could use these numbers with quotes "something something" (P4) and that would give readers more insight into what type of habit it was related to and what reward they received. Let me know if it doesn't make sense
-
-
 \begin{table}[b]
-  \centering
-  \begin{tabular}{l l l l l l}
+  \begin{tabular}{l l l l l p{1cm}}
     % \toprule
-    {\small\textit{Number}} & {\small \textit{Age}} & {\small \textit{Gender}} & {\small \textit{Habit}} & {\small \textit{Reward}} & {\small \textit{Habit Completion rate}}\\
+    \multicolumn{1}{l}{\small \textit{~}} &
+    \multicolumn{1}{l}{\small \textit{Age}} & 
+    \multicolumn{1}{l}{\small \textit{Gender}} & 
+    \multicolumn{1}{l}{\small \textit{Condition}} &
+    \multicolumn{1}{l}{\small \textit{Habit}} &
+    \multicolumn{1}{l}{\small \textit{Completion rate}} \\
     \midrule
-    1 & 24 & Male & Visual & Meditation & X\% \\
-    2 & 19 & Female & Auditory & Stretch & X\% \\ 
-    3 & 28 & Female & Visual & Writing & X\% \\
-    4 & 57 & Female & No reward & Meditation & X\% \\ 
-    5 & 25 & Male & Visual & Meditation & X\% \\ 
-    6 & 21 & Female & No reward & Meditation & X\% \\ 
-    7 & 32 & Male & Visual-Auditory & Stretch & X\% \\
+    P1 & 24 & M & Visual & Meditation & X\% \\
+    P2 & 19 & F & Auditory & Stretch & X\% \\ 
+    P3 & 28 & F & Visual & Writing & X\% \\
+    P4 & 57 & F & No reward & Meditation & X\% \\ 
+    P5 & 25 & M & Visual & Meditation & X\% \\ 
+    P6 & 21 & F & No reward & Meditation & X\% \\ 
+    P7 & 32 & M & Visual-Auditory & Stretch & X\% \\
     % \bottomrule
   \end{tabular}
-  \caption{Interviewed participants breakdown.}~\label{fig:transcript_participant_breakdown}
+  \caption{Details of participants who were interviewed}~\label{table:transcript_participant_breakdown}
 \end{table}
 
 
  
 \subsubsection{Experiences with habit formation}
-When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. Px and Px \emph{[see the hidden comment above about participant numbering; we need to know who said what]} admitted choosing their habit because they had wanted to start that particular habit for a long time. Px said that it was \textit{'not too much effort'} and \textit{'something successful people do'} [did the same person said both these things?]. They wanted \textit{'to be more active'}, \textit{'relieve stress'} and wanted a habit that was \textit{'less time consuming'}. 
+When discussing the experiences with habit formation, we asked participants for their reasons of selecting their habits. P4 and P5 admitted choosing their habit because they had wanted to start that particular habit for a long time. P2 said that it was \textit{'not too much effort'} and P6 said it was \textit{'something successful people do'}. P7 wanted \textit{'to be more active'} P2 wanted a habit that was \textit{'less time consuming'}. Finally, P1, P5 and P6 wanted to \textit{'relieve stress'}. 
 
-In terms of habit completion, while most participants were able to do it regularly, Px reported always putting the message off and eventually their habit completion got \textit{'worse and worse'} until they stopped altogether. After the bot was removed, the same was true for all other interviewed participants, who admitted finding it difficult to continue with their habit. They \textit{'kept forgetting'} (Px), found it \textit{'harder to remember'} (Px) and lacked motivation, not performing the action if it had \textit{'been a long day'} (Px). Some tried to do it \textit{'every now and again'} (Px), but usually they would only complete it if \textit{'they remembered'} (Px). This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
+In terms of habit completion, while most participants were able to do it regularly, P6 reported always putting the message off and eventually their habit completion got \textit{'worse and worse'} until they stopped altogether. After the bot was removed, the same was true for all other interviewed participants, who admitted finding it difficult to continue with their habit. They \textit{'kept forgetting'} (P3), found it \textit{'harder to remember'} (P1) and lacked motivation, not performing the action if it had \textit{'been a long day'} (P5). P5 also tried to do it \textit{'every now and again'}, but usually they would only complete it if \textit{'they remembered'}. P1, P4, P6, and P7 all discussed not being able to remember to complete their habit after the bot was removed. This reveals the dependency between technology and habits, suggesting that the bot did not increase habit automaticity, or that the existing routine participants chose was not suitable for new habits, or that they were not given enough time to develop automaticity.
 
 \subsubsection{Attitudes Towards Rewards}
-[update in a similar way to the first section above]
-
-Participants had mixed feelings about the rewards. Some \textit{'did not like the [visual] rewards'}, skipping over them after the first few, they \textit{'just wanted to get rid of the notification dot'}. Another participant said \textit{'some of them [audio-visual rewards] were funny'}, but they did not like them overall and mentioned the audio rewards were \textit{'too random'}. One participant thought they did not give them an incentive towards their habit, just a \textit{'nice little extra'}. They also discussed including time-sensitive rewards, as they did not want to listen to music before going to bed. This shows the importance of using an appropriate modality at particular times, e.g. not having audio rewards at certain times of the day. Finally, an upbeat participant talked about \textit{'always wanting to open them'} and \textit{'the combination was perfect'}. However, they said they also found them \textit{'repetitive'} and one participant stated that they simply wanted to get rid of the notification. This implies that the bot was not tracking how many habits that participant completed, but instead tracking how many times that participant wanted the bot to stop messaging them.
+Participants had mixed feelings about the rewards. Some \textit{'did not like the [visual] rewards'} (P1), skipping over them after the first few, they \textit{'just wanted to get rid of the notification dot'} (P1). Another participant (P3) said \textit{'some of them [audio-visual rewards] were funny'}, but they did not like them overall and mentioned the audio rewards were \textit{'too random'}. One participant (P5) thought the rewards did not give them an incentive towards their habit, just a \textit{'nice little extra'} and they discussed including time-sensitive rewards, as they did not want to listen to music before going to bed. This shows the importance of using an appropriate modality at particular times, e.g. not having audio rewards at certain times of the day. Finally, an upbeat participant (P7) talked about \textit{'always wanting to open them'} and \textit{'the combination was perfect'}. However, they said they also found them \textit{'repetitive'} (P7) and one participant stated that they simply wanted to get rid of the notification (P1). This implies that the bot was not tracking how many habits that participant completed, but instead tracking how many times that participant wanted the bot to stop messaging them.
 
 \subsubsection{Attitudes Towards the Chatbot}
-[update in a similar way to the first section above]
+Participants were asked about how they found the chatbot as the method of interaction. They found the method \textit{'pretty good'} (P2), they \textit{'liked it'} (P3) and \textit{'would have liked more interaction'} (P4). Suggesting additional features, such as \textit{'help and support throughout'} (P4), \textit{'ideas on how to improve your habit'} (P4) and \textit{'advice on how to set aside time for your habit'} (P4). Others were neutral, some expecting \textit{'different messages, such as Hey [name], a bit more care about the person, a bit less like a robot'} (P7). Four participants (P2, P4, P6, P7) enjoyed the back up notification aspect, but one found it \textit{'repetitive'} (P7) and \textit{'got annoying if I pressed Not Yet'} (P5). Participants (P1, P3) wanted to see their progress as they tracked their habits, they talked about wanting to reflect on their data. They mentioned that they would feel \textit{'more encouraged to keep doing it, rather than random music [audio rewards]'} (P3). Six out of the seven participants wanted the prototype to come back with a few modifications (P1 was neutral): \textit{'enclosed with Fitbit so it is all in a single place'} (P2), \textit{'fine without rewards'} (P1, P3), \textit{'more interaction'} (P4) and \textit{'with statistics about my progress'} (P1, P3). Participants wanted the bot as more of a \textit{'constant persistent reminder'} (P6) with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Participants (N = 5) mentioned the \textit{headspace} app (\url{www.headspace.com}), mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
 
-Participants were asked about how they found the chatbot as the method of interaction. They found the method \textit{'pretty good'}, they \textit{'liked it'} and \textit{'would have liked more interaction'}. Suggesting additional features, such as \textit{'help and support throughout'}, \textit{'ideas on how to improve your habit'} and \textit{'advice on how to set aside time for your habit'}. Others were neutral, some expecting \textit{'different messages, such as Hey [name], a bit more care about the person, a bit less like a robot'}. Four participants enjoyed the back up notification aspect, but a few found it \textit{'repetitive'} and \textit{'got annoying if I pressed Not Yet'}. Participants wanted to see their progress as they tracked their habits, they talked about wanting to reflect on their data. They mentioned that they would feel \textit{'more encouraged to keep doing it, rather than random music [audio rewards]'}. Mostly participants wanted the prototype to come back with a few modifications: \textit{'enclosed with Fitbit so it is all in a single place'}, \textit{'fine without rewards'} (N=2), \textit{'more interaction'} and \textit{'with statistics about my progress'}. Participants wanted the bot as more of a \textit{'constant persistent reminder'} with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Participants (N = 5) mentioned the \textit{headspace} app (\url{www.headspace.com}), mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
-
-Participants gave additional feedback by simply messaging the bot. They asked inquisitive questions, such as \textit{'what kind of thing are you looking to find out'}, \textit{'this is not working for me'} and \textit{'stop'} --- to try and stop the daily messages (the participant then blocked the bot). Negative feedback towards the rewards and bot were also expressed. When asked about being messaged every day, a participant sent this reply and then blocked the bot: \textit{'Do not do that, it will be annoying'}, and another said \textit{'never message me'}. Another stated that this was the \textit{'lame same band'} after receiving an audio reward.
+Participants gave additional feedback by simply messaging the bot. They asked inquisitive questions, such as \textit{'what kind of thing are you looking to find out'} (P8), \textit{'this is not working for me'} (P9) and \textit{'stop'} (P10)) --- to try and stop the daily messages (the participant then blocked the bot). Negative feedback towards the rewards and bot were also expressed. When asked about being messaged every day, a participant sent this reply and then blocked the bot: \textit{'Do not do that, it will be annoying'} (P11), and another said \textit{'never message me'} (P12). Another stated that this was the \textit{'lame same band'} (P13) after receiving an audio reward.
 
 Participants were able to personalise the chatbot with several different variable configurations. This personalisation could have effected the findings by not narrowing the condition variables. Replicating this research with tighter a configuration is needed to validate this line of reasoning. Finally, streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all participants interviewed (N = 7) struggled with maintaining habit completion after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 \subsection{Summary}
-[combine all discussions together in this section, no subsections! how do the restults relate to each other?]
+[combine all discussions together in this section, no subsections! how do the results relate to each other?]
 %I've just pasted everything here, it needs cleaning up
 
 Participants picked habits they wanted to perform, but when the bot stopped notifying them, they lacked motivation to completed their habit. Some participants enjoyed the rewards at the beginning, but most participants disliked them after the first week.
@@ -574,7 +576,7 @@ Only seven participants responded to the follow up interviews. In addition, the 
 \section{General Discussion}
 This research aimed to understand more about rewards from different modalities and their role in habit formation. Participants receiving bot-delivered rewards completed more habits than the control group without rewards. There was a significant correlation between the habit formation method and habit automaticity. However, this was contradicted during the participant interviews where all seven participants reported a drop in habit completion after 1-week without the prototype.
 
-[this section needs cleaning up - leave only bits that are directly linked to the findings and our contribution as outlined in the Introduction. Also, make sure to link the findings and discuss everying in the cotext of the the literature you described earlier - which of our findings confirm what we know from the literature? which contradict the literature? have we found something completely new and/or unexpected?]
+[this section needs cleaning up - leave only bits that are directly linked to the findings and our contribution as outlined in the Introduction. Also, make sure to link the findings and discuss everything in the context of the the literature you described earlier - which of our findings confirm what we know from the literature? which contradict the literature? have we found something completely new and/or unexpected?]
 
 % Under half the participants completed the modality survey (N = 12, 40\%). These had the following rewards: visual rewards had the highest score (the higher, the more participants preferred the reward) (mean = 12, SD = 3.347), visual and audio rewards were slightly below (mean = 10.75, SD = 1.893).
 % TODO: Compare these results to people not using the chatbot, e.g.. people signing up to the gym, new years resolution
@@ -608,10 +610,10 @@ The results found that the rewards did not impact habit automaticity, but it inc
 % Audio-Visual rewards actually decreased completion
 
 \section{Acknowledgements}
-[removed for peer review]
+[Removed for peer review.]
 %"Internal reviews" sound a bit like it's been reviewed somewhere, so let's hide it for now.
 
-%Thank you to all the participants involved and staff who provided helpful feedback throughout the study.
+% Thank you to all the participants involved who provided feedback throughout the study.
 
 \balance{}
 
