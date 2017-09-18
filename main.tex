@@ -150,12 +150,11 @@ For each condition, we measured the number of times the selected habit was compl
 
 \begin{table}[b]
   \centering   
-  \begin{tabular}{c c c}
+  \begin{tabular}{l l l}
     % \toprule
-    
-  \thead{ \small\textit{Condition}} &
-    \thead{\small \textit{No. Participants}} &
-    \thead{\small \textit{Positive reinforcement}} \\
+\multicolumn{1}{l}{\small \textit{Condition}} &
+\multicolumn{1}{p{1.4cm}}{\small \textit{Number of Participants}} &
+\multicolumn{1}{l}{\small \textit{Positive Reinforcement}} \\
     \midrule
     Audio & 15 & 15s audio\\
     Visual & 15 & 15s GIF \\
@@ -163,13 +162,11 @@ For each condition, we measured the number of times the selected habit was compl
     None (control group) & 15 & Confirmation \\
     % \bottomrule
   \end{tabular}
-  \caption{Study conditions and their corresponding types of positive reinforcement}~\label{fig:precise_rewards}
+  \caption{Study conditions and their corresponding types of positive reinforcement.}~\label{fig:precise_rewards}
 \end{table}
 
 \subsubsection{Materials}
-To deliver different types of positive reinforcement, we built a custom Facebook Messenger bot (see Figure~\ref{fig:setup}). Bot's functionality and approach to support habit formation was informed by~\cite{article_beyond_self_tracking_designing_apps}: rather than providing reminders, the bot first allowed participants to define a routine and during the study provided ``check in'' notifications to see if the routine was followed; if the routine was not working and participants did not complete their habit on time, the bot then suggested changes to the plan.
-%
-\textbf{[give an example here]}
+To deliver different types of positive reinforcement, we built a custom Facebook Messenger bot (see Figure~\ref{fig:setup}). Bot's functionality and approach to support habit formation was informed by~\cite{article_beyond_self_tracking_designing_apps}: rather than providing reminders, the bot first allowed participants to define a routine and during the study provided ``check in'' notifications to see if the routine was followed; if the routine was not working and participants did not complete their habit on time, the bot then suggested changes to the plan. For example, if a participant regularly snoozed the check in notification, the bot would ask the participant if they wanted to move the check in time for later in the day.
 
 We decided to use a bot as it can easily send notifications, is cross-platform and thus highly available, and also offers simple user interface and easy interactions already familiar to the users. Moreover, the integration with the platform meant that interactions with the bot would be visible alongside participant's other conversations, making it easier to report completion of the habit~\cite{the_power_of_logging_mobile_notifications}.
 
@@ -507,14 +504,14 @@ Seven participants agreed to participate in optional interviews. Their details a
 % Moved info about the interviews to the Method section
 
 \begin{table}[b]
-  \begin{tabular}{l l l l l p{1cm}}
+  \begin{tabular}{l l l l l l}
     % \toprule
     \multicolumn{1}{l}{\small \textit{~}} &
     \multicolumn{1}{l}{\small \textit{Age}} & 
     \multicolumn{1}{l}{\small \textit{Gender}} & 
     \multicolumn{1}{l}{\small \textit{Condition}} &
     \multicolumn{1}{l}{\small \textit{Habit}} &
-    \multicolumn{1}{l}{\small \textit{Completion rate}} \\
+    \multicolumn{1}{p{1cm}}{\small \textit{Completion rate}} \\
     \midrule
     P1 & 24 & M & Visual & Meditation & X\% \\
     P2 & 19 & F & Auditory & Stretch & X\% \\ 
@@ -525,7 +522,7 @@ Seven participants agreed to participate in optional interviews. Their details a
     P7 & 32 & M & Visual-Auditory & Stretch & X\% \\
     % \bottomrule
   \end{tabular}
-  \caption{Details of participants who were interviewed}~\label{table:transcript_participant_breakdown}
+  \caption{Details of participants who were interviewed.}~\label{table:transcript_participant_breakdown}
 \end{table}
 
 
