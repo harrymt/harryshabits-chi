@@ -177,29 +177,13 @@ Thirty-six participants completed the four-week study (see Figure~\ref{fig:study
 Among participants who completed the study, meditation was the most popular habit (twelve participants, or 33\%), followed by press ups (eight participants, or 22\%), then stretching (six participants, or 15\%). Reading and writing were the least common, only selected by four, or 11\% and two, or 5\% respectively.
 
 \subsection{Habit Completion}
-% Habit completion Rate = (SUM of habits-completed / 21 (days)) * 100%
-Overall, completion rates varied from X\% to X\% across individual participants. The average habit completion rate was the highest for [condition X], with xx\%, and the lowest for [condition Y], with xx\%. Figure [3] shows the average completion rate for all conditions. [change figure 3 label, maybe change the numbers to percentages: habits completed / 21 * 100\%]
+% Habit completion Rate= (SUM of habits-completed for condition / 21 (days)) * 100%
+% Avg Rate per week = (SUM of habits-completed for condition / <number of people in condition> / 7 (days)) * 100%
+Overall, completion rates varied from 5\% to 100\% across individual participants (mean=31\%). The average habit completion rate was the highest for the control condition, with 36\%, and the lowest for Audio, with 14\%. Figure~\ref{fig:habit_completion_1} shows the average completion rate for all conditions.
 
 \subsubsection{The effect of each condition on habit completion}
-To investigate the levels of habit completion per condition, we conducted a one-way ANOVA. The analysis (see Figure~\ref{fig:m1_h1_a}) revealed that there was a statistically significant difference between each reward ($F(2,624) = 27.007$, $p < 0.05$). A Tukey post hoc test revealed that the difference in completed habits was lower for the Audio ($0.081 + 0.274$, $p < 0.005$) and Audio-visual ($0.267$ + $0.484$, $p = 0.025$) feedback conditions compared to the Visual feedback ($0.373$ + $0.484$) condition. \emph{[KS: What about comparisons with the control group? according to fig. 3 it seems to be more effective than audio!]}
-
-
-%Comparing the number of participants who dropped out of the study versus their reward modality, shows that 7 participants who blocked the bot had 27 visual rewards in total (mean = 3.85). 2 participants had 4 total audio rewards (mean = 2) and 2 participants had 2 audio-visual combined (mean = 6.5). These audio-visual participants that dropped out had the highest amount of snoozes (24 total snoozes, 6 and 18 individually, mean = 12), compared with visual 10 total (mean = 2), and audio with 0 snoozes.
-
-% [this section needs cleaning up]
-
-% Stretching (6 participants 15\%) was the most completed habit based on selection (60 times), ranking 10.0 (where 10.0 = 60/6). Meditation ranked 6.25 (6.25 = 75/12) and the least were the plank and reading with 3.75 (15/4) and 1.75 (7/4) respectively.
-
-% Participants (14 participants 39\%) with visual rewards had the highest total number of snoozes (72 total presses to 'Not Yet'), audio had the smallest (14 total). The control group had 55 snoozes and audio-visual had 45 snoozes. Most participants snoozed (answered 'Not Yet') in the morning (100 times), specifically mid (66) and late (27) morning. audio-visual had the most number of failed snoozes (10, split over 6 participants, 1 person had 5 failed snoozes). Then it was audio by 4.
-
-% Habit performance was also tracked in the form of a streak. If a participant did not track a habit for a day, their streak would be reset to 0. Meditation had the most cumulative streak (17) followed by stretching (7). High streaks (streak > 10) had habits: meditation (135 streaks) and stretch (126 streaks). audio-visual rewards had the most streaks (126), control group (75) and visual (60). Stretch had the highest peak streak (18), meditation (15). However, overall, for all completed habits, meditation was the most streaked (269), stretching (231), press ups (39) and plank (24).
-
-
-\subsubsection{The rewards effect on habit completion}
-To explore the effect of rewards on the number of habits completed, compared with the control group, a one-way between-groups analysis of variance with planned comparisons was conducted. Participants were divided into two groups: group one with rewards, group two without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for week one and three: week one, $F(1,23.20) = 9.48$, $p = 0.005$, week two, $F(1,33.35) = 4.46$, p = 0.42 and week three, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting a large difference in the mean scores.
-
-\subsubsection{Audio-visual rewards effect on habit completion}
-Multiple modes as feedback has been shown to increase task completion rates~\cite{comparing_modalities_effects_of_visual_auditory, benefits_of_audio_visual_1, benefits_of_audio_visual_2}. However, the results from our study report a significant \textit{decrease} in habit completion for multiple modes (audio-visual). The significance of this finding was tested by conducting a one-way between-groups analysis of variance with planned comparisons (Figure~\ref{fig:m1_h2}). Participants were divided into two groups according to their mode. Group one: audio rewards and visual rewards, group two: audio-visual rewards. There was a statistically significant difference between groups each week ($p$ $<$ $0.005$) week one, $F(1,50) = 0.69$, $p = 0.410$, week two, $F(1,50) = 23.04$, $p$ $<$ $0.005$ and week three, $F(1,50) = 8.85$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting an increasing difference in the mean scores throughout weeks.
+ \emph{[TODO: Change to habit completion rate with control group]}
+To investigate the levels of habit completion per condition, we conducted a one-way ANOVA. The analysis (see Figure~\ref{fig:habit_completion_1}) revealed that there was a statistically significant difference between each reward ($F(2,624) = 27.007$, $p < 0.05$). A Tukey post hoc test revealed that the difference in completed habits was lower for the Audio ($0.081 + 0.274$, $p < 0.005$) and Audio-visual ($0.267$ + $0.484$, $p = 0.025$) feedback conditions compared to the Visual feedback ($0.373$ + $0.484$) condition.
 
 
 
@@ -218,99 +202,54 @@ Multiple modes as feedback has been shown to increase task completion rates~\cit
       scaled y ticks = false,
       enlarge x limits=0.3,
       ymin=0,
-      ymax=40,
+      ymax=50,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
-      ylabel={Habits Completed},
+      ylabel={Mean Habit Completion Rate \%},
    ]
    
       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates {
-          (Week-1, 5)
+           coordinates { % Audio
+          (Week-1, 10)
           (Week-2, 0)
-          (Week-3, 12)
+          (Week-3, 24)
            };
 
 
       \addplot[style={fill=white},  postaction={
         pattern=north east lines
     }, error bars/.cd, y dir=both, y explicit]
-          coordinates {
-          (Week-1, 26)
-          (Week-2, 28)
+          coordinates { % Visual
+          (Week-1, 27)
+          (Week-2, 29)
           (Week-3, 24)
           };
 
 
       \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates { 
-          (Week-1, 14)
-          (Week-2, 26)
-          (Week-3, 16)
+           coordinates {  % audio-visual
+          (Week-1, 22)
+          (Week-2, 41)
+          (Week-3, 25)
            };
            
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
-           coordinates { 
-          (Week-1, 9)
-          (Week-2, 18)
-          (Week-3, 18)
+           coordinates { % Control
+          (Week-1, 21)
+          (Week-2, 43)
+          (Week-3, 43)
            };
       \legend{audio, visual, audio-visual, control group}
 
   \end{axis}
   \end{tikzpicture}
-  \caption{The number of habits completed for each reward over the 3-week period.}~\label{fig:m1_h1_a}
+  \caption{The effect of each condition on habit completion.}~\label{fig:habit_completion_1}
 \end{figure}
 
 
-% \begin{figure}
-%   \centering
-%  \begin{tikzpicture}
-%    \begin{axis}[
-%       width  = 0.4*\textwidth,
-%       height = 6cm,
-%       major x tick style = transparent,
-%       ybar=2*\pgflinewidth,
-%       bar width=15pt,
-%       ymajorgrids = true,
-%       symbolic x coords={Week-1, Week-2, Week-3},
-%       xtick = data,
-%       scaled y ticks = false,
-%       enlarge x limits=0.45,
-%       ymin=0,
-%       ymax=22,
-%       legend cell align=left,
-%       legend style={at={(0.5,-0.15)},anchor=north},
-%       ylabel={Habits Completed},
-%    ]
-%       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
-%           coordinates { % Control group
-%           (Week-1, 19)
-%           (Week-2, 6)
-%           (Week-3, 3)
-%           };
+\subsubsection{The rewards effect on habit completion}
+To explore the effect of rewards on the number of habits completed, compared with the control group, a one-way between-groups analysis of variance with planned comparisons was conducted (Figure~\ref{fig:habit_completion_2}. Participants were divided into two groups: group one with rewards, group two without rewards. There was a statistically significant difference at the $p$ $<$ $0.005$ level in both groups for week one and three: week one, $F(1,23.20) = 9.48$, $p = 0.005$, week two, $F(1,33.35) = 4.46$, p = 0.42 and week three, $F(1,50) = 17.01$, $p\leq 0.005$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting a large difference in the mean scores.
 
-%       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
-%            coordinates { % Rewards
-%           (Week-1, 21)
-%           (Week-2, 16)
-%           (Week-3, 18)
-%            };
-
-%       \legend{Control, Rewards}
-
-%   \end{axis}
-%   \end{tikzpicture}
-%   \caption{The effect of positive reinforcement rewards on habit completion.}~\label{fig:m1_h1}
-% \end{figure}
-
-
-
-
-%\subsection{Limitations and Future work for Habit Completion}
-%LIMITATIONS AND FUTURE WORK go only to the final discussion, no need for that earlier
-
-%This research relies on participants self-reporting and participants could have lied to remove the alert instead of performing the habit, just to get the reward. This is particularly true with the snooze function, as the voluntary interviews report that some participants found the bot annoying and stopped using it over time. These participants could have been simply getting rid of the check-in notification rather than completing the habit changing the measurement to how participants reacted to these check-in notifications, instead of their habit. Therefore, it is difficult to draw any valid conclusion on actual habit performance. Future work into how quickly participants responded to the alerts and if the device delivery (browser or smartphone) would better understand how participants interacted with the alerts.
 
 \begin{figure}
   \centering
@@ -327,23 +266,69 @@ Multiple modes as feedback has been shown to increase task completion rates~\cit
       scaled y ticks = false,
       enlarge x limits=0.45,
       ymin=0,
-      ymax=40,
+      ymax=50,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
-      ylabel={Habits Completed},
+      ylabel={Mean Habit Completion Rate \%},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates { % Control group
+          (Week-1, 21)
+          (Week-2, 43)
+          (Week-3, 43)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates { % Rewards
+          (Week-1, 20)
+          (Week-2, 23)
+          (Week-3, 25)
+           };
+
+      \legend{Control, Rewards}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{The rewards effect on habit completion.}~\label{fig:habit_completion_2}
+\end{figure}
+
+
+\subsubsection{Multiple vs. single-mode feedback on habit completion}
+Multiple modes as feedback has been shown to increase task completion rates~\cite{comparing_modalities_effects_of_visual_auditory, benefits_of_audio_visual_1, benefits_of_audio_visual_2}. However, the results from our study report a significant \textit{decrease} in habit completion for multiple modes (audio-visual). The significance of this finding was tested by conducting a one-way between-groups analysis of variance with planned comparisons (Figure~\ref{fig:habit_completion_3}). Participants were divided into two groups according to their mode. Group one: audio rewards and visual rewards, group two: audio-visual rewards. There was a statistically significant difference between groups each week ($p$ $<$ $0.005$) week one, $F(1,50) = 0.69$, $p = 0.410$, week two, $F(1,50) = 23.04$, $p$ $<$ $0.005$ and week three, $F(1,50) = 8.85$. The effect size for week one, week two and week three are large, calculated using $\eta^{2}$, were 0.25, 0.39 and 0.43 respectively, reporting an increasing difference in the mean scores throughout weeks.
+
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.4*\textwidth,
+      height = 6.5cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={Week-1, Week-2, Week-3},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.45,
+      ymin=0,
+      ymax=50,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Mean Habit Completion Rate \%},
    ]
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates { % Singular Modes
-          (Week-1, 31)
-          (Week-2, 28)
-          (Week-3, 36)
+          (Week-1, 18)
+          (Week-2, 14)
+          (Week-3, 24)
            };
 
       \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit]
           coordinates { % Multiple Modes
-          (Week-1, 14)
-          (Week-2, 26)
-          (Week-3, 16)
+          (Week-1, 22)
+          (Week-2, 41)
+          (Week-3, 25)
           };
 
    
@@ -351,20 +336,61 @@ Multiple modes as feedback has been shown to increase task completion rates~\cit
 
   \end{axis}
   \end{tikzpicture}
-  \caption{The rewards effect on habit completion: audio-visual compared with audio rewards and visual rewards.}~\label{fig:m1_h2}
+  \caption{Multiple vs. single-mode feedback on habit completion.}~\label{fig:habit_completion_3}
 \end{figure}
 
 \subsection{Habit Automaticity}
 Participants completed SRBAI questionnaires at the end of week three and week four. Eleven participants completed both SRBAI questionnaires: two from the Audio condition, five from Visual, two from Audio-Visual and two from the control group.
 
-
 \subsubsection{The effect of each condition on habit automaticity}
-TODO
+TODO (Figure~\ref{fig:habit_automaticity_1}).
 % A paired-samples t-test was conducted on both questionnaires, showing a statistically significant increase in automaticity scores from week three (mean SRABI score = 14.18, SD = 3.78) to week four (mean = 15.09, SD = 4.34), $t(10) = 2.469$, $p$ $<$ $0.005$ (two-tailed). This meant that participant's habit automaticity did generally increase, as reported by a mean increase in SRBAI scores of 0.90 (CI = 95\%, from 0.08 to 1.72) and a large effect size as measured by $\eta^{2} = 0.37$.
+
+\begin{figure}
+  \centering
+ \begin{tikzpicture}
+   \begin{axis}[
+      width  = 0.5*\textwidth,
+      height = 6cm,
+      major x tick style = transparent,
+      ybar=2*\pgflinewidth,
+      bar width=15pt,
+      ymajorgrids = true,
+      symbolic x coords={audio, visual, audio-visual, none},
+      xtick = data,
+      scaled y ticks = false,
+      enlarge x limits=0.2, % how far apart the bars are, the lower the further apart
+      ymin=0,
+      legend cell align=left,
+      legend style={at={(0.5,-0.15)},anchor=north},
+      ylabel={Mean Habit Automaticity Score},
+   ]
+      \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
+          coordinates {
+          (audio, 12) += (0,4.243) -= (0,4.243)
+          (visual, 14.6) += (0,4.336) -= (0,4.336)
+          (audio-visual, 16) += (0,2.828) -= (0,2.828)
+          (none, 13.5) += (0, 4.950) -= (0, 4.950)
+          };
+
+      \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
+           coordinates {
+          (audio, 11.5) += (0,6.364) -= (0,6.364)
+          (visual, 15.8) += (0,3.701) -= (0,3.701)
+          (audio-visual, 17.5) += (0,3.536) -= (0,3.536)
+          (none, 14.5) += (0, 6.364) -= (0, 6.364)
+           };
+
+      \legend{Week-3: End of interaction, Week-4: Follow-up}
+
+  \end{axis}
+  \end{tikzpicture}
+  \caption{The effect of each condition on habit automaticity.}~\label{fig:habit_automaticity_1}
+\end{figure}
 
 \subsubsection{The effect of rewards on habit automaticity}
 Comparing participants SRBAI results' with the control group shows the impact rewards had on automaticity.
-An independent-samples t-test was conducted to compare both SRBAI one and SRBAI two for rewards and control (Figure~\ref{fig:m2_h1}). For SRBAI one, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; $t(9) = 0.224$, $p = 0.85$,
+An independent-samples t-test was conducted to compare both SRBAI one and SRBAI two for rewards and control (Figure~\ref{fig:habit_automaticity_2}). For SRBAI one, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; $t(9) = 0.224$, $p = 0.85$,
 two-tailed). The magnitude of the differences in the means (mean difference = 0.83,
 95\% CI: \-29.43 to 27.76) was very small ($\eta^{2} = 0.005$). For SRBAI 2, there was no significant difference in scores for rewards
 (mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; $t(9) = 0.202$, $p = 0.84$,
@@ -413,70 +439,59 @@ two-tailed). The magnitude of the differences in the means (mean difference = 0.
 
   \end{axis}
   \end{tikzpicture}
-  \caption{The rewards effect on habit automaticity. Comparing mean habit automaticity for rewards versus control group.}~\label{fig:m2_h1}
+  \caption{The effect of rewards on habit automaticity.}~\label{fig:habit_automaticity_2}
 \end{figure}
 
-\subsubsection{Multiple vs. single-mode feedback}
-To compare the effect audio-visual had on automaticity a one-way between-groups analysis of variance with planned comparisons was conducted (Figure~\ref{fig:m2_h2}). Participants were divided into two groups according to their reward mode: group one: audio rewards and visual rewards and group two: audio-visual rewards. There was not a
+\subsubsection{Multiple vs. single-mode feedback on habit automaticity}
+To compare the effect audio-visual had on automaticity a one-way between-groups analysis of variance with planned comparisons was conducted (Figure~\ref{fig:habit_automaticity_3}). Participants were divided into two groups according to their reward mode: group one: audio rewards and visual rewards and group two: audio-visual rewards. There was not a
 statistically significant difference for the two groups at SRBAI one: $ F(1,9) = 1.04$, $p = 0.33$, and SRBAI two: $F(1,9) = 0.64$, $p = 0.44$. In addition, the difference in mean scores between the groups had, at SRBAI one: a medium effect with an effect size of $\eta^{2} = 0.11$, and at SRBAI two: a large effect, with an effect size of $\eta^{2} = 0.17$.
 
-
-
-
-%       S1 Mean S2 Mean S1 SD S2 SD
-% Visual  14.6  15.8  4.336 3.701
-% audio  12    11.5  4.243 6.364
-% V-A   16    17.5  2.828 3.536
 
 \begin{figure}
   \centering
  \begin{tikzpicture}
    \begin{axis}[
-      width  = 0.44*\textwidth,
+      width  = 0.4*\textwidth,
       height = 6cm,
       major x tick style = transparent,
       ybar=2*\pgflinewidth,
       bar width=15pt,
       ymajorgrids = true,
-      symbolic x coords={audio, visual, audio-visual},
+      symbolic x coords={Singular Mode, Multiple Mode},
       xtick = data,
       scaled y ticks = false,
-      enlarge x limits=0.3, % how far apart the bars are
+      enlarge x limits=0.60,
       ymin=0,
       legend cell align=left,
       legend style={at={(0.5,-0.15)},anchor=north},
-%       x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-%       y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-%       xlabel={$u$ unemployment},
       ylabel={Mean Habit Automaticity Score},
    ]
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
           coordinates {
-          (audio, 12) += (0,4.243) -= (0,4.243)
-          (visual, 14.6) += (0,4.336) -= (0,4.336)
-          (audio-visual, 16) += (0,2.828) -= (0,2.828)
+          (Singular Mode, 13.3) += (0,4.289) -= (0,4.289)
+          (Multiple Mode, 16) += (0,2.828) -= (0,2.828)
           };
 
       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates {
-          (audio, 11.5) += (0,6.364) -= (0,6.364)
-          (visual, 15.8) += (0,3.701) -= (0,3.701)
-          (audio-visual, 17.5) += (0,3.536) -= (0,3.536)
+          (Singular Mode, 13.65) += (0,5.033) -= (0,5.033)
+          (Multiple Mode, 17.5) += (0,3.536) -= (0,3.536)
            };
 
       \legend{Week-3: End of interaction, Week-4: Follow-up}
 
   \end{axis}
   \end{tikzpicture}
-  \caption{Audio-Visual versus audio rewards and visual rewards on habit automaticity. Comparing mean habit automaticity for each group.}~\label{fig:m2_h2}
+  \caption{Multiple vs. single-mode feedback on habit automaticity.}~\label{fig:habit_automaticity_3}
 \end{figure}
+
+
 
 \subsection{Interview Feedback}
 Seven participants agreed to participate in optional interviews. Their details are summarised in Table~\ref{table:transcript_participant_breakdown}. Below we summarise the key findings related to participants' experiences of repeating the habit and support provided by the bot, their attitudes towards types of positive reinforcement they received, and towards the bot itself.
 
 \begin{table}[b]
   \begin{tabular}{l l l l l l}
-    % \toprule
     \multicolumn{1}{l}{\small \textit{~}} &
     \multicolumn{1}{l}{\small \textit{Age}} & 
     \multicolumn{1}{l}{\small \textit{Gender}} & 
@@ -484,14 +499,13 @@ Seven participants agreed to participate in optional interviews. Their details a
     \multicolumn{1}{l}{\small \textit{Habit}} &
     \multicolumn{1}{p{1cm}}{\small \textit{Completion rate}} \\
     \midrule
-    P1 & 24 & M & Visual & Meditation & X\% \\
-    P2 & 19 & F & Auditory & Stretch & X\% \\ 
-    P3 & 28 & F & Visual & Writing & X\% \\
-    P4 & 57 & F & No reward & Meditation & X\% \\ 
-    P5 & 25 & M & Visual & Meditation & X\% \\ 
-    P6 & 21 & F & No reward & Meditation & X\% \\ 
-    P7 & 32 & M & Visual-Auditory & Stretch & X\% \\
-    % \bottomrule
+    P1 & 24 & M & Visual & Meditation & 86\% \\
+    P2 & 19 & F & Auditory & Stretch & 43\% \\ 
+    P3 & 28 & F & Visual & Writing & 38\% \\
+    P4 & 57 & F & No reward & Meditation & 100\% \\ 
+    P5 & 25 & M & Visual & Meditation & 19\% \\ 
+    P6 & 21 & F & No reward & Meditation & 33\% \\ 
+    P7 & 32 & M & Visual-Auditory & Stretch & 90\% \\
   \end{tabular}
   \caption{Details of participants who were interviewed.}~\label{table:transcript_participant_breakdown}
 \end{table}
@@ -505,7 +519,7 @@ In terms of habit completion, while most participants were able to do it regular
 Participants had mixed feelings about the rewards. Some \textit{'did not like the [visual] rewards'} (P1), skipping over them after the first few, they \textit{'just wanted to get rid of the notification dot'} (P1). Another participant (P3) said \textit{'some of them [audio-visual rewards] were funny'}, but they did not like them overall and mentioned the audio rewards were \textit{'too random'}. One participant (P5) thought the rewards did not give them an incentive towards their habit, just a \textit{'nice little extra'} and they discussed including time-sensitive rewards, as they did not want to listen to music before going to bed. This shows the importance of using an appropriate modality at particular times, e.g. not having audio rewards at certain times of the day. Finally, an upbeat participant (P7) talked about \textit{'always wanting to open them'} and \textit{'the combination was perfect'}. However, they said they also found them \textit{'repetitive'} (P7) and one participant stated that they simply wanted to get rid of the notification (P1). This implies that the bot was not tracking how many habits that participant completed, but instead tracking how many times that participant wanted the bot to stop messaging them.
 
 \subsubsection{Attitudes Towards the Chatbot}
-Participants were asked about how they found the chatbot as the method of interaction. They found the method \textit{'pretty good'} (P2), they \textit{'liked it'} (P3) and \textit{'would have liked more interaction'} (P4). Suggesting additional features, such as \textit{'help and support throughout'} (P4), \textit{'ideas on how to improve your habit'} (P4) and \textit{'advice on how to set aside time for your habit'} (P4). Others were neutral, some expecting \textit{'different messages, such as Hey [name], a bit more care about the person, a bit less like a robot'} (P7). Four participants (P2, P4, P6, P7) enjoyed the check-in notification aspect, but one found it \textit{'repetitive'} (P7) and \textit{'got annoying if I pressed Not Yet'} (P5). Participants (P1, P3) wanted to see their progress as they tracked their habits, they talked about wanting to reflect on their data. They mentioned that they would feel \textit{'more encouraged to keep doing it, rather than random music [audio rewards]'} (P3). Six out of the seven participants wanted the prototype to come back with a few modifications (P1 was neutral): \textit{'enclosed with Fitbit so it is all in a single place'} (P2), \textit{'fine without rewards'} (P1, P3), \textit{'more interaction'} (P4) and \textit{'with statistics about my progress'} (P1, P3). Participants wanted the bot as more of a \textit{'constant persistent reminder'} (P6) with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Participants (N = 5) mentioned the \textit{headspace} app (\url{www.headspace.com}), mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
+Participants were asked about how they found the chatbot as the method of interaction. They found the method \textit{'pretty good'} (P2), they \textit{'liked it'} (P3) and \textit{'would have liked more interaction'} (P4). Suggesting additional features, such as \textit{'help and support throughout'} (P4), \textit{'ideas on how to improve your habit'} (P4) and \textit{'advice on how to set aside time for your habit'} (P4). Others were neutral, some expecting \textit{'different messages, such as Hey [name], a bit more care about the person, a bit less like a robot'} (P7). Four participants (P2, P4, P6, P7) enjoyed the check-in notification aspect, but one found it \textit{'repetitive'} (P7) and \textit{'got annoying if I pressed Not Yet'} (P5). Participants (P1, P3) wanted to see their progress as they tracked their habits, they talked about wanting to reflect on their data. They mentioned that they would feel \textit{'more encouraged to keep doing it, rather than random music [audio rewards]'} (P3). Six out of the seven participants wanted the prototype to come back with a few modifications (P1 was neutral): \textit{'enclosed with Fitbit so it is all in a single place'} (P2), \textit{'fine without rewards'} (P1, P3), \textit{'more interaction'} (P4) and \textit{'with statistics about my progress'} (P1, P3). Participants wanted the bot as more of a \textit{'constant persistent reminder'} (P6) with additional tracking elements to remind them to perform their habit to fit into their busy schedule. Five participants mentioned the \textit{headspace} app (\url{www.headspace.com}), mentioning that they wanted a combination of the bot and headspace. It prompted another participant to download the headspace app. They wanted the bot to keep on track of their habit and they would use the headspace app to help them perform their mindfulness.
 
 Participants gave additional feedback by simply messaging the bot. They asked inquisitive questions, such as \textit{'what kind of thing are you looking to find out'} (P8), \textit{'this is not working for me'} (P9) and \textit{'stop'} (P10)) --- to try and stop the daily messages (the participant then blocked the bot). Negative feedback towards the rewards and bot were also expressed. When asked about being messaged every day, a participant sent this reply and then blocked the bot: \textit{'Do not do that, it will be annoying'} (P11), and another said \textit{'never message me'} (P12). Another stated that this was the \textit{'lame same band'} (P13) after receiving an audio reward.
 
@@ -549,7 +563,13 @@ Each individual reward did not have a significant effect on habit automaticity. 
 % Streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it. However, all seven participants interviewed struggled with maintaining habit performance after the bot was removed. This suggests a dependence between the technology and the habit as participants depended on bot notifications to continue repeating the desired action.
 
 \subsection{Limitations and Future Work}
+
 This research has a few key limitations that open up future work avenues. First, the small number of participants and the small sample of rewards used in the study make it unclear how these findings would generalise to other types of rewards with the same modality. However, our findings already suggest that...  [explain why it's okay and not a big deal!]
+
+
+\textbf{Limitations and Future work for Habit Completion:} This research relies on participants self-reporting and participants could have lied to remove the alert instead of performing the habit, just to get the reward. This is particularly true with the snooze function, as the voluntary interviews report that some participants found the bot annoying and stopped using it over time. These participants could have been simply getting rid of the check-in notification rather than completing the habit changing the measurement to how participants reacted to these check-in notifications, instead of their habit. Therefore, it is difficult to draw any valid conclusion on actual habit performance. Future work into how quickly participants responded to the alerts and if the device delivery (browser or smartphone) would better understand how participants interacted with the alerts.
+
+
 
 Only seven participants responded to the follow up interviews. In addition, the study relied on participants recall which could be inaccurate. Future work conducting similar research with a larger sample size for the SRBAI questionnaire would validate the effect these rewards had on automaticity.
 
