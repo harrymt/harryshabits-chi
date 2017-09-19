@@ -136,7 +136,7 @@ We decided to use a bot as it can easily send notifications, is cross-platform a
 
 As the aim of the rewards was to motivate the participants to keep coming back every day and completing their habits, we identified several ``motivational'' GIFs and audio files, and each GIF file was tweaked to match the audio frequency. We decided to use popular GIFs with internet memes, i.e. content that is passed along from person to person via social media posts~\cite{meme_definition}. Humorous GIF memes make people laugh and are popular on some social media sites, where they usually are the most engaging content~\cite{meme_gifs_are_good}. Given that our bot was integrated with Facebook, and that Facebook introduced built-in support for animated GIFs~\cite{fb_gif_rollout}, memes would integrate well with the bot environment. 
 
-We also used the bot to collect responses to the Self-Report Behavioural Automaticity Index (SRBAI;~\cite{article_4q_SRBAI}). This is a validated four-item instrument for measuring habit automaticity, which can be used as an indicator of habit strength. %SRBAI statements are presented on a 5-point Likert scale with answers from 'Strongly Disagree' (1) to 'Strongly Agree' (5); higher scores indicate higher self-reported levels of automaticity.
+We also used the bot to collect responses to the Self-Report Behavioural Automaticity Index (SRBAI;~\cite{article_4q_SRBAI}). This is a validated four-item instrument for measuring habit automaticity, which can be used as an indicator of habit strength.
 
 \begin{figure}
   \centering
@@ -337,16 +337,9 @@ Participants completed habit automaticity questionnaires (SRBAI) at the end of w
 
 \subsubsection{The effect of each condition on habit automaticity}
 There was no statistically significant difference between scores as determined by a one-way ANOVA (see Figure~\ref{fig:habit_automaticity_1}) for SRBAI one ($F(3,7) = 0.333$, $p = 0.802$) and SRBAI two ($F(3,7) = 0.639$, $p = 0.614$). For each reward specifically a Tukey post hoc test revealed that there was no significant difference in scores for each reward.
-% A paired-samples t-test was conducted on both questionnaires, showing a statistically significant increase in automaticity scores from week three (mean SRABI score = 14.18, SD = 3.78) to week four (mean = 15.09, SD = 4.34), $t(10) = 2.469$, $p$ $<$ $0.005$ (two-tailed). This meant that participant's habit automaticity did generally increase, as reported by a mean increase in SRBAI scores of 0.90 (CI = 95\%, from 0.08 to 1.72) and a large effect size as measured by $\eta^{2} = 0.37$.
 
 \subsubsection{The effect of rewards on habit automaticity}
 Comparing participants SRBAI results' with the control group shows the impact rewards had on automaticity (see Figure~\ref{fig:habit_automaticity_2}).
-% An independent-samples t-test was conducted to compare both SRBAI one and SRBAI two for rewards and control (see Figure~\ref{fig:habit_automaticity_2}). For SRBAI one, there was also no significant differences in scores for rewards (mean = 14.33, SD = 3.84) and control (mean = 13.50, SD = 4.94; $t(9) = 0.224$, $p = 0.85$,
-% two-tailed). The magnitude of the differences in the means (mean difference = 0.83,
-% 95\% CI: \-29.43 to 27.76) was very small ($\eta^{2} = 0.005$). For SRBAI 2, there was no significant difference in scores for rewards
-% (mean = 15.22, SD = 4.29) and control (mean = 14.50, SD = 6.36; $t(9) = 0.202$, $p = 0.84$,
-% two-tailed). The magnitude of the differences in the means (mean difference = 0.72,
-% 95\% CI: \-8.80 to 7.36) was very small ($\eta^{2} = 0.004$). Another test was conducted to validate this finding.
 A one-way between-groups ANOVA with planned comparisons was conducted, but there was not a statistically significant difference for the two groups at SRBAI one: $F(1,9) = 0.02$, $p = 0.88$, and SRBAI two: $F(1,9) = 0.07$, $p = 0.78$. The difference in mean scores between the groups had, at SRBAI one: a medium effect with an effect size $\eta^{2} = 0.11$, and at SRBAI two: a large effect, with an effect size of $\eta^{2} = 0.17$.
 
 
@@ -536,27 +529,20 @@ Each individual reward did not have a significant effect on habit automaticity. 
 
 The prototype was based on the existing literature, i.e. it helped participants stick to a routine by reminding them of their routine and using positive reinforcement~\cite{positive_reinforcement_pro} and back up notifications~\cite{article_beyond_self_tracking_designing_apps}. However, because of the nature of interactions, participants might have treated the bot as a regular reminder. Therefore, the bot may have simply reinforced repetitive actions rather than facilitating the development of  automaticity~\cite{coaching_not_that_good}. 
 
-%Finally, these findings are only impacted by the specific rewards used in this study delivered by the bot. Therefore, it is inconclusive whether audio-visual rewards in a general sense increase habit completion.
-
 
 \subsection{Limitations and Future Work}
 This research has a few key limitations that open up future work avenues. First, the small number of participants and the small sample of rewards used in the study make it unclear how these findings would generalise to other types of rewards with the same modality. Nevertheless, our findings already suggest a significant difference between combined modalities and singular to improve habit completion, which matches previous studies~\cite{benefits_of_audio_visual_1,benefits_of_audio_visual_2,comparison_of_auditory_visual_feedback} that compared of audio and visual modalities.
 
 Second, the measurement of habit formation past the lifetime of the bot relied on the interviews. But only seven participants responded to the follow up interviews and their discussions relied on participants recall, which could be inaccurate. Future work conducting similar research with a larger sample size for the SRBAI questionnaire would validate the effect these rewards had on habit formation without the prototype.
 
-Third, this research relies on participants self-reporting and some of them could have lied to remove the alert instead of performing the habit, just to get the reward. This is particularly true with the snooze function, as the voluntary interviews showed that some participants found the bot annoying and stopped using it over time. %These participants could have been simply getting rid of the back up notification rather than completing the habit, changing the measurement of how participants reacted to these back up notifications, instead of their habit. 
+Third, this research relies on participants self-reporting and some of them could have lied to remove the alert instead of performing the habit, just to get the reward. This is particularly true with the snooze function, as the voluntary interviews showed that some participants found the bot annoying and stopped using it over time.
 Therefore, it is difficult to draw any valid conclusion on actual habit performance. Future work into how quickly participants responded to the alerts and if the device delivery (browser or smartphone) affected these findings would allow us to better understand how participants interacted with the alerts.
-
-
-% Using other motivating factors, such as streaks could have been better used to give insight to participants progress and challenged them to maintain it, using loss aversion~\cite{loss_aversion} to compare the impact of their broken streak with the gain of keeping it.
-%Fourth, participants were able to personalise the chatbot with several different variable configurations. This personalisation could have effected the findings by not narrowing the condition variables. Replicating this research with tighter a configuration is needed to validate this line of reasoning. 
-%[DON'T UNDERSTAND THIS ONE! ALSO, TOO MANY LIMITATIONS!]
 
 Finally, future work could focus on comparing bot-delivered positive reinforcement to more traditional approaches, such as app notifications or  SMS. With their ease of implementation and access to a large pool of participants, chatbots are a promising platform for delivering behaviour change interventions. Further research into the effect of bot interactions on habit formation is needed to explore the full potential of this approach.   
 
 \section{Conclusions}
 We found that the type of reward did not influenced habit automaticity, but it nevertheless increased throughout the study. However, the rewards did improve the number of habits people completed, with the highest completion rates in the audio-visual condition, which suggests that bots may play a useful, albeit limited, role in supporting new behaviours. 
-%We hope this research opens up new avenues for using bots as tools to help form new habits and give new behaviour change technology insights into positive reinforcement rewards from audio, visual and audio-visual modalities.
+
 
 % -- FINDINGS --
 % AUTOMATICITY
