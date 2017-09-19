@@ -3253,7 +3253,7 @@ REVERSE {reverse.pass}
 
 FUNCTION { bib.sort.order }
 {
-  %sort.label
+  sort.label
   
   "    "
   *
