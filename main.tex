@@ -59,7 +59,7 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 \section{Introduction}
 %In recent years, d
-Designing technology to support habit formation has become an important theme in HCI research. This is not surprising, as understanding how to design systems that support habit development helps to ensure that they lead to long lasting changes in one's behaviour~\cite{how_to_evaluate_tech_for_behaviour_change}. %While there is evidence that  supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits~\cite{article_beyond_self_tracking_designing_apps}, %there is little research into 
+Designing technology to support habit formation has become an important theme in HCI research. This is not surprising, as a good understanding of how to design systems that support habit development helps to ensure that they lead to long lasting changes in one's behaviour~\cite{how_to_evaluate_tech_for_behaviour_change}. %While there is evidence that  supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits~\cite{article_beyond_self_tracking_designing_apps}, %there is little research into 
 %the impact that different types of positive reinforcement have on habit formation remains largely unexplored \textbf{[insert refs to papers that do look at this her, OM]}.
 %
 %Positive reinforcement plays an important role in habit formation. It is used as a reward to reinforce a habit and increase repetition~\cite{positive_reinforcement_pro}. 
@@ -69,18 +69,17 @@ Rewards are an important part in supplementing the positive reinforcement necess
 %While habit formation technologies use extrinsic rewards to increase task repetition, such as coins and points, studies have shown that extrinsic rewards can reduce motivation and therefore hinder habit development~\cite{article_meta_analytic_review_intrinsic_motivation}. 
 %
 
-Other types of positive reinforcement include sending text messages to affirm behaviour~\cite{chi_crowd_designed_motivation} and Coaching a person throughout the habit formation process~\cite{coaching_not_that_good}. But these approaches have been shown to encourage repetitive action and dependency, rather than automaticity of behaviour that is characteristic of habits~\cite{habits_as_automaticity_not_frequency_gardner}.
+Other types of positive reinforcement include sending text messages to affirm behaviour~\cite{chi_crowd_designed_motivation} and coaching a person throughout the habit formation process~\cite{coaching_not_that_good}. But these approaches have been shown to encourage repetitive action and dependency, rather than automaticity of behaviour that is characteristic of habits~\cite{habits_as_automaticity_not_frequency_gardner}.
 %
-An alternative approach is to provide intrinsic, rather than extrinsic, motivation after a habit is completed~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}. Intrinsic motivation refers to behaviour that is driven by internal rewards, which focus on increasing personal motivation to complete a task, such as health benefits, rather than monetary extrinsic rewards.
+An alternative approach is to provide intrinsic, rather than extrinsic, motivation after a habit is completed~\cite{article_a_self_efficacy, article_meta_analytic_review_intrinsic_motivation}. Intrinsic motivation refers to behaviour that is driven by internal rewards that focus on increasing personal motivation to complete a task, such as health benefits, as opposed to, for example, monetary extrinsic rewards.
 
 When delivered through technology, positive reinforcement aimed at facilitating intrinsic motivation is predominantly presented in a form of visual feedback, e.g. %positive messages
 ~\cite{comparison_of_auditory_visual_feedback, visual_mode_better, article_realtime_feedback_improving_medication_taking}. 
 %
-But with the advent of ubiquitous and mobile technology, there are situations where visual feedback is not the ideal form of presenting reward, for example in situation where the display is not visible due to situation or permanent impairment. Alternative non-visual displays have been used to overcome these issues in a number of other applications (e.g.~\cite{burke2006comparing, vazquez2012auditory, chi_oussama_tap_the_shapetones}), 
-\textbf{[not yet sure whether this is best argument to putforth, but it could be a way to go? OM]}
+However, with the advent of ubiquitous and mobile technologies, visual feedback may not always be an appropriate form of presenting rewards, for where the display is not visible or even not available.  Alternative non-visual displays have been used to overcome these issues in a number of other applications (e.g.~\cite{burke2006comparing, vazquez2012auditory, chi_oussama_tap_the_shapetones}), 
 %Audio for example have been shown to compliment visual displays in situations where vision alone is unreliable. 
 %Research investigating non-visual display of rewards is scarce, and 
-but their impact as a form of positive reinforcement habit formation remains largely unknown.
+but the benefits of non-visual feedback as a form of positive reinforcement in the context of habit formation have received limited attention.
 
 
 %however only as a means to increase task performance; 
@@ -100,10 +99,8 @@ but their impact as a form of positive reinforcement habit formation remains lar
 %The method of delivery should suit each individual user and a choice of delivery should be available. For example, a survey on feedback systems~\cite{article_user_centred_multimodal_reminders} advised that delivery of interaction should span different modalities to increase retention and better suit the needs of users. Although interaction across modalities is important, this research does not have configurable feedback, but aims to compare how each type of feedback can affect motivation. Monetary (extrinsic) rewards can hinder motivation~\cite{article_meta_analytic_review_intrinsic_motivation}, whereas, satisfaction-based (intrinsic) rewards can be beneficial to motivation and should be preferred. 
 %This study uses a chatbot to deliver intrinsic positive reinforcement rewards from different modalities to see how participants habit automaticity and performance are affected.
 
-To contribute to addressing this gap, we run a four week situated study that explored the impact of different types of positive reinforcement (audio, visual, audio-visual) on the process of habit formation and motivating repeated behaviour.
-%The main contribution of our work is a better understanding of the effectiveness of these types of positive feedback. 
-We show that audio-visual positive reinforcement can increase habit completion rates, over visual- and audio-only displays. 
-\textbf{[the next sentence needs rephrasing, a better summary of the results:]}However, it does not necessarily support habit formation as even though we observed an increase in habit automaticity, the use of specific rewards did not seem to impact this measurement.
+To explore the potential of non-visual feedback in supporting new habits, we conducted a four week situated study that explored the impact of different types of positive reinforcement (audio, visual, audio-visual) on the process of habit formation.
+The main contribution of our work is a better understanding of how these types of positive feedback affect the development of new habits. We show that combined audio-visual positive reinforcement is more effective at supporting repetition and habit completion rates compared to visual- or audio-only displays. However, it does not seem to affect habit automaticity.
 %
 This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
 
@@ -186,7 +183,7 @@ During the set-up process, participants were asked to select one of the healthy 
 
 Next, for the first three weeks of the study, participants were asked to complete their chosen habit as part of the specified routine. During that period, the bot ``checked in'' with the participants after their specified time (see Figure~\ref{fig:setup}, left). Participants then could indicate whether they completed the habit or not. If they reported habit completion, they would receive their positive reinforcement message (see Figure~\ref{fig:setup}, right). If they selected ``not yet'', the bot would check on the participant again an hour later. This allowed for the checks to be snoozed, to ensure the new habit fits into participant's routine. If participants constantly told the bot they had not completed their habit yet, the bot would suggest making changes to the routine. Throughout the study, information about how well each participant was performing was not revealed, as streaks can provide motivation~\cite{article_dont_kick_habit}. 
 
-After interacting with the bot for three weeks, participants were asked to complete the SRBAI questionnaire and answer a set of questions about the positive reinforcement they received. Next, during the final week of the study, bot interactions were suspended, but participants were still asked to continue with their habit. At the end of that period, participants were asked to complete the SRBAI questionnaire again along with a few questions about their experience with the reward. 
+After interacting with the bot for three weeks, participants were asked to complete the SRBAI questionnaire and answer a set of questions about the positive reinforcement they received. Next, during the final week of the study, bot interactions were suspended, but participants were still asked to continue with their habit. At the end of that period, participants were asked to complete the SRBAI questionnaire again along with a few questions about their experience with the rewards. 
 
 \subsubsection{Analysis}
 The results are grouped into two measurements habit completion and habit automaticity. For each measurement three categories are used for comparison: i) The effect of each condition on habit completion ii) The rewards effect on habit completion, iii) Multiple vs. single-mode feedback on habit completion. Participants also had an option to opt-in for an interview to discuss their experience. The interviews were conducted after the four-week study and explored participants experience with trying to maintain their habit after the interactions with the bot ended, their attitudes towards positive reinforcement and towards the bot itself. 
