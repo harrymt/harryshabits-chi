@@ -208,9 +208,9 @@ Among participants who completed the study, meditation was the most popular habi
    
       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates { % Audio
-          (Week-1, 10)
-          (Week-2, 0)
-          (Week-3, 24)
+          (Week-1, 10)  += (0,4) -= (0,4)
+          (Week-2, 0)+= (0,4) -= (0,0.5)
+          (Week-3, 24)+= (0,4) -= (0,4)
            };
 
 
@@ -218,24 +218,24 @@ Among participants who completed the study, meditation was the most popular habi
         pattern=north east lines
     }, error bars/.cd, y dir=both, y explicit]
           coordinates { % Visual
-          (Week-1, 27)
-          (Week-2, 29)
-          (Week-3, 24)
+          (Week-1, 27)  += (0,7) -= (0,7)
+          (Week-2, 29) += (0,7) -= (0,6)
+          (Week-3, 24) += (0,7) -= (0,5)
       };
 
 
       \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates {  % audio-visual
-          (Week-1, 22)
-          (Week-2, 41)
-          (Week-3, 25)
+          (Week-1, 22) += (0,6) -= (0,6)
+          (Week-2, 41)+= (0,6) -= (0,6)
+          (Week-3, 25)+= (0,6) -= (0,4)
       };
            
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates { % Control
-          (Week-1, 17)
-          (Week-2, 38)
-          (Week-3, 31)
+          (Week-1, 17)+= (0,5) -= (0,5)
+          (Week-2, 38)+= (0,5) -= (0,5)
+          (Week-3, 31) += (0,5) -= (0,5)
       };
       \legend{audio, visual, audio-visual, control group}
 
@@ -273,16 +273,16 @@ Overall, completion rates varied from 5\% to 100\% across individual participant
    ]
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit]
           coordinates { % Rewards
-          (Week-1, 20)
-          (Week-2, 35)
-          (Week-3, 25)
+          (Week-1, 20) += (0,3) -= (0,5)
+          (Week-2, 35) += (0,12) -= (0,12)
+          (Week-3, 25) += (0,0) -= (0,0)
           };
 
       \addplot[style={fill=black},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates {  % Control group
-     	  (Week-1, 17)
-          (Week-2, 38)
-          (Week-3, 31)
+     	  (Week-1, 17) += (0,0.5) -= (0,0.5)
+          (Week-2, 38) += (0,0.9) -= (0,0.9)
+          (Week-3, 31) += (0,0.4) -= (0,0.4)
            };
 
       \legend{Control, Rewards}
@@ -329,16 +329,16 @@ The results from our study report a significant increase in habit completion for
    ]
       \addplot[style={fill=white},error bars/.cd, y dir=both, y explicit,error bar style=red]
            coordinates { % Singular Modes
-          (Week-1, 18)
-          (Week-2, 14)
-          (Week-3, 24)
+          (Week-1, 18)  += (0,8) -= (0,8)
+          (Week-2, 14)  += (0,10) -= (0,10)
+          (Week-3, 24)  += (0,0.5) -= (0,0.5)
       };
 
       \addplot[style={fill=gray},error bars/.cd, y dir=both, y explicit]
           coordinates { % Multiple Modes
-          (Week-1, 22)
-          (Week-2, 41)
-          (Week-3, 25)
+          (Week-1, 22)  += (0,11) -= (0,11)
+          (Week-2, 41)  += (0,20) -= (0,20)
+          (Week-3, 25)  += (0,12) -= (0,12)
        };
 
       \legend{Singular Mode, Multiple Mode}
