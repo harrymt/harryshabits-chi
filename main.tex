@@ -2,18 +2,14 @@
 \usepackage{pifont} % Check marks
 \newcommand{\cmark}{\ding{51}} % So we can use \cmark instead of \ding{51}
 \newcommand{\xmark}{\ding{55}}
-%\usepackage[none]{hyphenat}
 \usepackage{makecell} % For table headers
 \usepackage{multirow}
 
-% \usepackage[style=numeric,sorting=nty, eprint=false,doi=true,isbn=false,url=false, maxbibnames=99, giveninits=false]{biblatex}
-% \DeclareFieldFormat{labelnumberwidth}{#1\adddot\midsentence}
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} % Get rid of annoying warnings
 
-% \addbibresource{sample.bib}
 
 % Title
 \def\plaintitle{Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation}
-%\def\plaintitle{Investigating the Impact of Displaying Positive Reinforcement Using Different Modalities on Habit Formation}
 
 % Authors as plain text
 \def\plainauthor{First Author, Second Author, Third Author,
@@ -58,7 +54,6 @@ presentation (e.g. HCI)}{Miscellaneous}
 
 
 \section{Introduction}
-%In recent years, d
 Designing technology to support habit formation has become an important theme in HCI research. This is not surprising, as a good understanding of how to design systems that support habit development helps to ensure that they lead to long lasting changes in one's behaviour~\cite{how_to_evaluate_tech_for_behaviour_change}. %While there is evidence that  supporting contextual cues, regular repetition and positive reinforcement facilitates the formation of new habits~\cite{article_beyond_self_tracking_designing_apps}, %there is little research into 
 %the impact that different types of positive reinforcement have on habit formation remains largely unexplored \textbf{[insert refs to papers that do look at this her, OM]}.
 %
