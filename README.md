@@ -1,13 +1,20 @@
+### CHI 2018 paper
 
-### Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation
+Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation
+
+<p align="center">
+    <a href="chi-2018-harry.pdf" title="Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation.">
+        <img src="screenshot.png" width="400" />
+    </a>
+</p>
+
 
 Submitted to [ACM CHI 2018](https://chi2018.acm.org/) - Conference on Human Factors in Computing Systems, using the [CHI 2018 template](https://chi2018.acm.org/chi-proceedings-format/).
 
 Accompanied by my MSc [thesis](https://github.com/harrymt/harryshabits-thesis) and [Harry's Habits](https://github.com/harrymt/harryshabits) - the chatbot that delivered the positive reinforcement.
 
-#### Development
+#### Implementation
 
-- Download [the latest release](https://github.com/harrymt/harryshabits-chi/releases) and upload the project into a new [Overleaf](https://www.overleaf.com) project and compile.
-
-#### Abstract
-Habit formation technologies use rewards and points as means for providing positive reinforcement, often in visual or audio forms such as jingles, badges or animations. Providing appropriate rewards increases the chances for developing a new habit; yet, research on how these rewards should be delivered and the impact that this has on the process of habit formation is scarce. In this paper, we investigate how three types of positive reinforcement (audio, visual, audio-visual) influence habit completion and automaticity. We describe a 4-week study in which participants used a chatbot that delivered different types of rewards for completing a new daily habit. The results reported higher habit completion rates when a reward was present, especially for the audio-visual condition, without necessarily increasing behaviour automaticity. This has implications for the design of habit formation technologies that rely on audio and visual rewards as means of positive reinforcement.
+- [Thesis](https://github.com/harrymt/masters-thesis): My Masters Thesis written at the University of Bristol.
+- [ChatBot](https://github.com/harrymt/harryshabits): Facebook Messenger Chatbot
+- This paper is in version control, download [the latest release](https://github.com/harrymt/harryshabits-chi/releases) and upload the project into a new [Overleaf](https://www.overleaf.com) project and compile.
