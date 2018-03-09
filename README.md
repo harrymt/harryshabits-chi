@@ -1,4 +1,4 @@
-### CHI 2018 paper
+### [CHI](https://chi2018.acm.org/) 2018 paper
 
 Impact of Audio and Visual Display of Positive Reinforcement on Supporting Habit Formation
 
